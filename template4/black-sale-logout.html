@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>DEFI HANTERS DAO</title>
+	<meta name="description" content="DEFI HANTERS DAO">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	
+    <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+</head>
+
+<body class="dark-theme">
+
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="loader-line-wrap">
+			   <img src="images/spinner.svg" alt="preloader" />
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<div class="top-info">This project is beta. DYOR</div>
+		<div class="top-header container-fluid">
+			<div class="row align-items-center g-0">
+				<div class="col-2 col-sm-2 col-xl-6">
+					<div class="top-header__logo">
+						<a href="#">
+							<img src="images/logo.png" alt="DAO LOGO" />
+						</a>
+					</div>
+				</div>
+				
+
+				<div class="col-10 col-sm-10 col-xl-6 d-flex align-items-end">
+
+
+					<div class="top-header__info  d-flex align-items-center">
+						<div class="networks">
+							<a href="#" class="networks__active top-header__poligon" id="dropdownNetwork" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="networks__btn d-flex align-items-center">
+									<img src="images/poligon.svg" alt="" />
+									<span>Polygon</span>
+								</span>
+								<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.982895 0.640364C1.30774 0.315516 1.83443 0.315517 2.15928 0.640366L5.69226 4.17336L9.22526 0.640365C9.55011 0.315516 10.0768 0.315516 10.4016 0.640365C10.7265 0.965213 10.7265 1.4919 10.4016 1.81675L6.28045 5.93793C6.12445 6.09393 5.91287 6.18157 5.69226 6.18157C5.47164 6.18157 5.26007 6.09393 5.10407 5.93793L0.982893 1.81674C0.658045 1.4919 0.658046 0.965212 0.982895 0.640364Z" fill="black"/>
+									</svg>						
+							</a>
+							<div class="networks__links dropdown-menu" aria-labelledby="dropdownNetwork">
+								<div class="name">Select a network</div>
+								<div class="networks-link">
+									<a href="#" class="networks__link">
+										<img src="images/ethereum.svg" alt="" />
+										<span>Ethereum</span>
+									</a>
+									<a href="#" class="scan">
+										<span>Etherscan</span>
+										<img src="images/arrow.svg" alt="" />
+									</a>
+								</div>
+								<div class="networks-link">
+									<a href="#" class="networks__link">
+										<img src="images/bsc.svg" alt="" />
+										<span>BSC</span>
+									</a>
+									<a href="#" class="scan">
+										<span>BscScan</span>
+										<img src="images/arrow.svg" alt="" />
+									</a>
+								</div>
+								<div class="networks-link active">
+									<a href="#" class="networks__link">
+										<img src="images/poligon.svg" alt="" />
+										<span>Polygon</span>
+									</a>
+									<a href="#" class="scan">
+										<span>Polygonscan</span>
+										<img src="images/arrow.svg" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="top-header__wallet">
+							<a href="#" class="top-header__wallet-link">Connect Wallet</a>
+						</div>
+						
+						<div class="menu-block">
+							<a href="#" class="menu-block__btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+								<svg width="18" height="4" viewBox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.868164 2.28915C0.868164 1.83082 1.02572 1.44768 1.34082 1.13974C1.66309 0.831797 2.08919 0.677826 2.61914 0.677826C3.14909 0.677826 3.57161 0.831797 3.88672 1.13974C4.20898 1.44768 4.37012 1.83082 4.37012 2.28915C4.37012 2.74749 4.20898 3.13063 3.88672 3.43857C3.57161 3.74651 3.14909 3.90048 2.61914 3.90048C2.08919 3.90048 1.66309 3.74651 1.34082 3.43857C1.02572 3.13063 0.868164 2.74749 0.868164 2.28915Z" fill="#3D8AFF"/>
+									<path d="M7.24902 2.28915C7.24902 1.83082 7.40658 1.44768 7.72168 1.13974C8.04395 0.831797 8.47005 0.677826 9 0.677826C9.52995 0.677826 9.95247 0.831797 10.2676 1.13974C10.5898 1.44768 10.751 1.83082 10.751 2.28915C10.751 2.74749 10.5898 3.13063 10.2676 3.43857C9.95247 3.74651 9.52995 3.90048 9 3.90048C8.47005 3.90048 8.04395 3.74651 7.72168 3.43857C7.40658 3.13063 7.24902 2.74749 7.24902 2.28915Z" fill="#3D8AFF"/>
+									<path d="M13.6299 2.28915C13.6299 1.83082 13.7874 1.44768 14.1025 1.13974C14.4248 0.831797 14.8509 0.677826 15.3809 0.677826C15.9108 0.677826 16.3333 0.831797 16.6484 1.13974C16.9707 1.44768 17.1318 1.83082 17.1318 2.28915C17.1318 2.74749 16.9707 3.13063 16.6484 3.43857C16.3333 3.74651 15.9108 3.90048 15.3809 3.90048C14.8509 3.90048 14.4248 3.74651 14.1025 3.43857C13.7874 3.13063 13.6299 2.74749 13.6299 2.28915Z" fill="#3D8AFF"/>
+									</svg>
+									
+							</a>
+
+							<div class="menu-block__links dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+								<a href="#" class="menu-block__link menu-block__link_discord">
+									<span>Discrod</span>
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14 8.49919C14.0023 9.3791 13.7967 10.2471 13.4 11.0325C12.9296 11.9737 12.2065 12.7653 11.3116 13.3187C10.4168 13.8721 9.3855 14.1654 8.33333 14.1659C7.45342 14.1682 6.58541 13.9626 5.8 13.5659L2 14.8325L3.26667 11.0325C2.86995 10.2471 2.66437 9.3791 2.66667 8.49919C2.66707 7.44703 2.96041 6.41576 3.51381 5.52089C4.06722 4.62602 4.85884 3.9029 5.8 3.43252C6.58541 3.03581 7.45342 2.83023 8.33333 2.83252H8.66667C10.0562 2.90918 11.3687 3.4957 12.3528 4.47976C13.3368 5.46383 13.9233 6.77629 14 8.16586V8.49919Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										
+								</a>
+								<a href="#" class="menu-block__link menu-block__link_darktheme">
+									<span>Dark Theme</span>
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.9999 9.39581C13.8951 10.5306 13.4692 11.6121 12.7721 12.5137C12.075 13.4153 11.1356 14.0997 10.0637 14.4868C8.99188 14.874 7.83192 14.9479 6.7196 14.6999C5.60728 14.4518 4.5886 13.8922 3.78275 13.0863C2.97691 12.2805 2.41723 11.2618 2.16921 10.1495C1.92118 9.03715 1.99508 7.8772 2.38224 6.80534C2.7694 5.73348 3.45382 4.79405 4.35541 4.09698C5.257 3.3999 6.33847 2.97401 7.47327 2.86914C6.80888 3.76799 6.48917 4.87544 6.57229 5.99008C6.65541 7.10473 7.13584 8.15251 7.9262 8.94287C8.71656 9.73323 9.76435 10.2137 10.879 10.2968C11.9936 10.3799 13.1011 10.0602 13.9999 9.39581V9.39581Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										
+								</a>
+								<a href="#" class="menu-block__link menu-block__link_language d-none">
+									<span>Русский язык</span>
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_19_651)">
+										<path d="M7.99967 15.4992C11.6816 15.4992 14.6663 12.5144 14.6663 8.83252C14.6663 5.15062 11.6816 2.16585 7.99967 2.16585C4.31778 2.16585 1.33301 5.15062 1.33301 8.83252C1.33301 12.5144 4.31778 15.4992 7.99967 15.4992Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M1.33301 8.83252H14.6663" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M7.99967 2.16585C9.66719 3.99142 10.6148 6.36054 10.6663 8.83252C10.6148 11.3045 9.66719 13.6736 7.99967 15.4992C6.33215 13.6736 5.38451 11.3045 5.33301 8.83252C5.38451 6.36054 6.33215 3.99142 7.99967 2.16585V2.16585Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_19_651">
+										<rect width="16" height="16" fill="white" transform="translate(0 0.83252)"/>
+										</clipPath>
+										</defs>
+										</svg>								
+										
+								</a>
+
+								<a href="#" class="menu-block__buy buy-dao">Buy DDAO</a>
+								<a href="#" class="menu-block__farm farm-button">Farm on GYSR</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		 </div>
+
+		
+		 
+		 
+	</header>
+
+
+	<section class="page">
+		<div class="container">
+
+			<div class="return-back">
+				<a class="button-back d-flex align-items-center" href="#" onclick="history.back();return false;">
+					<svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M5.04718 1.10426C4.75431 0.811341 4.27943 0.811301 3.98652 1.10417L0.469715 4.62038C0.329042 4.76103 0.250008 4.9518 0.25 5.15073C0.249992 5.34965 0.32901 5.54043 0.469669 5.68109L3.98647 9.19789C4.27936 9.49078 4.75424 9.49078 5.04713 9.19789C5.34002 8.905 5.34002 8.43012 5.04713 8.13723L2.81066 5.90076H18.582C18.9962 5.90076 19.332 5.56497 19.332 5.15076C19.332 4.73654 18.9962 4.40076 18.582 4.40076H2.81087L5.04709 2.16492C5.34 1.87205 5.34004 1.39718 5.04718 1.10426Z" fill="#636775"/>
+						</svg>
+
+					<span>Back</span>
+			  </a>
+			</div>
+			
+		
+			<div class="row align-items-stretch glog-wrapper">
+				<div class="col-12 col-sm-12 col-xl-6 glob-info-margin">
+					<div class="bg-wrap glob-info">
+						<div class="row glob-info__margin-1">
+							<div class="col-2 p-0">
+								<img src="images/logo-GBC.png" alt="GBC.AI Seed round" />
+							</div>
+							<div class="col-10">
+								<div class="glob-info__name">GBC.AI Seed round</div>
+								<div class="glob-info__link">
+									<a href="https://gbc.ai/" target="_blank" class="d-flex align-items-center">
+										
+										<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.7598 19.2494H6.75977C6.20977 19.2494 5.75977 18.7994 5.75977 18.2494V6.24939C5.75977 5.69939 6.20977 5.24939 6.75977 5.24939H11.7598C12.3098 5.24939 12.7598 4.79939 12.7598 4.24939C12.7598 3.69939 12.3098 3.24939 11.7598 3.24939H5.75977C4.64977 3.24939 3.75977 4.14939 3.75977 5.24939V19.2494C3.75977 20.3494 4.65977 21.2494 5.75977 21.2494H19.7598C20.8598 21.2494 21.7598 20.3494 21.7598 19.2494V13.2494C21.7598 12.6994 21.3098 12.2494 20.7598 12.2494C20.2098 12.2494 19.7598 12.6994 19.7598 13.2494V18.2494C19.7598 18.7994 19.3098 19.2494 18.7598 19.2494ZM14.7598 4.24939C14.7598 4.79939 15.2098 5.24939 15.7598 5.24939H18.3498L9.21977 14.3794C8.82977 14.7694 8.82977 15.3994 9.21977 15.7894C9.60977 16.1794 10.2398 16.1794 10.6298 15.7894L19.7598 6.65939V9.24939C19.7598 9.79939 20.2098 10.2494 20.7598 10.2494C21.3098 10.2494 21.7598 9.79939 21.7598 9.24939V4.24939C21.7598 3.69939 21.3098 3.24939 20.7598 3.24939H15.7598C15.2098 3.24939 14.7598 3.69939 14.7598 4.24939Z" fill="#3D8AFF"></path>
+											</svg>
+										<span>https://gbc.ai/</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row glob-info__margin-2">
+							<div class="col-12 col-sm-12 col-xl-5">
+								<div class="glob-info__label">
+									Hard/Soft Cap:
+									<span>includes  10% DAO fee</span>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-xl-7">
+								<div class="glob-info__value">$110k</div>
+							</div>
+						</div>
+
+						<div class="row align-items-center glob-info__margin-2">
+							<div class="col-12 col-sm-12 col-xl-5">
+								<div class="glob-info__label">
+									Networks:
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-xl-7">
+								<div class="glob-info__value">
+									<img src="images/ethereum.svg" alt="ethereum" />
+									<img src="images/poligon.svg" alt="poligon">
+									<img src="images/bsc.svg" alt="bsc" />
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-sm-12 col-xl-5">
+								<div class="glob-info__label">
+									Accepted currencies:
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-xl-7">
+								<div class="glob-info__value">
+									USDT, USDC, DAI, BUSD
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-xl-6">
+					<div class="bg-wrap glob-st">
+						<div class="sale-status">Sale Status</div>
+						<div class="row align-items-center">
+							<div class="col-12 col-sm-12 col-xl-6">
+								
+								<div class="round-progress">
+									<div class="progress" data-percentage="0">
+										<span class="progress-left">
+											<span class="progress-bar"></span>
+										</span>
+										<span class="progress-right">
+											<span class="progress-bar"></span>
+										</span>
+										<div class="progress-value">
+											<div>
+												<em>Goal</em><br>
+												<span>0%</span><br>
+												<strong>$110.000</strong>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-12 col-sm-12 col-xl-6">
+								<div class="row glob-st__row">
+									<div class="col-6 col-sm-6 col-xl-6">
+										<div class="glob-st__label">
+											Total sum:
+										</div>
+									</div>
+									<div class="col-6 col-sm-6 col-xl-6">
+										<div class="glob-st__value">
+											0
+										</div>
+									</div>
+								</div>
+								<div class="row glob-st__row">
+									<div class="col-6 col-sm-6 col-xl-6">
+										<div class="glob-st__label">
+											Participants:
+										</div>
+									</div>
+									<div class="col-6 col-sm-6 col-xl-6">
+										<div class="glob-st__value">
+											0
+										</div>
+									</div>
+								</div>
+								<div class="row glob-st__row">
+									<div class="col-6 col-sm-6 col-xl-6">
+										<div class="glob-st__label">
+											Total refund:
+										</div>
+									</div>
+									<div class="col-6 col-sm-6 col-xl-6">
+										<div class="glob-st__value">
+											0
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 text-center text-tokens">Only holders who have 45k DDAO tokens in total can participate in all three allocations.</div>
+			</div>
+
+			<div class="row tokens-tf">
+
+				<div class="col-12 col-sm-12 col-lg-4 tokens-tf__item">
+					<div class="bg-wrap">
+						<div class="row tokens-tf__margin-1">
+							<div class="col-2 p-0">
+								<img src="images/lobster.png" alt="lobster" />
+							</div>
+							<div class="col-10">
+								<div class="tokens-tf__name">Lobster</div>
+								<div class="tokens-tf__description">
+									Holder of min. 3k DDAO tokens
+								</div>
+							</div>
+						</div>
+
+						<div class="tokens-tf__text">Min. amount: $300</div>
+						<a href="#" class="art-button btn btn-primary">Connect Wallet</a>
+					</div>	
+				</div>
+
+				<div class="col-12 col-sm-12 col-lg-4 tokens-tf__item">
+					<div class="bg-wrap">
+						<div class="row tokens-tf__margin-1">
+							<div class="col-2 p-0">
+								<img src="images/shark.png" alt="shark" />
+							</div>
+							<div class="col-10">
+								<div class="tokens-tf__name">Shark</div>
+								<div class="tokens-tf__description">
+									Holder of min. 12k DDAO tokens
+								</div>
+							</div>
+						</div>
+
+						<div class="tokens-tf__text">Min. amount: $1000</div>
+						<a href="#" class="art-button btn btn-primary">Connect Wallet</a>
+					</div>	
+				</div>
+
+				<div class="col-12 col-sm-12 col-lg-4 tokens-tf__item">
+					<div class="bg-wrap">
+						<div class="row tokens-tf__margin-1">
+							<div class="col-2 p-0">
+								<img src="images/whale.png" alt="whale" />
+							</div>
+							<div class="col-10">
+								<div class="tokens-tf__name">Whale</div>
+								<div class="tokens-tf__description">
+									Holder of min. 30k DDAO tokens
+								</div>
+							</div>
+						</div>
+
+						<div class="tokens-tf__text">Min. amount: $3000</div>
+						<a href="#" class="art-button btn btn-primary">Connect Wallet</a>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row switch"  id="dropdownInfo1" data-bs-toggle="dropdown" aria-expanded="false">
+				<div class="col-6 switch__title">Detailed Stats</div>
+				<div class="col-6 text-end switch__btn">
+					<span class="span-show">Show</span>
+					<span class="span-hide">Hide</span>
+					<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0.335434 0.290266C0.660283 -0.0345816 1.18697 -0.0345808 1.51181 0.290268L5.0448 3.82327L8.5778 0.290267C8.90265 -0.0345812 9.42933 -0.0345812 9.75418 0.290267C10.079 0.615116 10.079 1.1418 9.75418 1.46665L5.63299 5.58784C5.47699 5.74383 5.26541 5.83147 5.0448 5.83147C4.82418 5.83147 4.61261 5.74383 4.45661 5.58784L0.335432 1.46665C0.0105844 1.1418 0.0105852 0.615114 0.335434 0.290266Z" fill="#636775"/>
+						</svg>
+				</div>
+			</div>
+
+			<div class="wrap-infoblock dropdown-menu" aria-labelledby="dropdownInfo1">
+				<div class="row wrap-infoblock-1">
+					<div class="col-12 col-sm-12 col-xl-4">
+						<div class="custom-table custom-table_gray">
+							<div class="row">
+								<div class="col-12 text-center custom-table__name">Collected</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Lobsters</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value">$48 406</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Sharks</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value">$18 778</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Whales</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value">$80 085</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-xl-4">
+
+						<div class="custom-table custom-table_light-blue">
+							<div class="row">
+								<div class="col-12 text-center custom-table__name">Refund</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Lobsters</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value">$22 006</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Sharks</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value">$78</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Whales</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value">$15 185</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-12 col-sm-12 col-xl-4">
+
+						<div class="custom-table custom-table_blue">
+							<div class="row">
+								<div class="col-12 text-center custom-table__name">Participants</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Lobsters</div>
+								<div class="col-3 col-sm-3 col-xl-3 custom-table__value">172</div>
+								<div class="col-4 col-sm-4 col-xl-4 custom-table__value-2">55%</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Sharks</div>
+								<div class="col-3 col-sm-3 col-xl-3 custom-table__value">40</div>
+								<div class="col-4 col-sm-4 col-xl-4 custom-table__value-2">32%</div>
+							</div>
+
+							<div class="row  align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Whales</div>
+								<div class="col-3 col-sm-3 col-xl-3 custom-table__value">48</div>
+								<div class="col-4 col-sm-4 col-xl-4 custom-table__value-2">47%</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row wrap-infoblock-2">
+					<div class="col-12 col-sm-12 col-xl-12 custom-table-2">
+						<div class="table-responsive-md">
+						<table class="table table-striped">
+							<thead>
+								<th></th>
+								<th>Lobsters</th>
+								<th>Sharks</th>
+								<th>Whales</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">Transactions</td>
+									<td>96</td>
+									<td>13</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td scope="row">Cap.</td>
+									<td>$26 400 <span>(30%)</span></td>
+									<td>$18 700 <span>(10%)</span></td>
+									<td>$64 900 <span>(60%)</span></td>
+								</tr>
+								<tr>
+									<td scope="row">Average</td>
+									<td>~275</td>
+									<td>~1438</td>
+									<td>~2821</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row-margin"></div>
+
+			<div class="row switch"  id="dropdownInfo2" data-bs-toggle="dropdown" aria-expanded="false">
+				<div class="col-6 switch__title">Stats per Network</div>
+				<div class="col-6 text-end switch__btn">
+					<span class="span-show">Show</span>
+					<span class="span-hide">Hide</span>
+					<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0.335434 0.290266C0.660283 -0.0345816 1.18697 -0.0345808 1.51181 0.290268L5.0448 3.82327L8.5778 0.290267C8.90265 -0.0345812 9.42933 -0.0345812 9.75418 0.290267C10.079 0.615116 10.079 1.1418 9.75418 1.46665L5.63299 5.58784C5.47699 5.74383 5.26541 5.83147 5.0448 5.83147C4.82418 5.83147 4.61261 5.74383 4.45661 5.58784L0.335432 1.46665C0.0105844 1.1418 0.0105852 0.615114 0.335434 0.290266Z" fill="#636775"/>
+						</svg>
+				</div>
+			</div>
+
+			<div class="wrap-infoblock dropdown-menu" aria-labelledby="dropdownInfo2">
+				<div class="row wrap-infoblock-3">
+					<div class="col-12 col-sm-12 col-xl-4">
+						<div class="custom-table custom-table_light-blue">
+							<div class="row">
+								<div class="col-12 text-center custom-table__name">Transactions</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Lobsters</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value text-end">12</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Sharks</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value text-end">21</div>
+							</div>
+
+							<div class="row align-items-end line-bottom">
+								<div class="col-5 col-sm-5 col-xl-5 custom-table__title">Whales</div>
+								<div class="col-7 col-sm-7 col-xl-7 custom-table__value text-end">4</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-12 col-xl-8 table-networks">
+						<div class="table-responsive">
+							<div class="table">
+								<div class="custom-table">
+									<div class="row justify-content-center line-bottom custom-table__value">
+										<img src="images/ethereum.svg" alt="">
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										27 400
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										27 400
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										18 829
+									</div>
+								</div>
+								<div class="custom-table">
+									<div class="row justify-content-center line-bottom custom-table__value">
+										<img src="images/poligon.svg" alt="">
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										0
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										12 377
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										6 401
+									</div>
+								</div>
+								<div class="custom-table">
+									<div class="row justify-content-center line-bottom custom-table__value">
+										<img src="images/bsc.svg" alt="">
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										12 153
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										27 400
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										57 302
+									</div>
+								</div>
+
+								<div class="custom-table d-none">
+									<div class="row justify-content-center line-bottom custom-table__value">
+										<img src="images/ethereum.svg" alt="">
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										27 400
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										27 400
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										18 829
+									</div>
+								</div>
+
+								<div class="custom-table d-none">
+									<div class="row justify-content-center line-bottom custom-table__value">
+										<img src="images/ethereum.svg" alt="">
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										27 400
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										27 400
+									</div>
+									<div class="row justify-content-center line-bottom custom-table__value">
+										18 829
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="language d-none">DDAO available in: <a href="#">русский</a></div>
+		</div>
+	</section>
+
+
+	
+	
+
+
+	
+
+
+
+	
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

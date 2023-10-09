@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>DEFI HANTERS DAO</title>
+	<meta name="description" content="DEFI HANTERS DAO">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	
+    <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+</head>
+
+<body  class="dark-theme">
+
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="loader-line-wrap">
+			   <img src="images/spinner.svg" alt="preloader" />
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<div class="top-info">This project is beta. DYOR</div>
+		<div class="top-header container-fluid">
+			<div class="row align-items-center g-0">
+				<div class="col-2 col-sm-2 col-xl-6">
+					<div class="top-header__logo">
+						<a href="#">
+							<img src="images/logo.png" alt="DAO LOGO" />
+						</a>
+					</div>
+				</div>
+				
+
+				<div class="col-10 col-sm-10 col-xl-6 d-flex align-items-end">
+
+
+					<div class="top-header__info  d-flex align-items-center">
+						<div class="networks">
+							<a href="#" class="networks__active top-header__poligon" id="dropdownNetwork" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="networks__btn d-flex align-items-center">
+									<img src="images/poligon.svg" alt="" />
+									<span>Polygon</span>
+								</span>
+								<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.982895 0.640364C1.30774 0.315516 1.83443 0.315517 2.15928 0.640366L5.69226 4.17336L9.22526 0.640365C9.55011 0.315516 10.0768 0.315516 10.4016 0.640365C10.7265 0.965213 10.7265 1.4919 10.4016 1.81675L6.28045 5.93793C6.12445 6.09393 5.91287 6.18157 5.69226 6.18157C5.47164 6.18157 5.26007 6.09393 5.10407 5.93793L0.982893 1.81674C0.658045 1.4919 0.658046 0.965212 0.982895 0.640364Z" fill="black"/>
+									</svg>						
+							</a>
+							<div class="networks__links dropdown-menu" aria-labelledby="dropdownNetwork">
+								<div class="name">Select a network</div>
+								<div class="networks-link">
+									<a href="#" class="networks__link">
+										<img src="images/ethereum.svg" alt="" />
+										<span>Ethereum</span>
+									</a>
+									<a href="#" class="scan">
+										<span>Etherscan</span>
+										<img src="images/arrow.svg" alt="" />
+									</a>
+								</div>
+								<div class="networks-link">
+									<a href="#" class="networks__link">
+										<img src="images/bsc.svg" alt="" />
+										<span>BSC</span>
+									</a>
+									<a href="#" class="scan">
+										<span>BscScan</span>
+										<img src="images/arrow.svg" alt="" />
+									</a>
+								</div>
+								<div class="networks-link active">
+									<a href="#" class="networks__link">
+										<img src="images/poligon.svg" alt="" />
+										<span>Polygon</span>
+									</a>
+									<a href="#" class="scan">
+										<span>Polygonscan</span>
+										<img src="images/arrow.svg" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="top-header__wallet">
+							<div class="top-header__wallet-bl">
+								<div class="top-header__wallet-m">100.78 MATIC</div>
+								<a href="#" data-fancybox class="top-header__wallet-id" data-bs-toggle="modal" data-bs-target="#accountModal">
+									<span class="wallet-id">0хС60В9се80хС60В9се80хС60В9се8</span>
+									<span class="status"></span>
+								</a>
+							</div>
+						</div>
+						
+						<div class="menu-block">
+							<a href="#" class="menu-block__btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+								<svg width="18" height="4" viewBox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.868164 2.28915C0.868164 1.83082 1.02572 1.44768 1.34082 1.13974C1.66309 0.831797 2.08919 0.677826 2.61914 0.677826C3.14909 0.677826 3.57161 0.831797 3.88672 1.13974C4.20898 1.44768 4.37012 1.83082 4.37012 2.28915C4.37012 2.74749 4.20898 3.13063 3.88672 3.43857C3.57161 3.74651 3.14909 3.90048 2.61914 3.90048C2.08919 3.90048 1.66309 3.74651 1.34082 3.43857C1.02572 3.13063 0.868164 2.74749 0.868164 2.28915Z" fill="#3D8AFF"/>
+									<path d="M7.24902 2.28915C7.24902 1.83082 7.40658 1.44768 7.72168 1.13974C8.04395 0.831797 8.47005 0.677826 9 0.677826C9.52995 0.677826 9.95247 0.831797 10.2676 1.13974C10.5898 1.44768 10.751 1.83082 10.751 2.28915C10.751 2.74749 10.5898 3.13063 10.2676 3.43857C9.95247 3.74651 9.52995 3.90048 9 3.90048C8.47005 3.90048 8.04395 3.74651 7.72168 3.43857C7.40658 3.13063 7.24902 2.74749 7.24902 2.28915Z" fill="#3D8AFF"/>
+									<path d="M13.6299 2.28915C13.6299 1.83082 13.7874 1.44768 14.1025 1.13974C14.4248 0.831797 14.8509 0.677826 15.3809 0.677826C15.9108 0.677826 16.3333 0.831797 16.6484 1.13974C16.9707 1.44768 17.1318 1.83082 17.1318 2.28915C17.1318 2.74749 16.9707 3.13063 16.6484 3.43857C16.3333 3.74651 15.9108 3.90048 15.3809 3.90048C14.8509 3.90048 14.4248 3.74651 14.1025 3.43857C13.7874 3.13063 13.6299 2.74749 13.6299 2.28915Z" fill="#3D8AFF"/>
+									</svg>
+									
+							</a>
+
+							<div class="menu-block__links dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+								<a href="#" class="menu-block__link menu-block__link_discord">
+									<span>Discrod</span>
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14 8.49919C14.0023 9.3791 13.7967 10.2471 13.4 11.0325C12.9296 11.9737 12.2065 12.7653 11.3116 13.3187C10.4168 13.8721 9.3855 14.1654 8.33333 14.1659C7.45342 14.1682 6.58541 13.9626 5.8 13.5659L2 14.8325L3.26667 11.0325C2.86995 10.2471 2.66437 9.3791 2.66667 8.49919C2.66707 7.44703 2.96041 6.41576 3.51381 5.52089C4.06722 4.62602 4.85884 3.9029 5.8 3.43252C6.58541 3.03581 7.45342 2.83023 8.33333 2.83252H8.66667C10.0562 2.90918 11.3687 3.4957 12.3528 4.47976C13.3368 5.46383 13.9233 6.77629 14 8.16586V8.49919Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										
+								</a>
+								<a href="#" class="menu-block__link menu-block__link_darktheme">
+									<span>Dark Theme</span>
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.9999 9.39581C13.8951 10.5306 13.4692 11.6121 12.7721 12.5137C12.075 13.4153 11.1356 14.0997 10.0637 14.4868C8.99188 14.874 7.83192 14.9479 6.7196 14.6999C5.60728 14.4518 4.5886 13.8922 3.78275 13.0863C2.97691 12.2805 2.41723 11.2618 2.16921 10.1495C1.92118 9.03715 1.99508 7.8772 2.38224 6.80534C2.7694 5.73348 3.45382 4.79405 4.35541 4.09698C5.257 3.3999 6.33847 2.97401 7.47327 2.86914C6.80888 3.76799 6.48917 4.87544 6.57229 5.99008C6.65541 7.10473 7.13584 8.15251 7.9262 8.94287C8.71656 9.73323 9.76435 10.2137 10.879 10.2968C11.9936 10.3799 13.1011 10.0602 13.9999 9.39581V9.39581Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										
+								</a>
+								<a href="#" class="menu-block__link menu-block__link_language d-none">
+									<span>Русский язык</span>
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_19_651)">
+										<path d="M7.99967 15.4992C11.6816 15.4992 14.6663 12.5144 14.6663 8.83252C14.6663 5.15062 11.6816 2.16585 7.99967 2.16585C4.31778 2.16585 1.33301 5.15062 1.33301 8.83252C1.33301 12.5144 4.31778 15.4992 7.99967 15.4992Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M1.33301 8.83252H14.6663" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M7.99967 2.16585C9.66719 3.99142 10.6148 6.36054 10.6663 8.83252C10.6148 11.3045 9.66719 13.6736 7.99967 15.4992C6.33215 13.6736 5.38451 11.3045 5.33301 8.83252C5.38451 6.36054 6.33215 3.99142 7.99967 2.16585V2.16585Z" stroke="#636775" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_19_651">
+										<rect width="16" height="16" fill="white" transform="translate(0 0.83252)"/>
+										</clipPath>
+										</defs>
+										</svg>								
+										
+								</a>
+
+								<a href="#" class="menu-block__buy buy-dao">Buy DDAO</a>
+								<a href="#" class="menu-block__farm farm-button">Farm on GYSR</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		 </div>
+
+		 <div class="container">
+			 <div class="row d-flex justify-content-center">
+				<div class="col-11 col-sm-9 col-md-6 col-lg-4 col-xl-3">
+					<div class="top-tabs">
+						<a href="#" class="top-tabs__tab tab-1">Claim</a>
+						<a href="#" class="top-tabs__tab tab-2 active">Pool</a>
+						<a href="#" class="top-tabs__tab tab-3">Staking</a>
+					</div>
+				 </div>
+			 </div>
+		 </div>
+		 
+		 
+	</header>
+
+
+	<section class="page">
+		<div class="container">
+			<div class="title-bl">Pools Overview</div>
+			<div class="top-line row">
+				<div class="col-xs-12 col-lg-8">
+					<div class="row">
+						<div class="col-xs-12 col-lg-7">
+							<div class="row g-0">
+								<div class="col-7 col-sm-7 col-lg-7">
+									<div class="search">
+										<input type="text" class="search-input" name="search" placeholder="Search Pools">
+									</div>
+								</div>
+								<div class="col-5 col-sm-5 col-lg-5">
+									<div class="sort">
+										<a href="#" class="sort-default" id="sortMenu" data-bs-toggle="dropdown" aria-expanded="false">
+											<span class="sort__btn">
+												Sort by
+											</span>
+											<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M0.982895 0.640364C1.30774 0.315516 1.83443 0.315517 2.15928 0.640366L5.69226 4.17336L9.22526 0.640365C9.55011 0.315516 10.0768 0.315516 10.4016 0.640365C10.7265 0.965213 10.7265 1.4919 10.4016 1.81675L6.28045 5.93793C6.12445 6.09393 5.91287 6.18157 5.69226 6.18157C5.47164 6.18157 5.26007 6.09393 5.10407 5.93793L0.982893 1.81674C0.658045 1.4919 0.658046 0.965212 0.982895 0.640364Z" fill="black"/>
+												</svg>						
+										</a>
+										<div class="sort__links dropdown-menu" aria-labelledby="sortMenu">
+											<a href="#" class="sort__link">Live</a>
+											<a href="#" class="sort__link">Coming soon</a>
+											<a href="#" class="sort__link">Ended</a>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+
+						
+						</div>
+						<div class="col-xs-12 col-lg-5 d-flex align-items-center">
+							
+								<div class="col-6 views d-flex">
+									<a href="#" class="views__link grid active">
+										<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.80078 6.50586H4.80078C5.35078 6.50586 5.80078 6.05586 5.80078 5.50586V1.50586C5.80078 0.955859 5.35078 0.505859 4.80078 0.505859H1.80078C1.25078 0.505859 0.800781 0.955859 0.800781 1.50586V5.50586C0.800781 6.05586 1.25078 6.50586 1.80078 6.50586ZM1.80078 13.5059H4.80078C5.35078 13.5059 5.80078 13.0559 5.80078 12.5059V8.50586C5.80078 7.95586 5.35078 7.50586 4.80078 7.50586H1.80078C1.25078 7.50586 0.800781 7.95586 0.800781 8.50586V12.5059C0.800781 13.0559 1.25078 13.5059 1.80078 13.5059ZM7.80078 13.5059H10.8008C11.3508 13.5059 11.8008 13.0559 11.8008 12.5059V8.50586C11.8008 7.95586 11.3508 7.50586 10.8008 7.50586H7.80078C7.25078 7.50586 6.80078 7.95586 6.80078 8.50586V12.5059C6.80078 13.0559 7.25078 13.5059 7.80078 13.5059ZM13.8008 13.5059H16.8008C17.3508 13.5059 17.8008 13.0559 17.8008 12.5059V8.50586C17.8008 7.95586 17.3508 7.50586 16.8008 7.50586H13.8008C13.2508 7.50586 12.8008 7.95586 12.8008 8.50586V12.5059C12.8008 13.0559 13.2508 13.5059 13.8008 13.5059ZM7.80078 6.50586H10.8008C11.3508 6.50586 11.8008 6.05586 11.8008 5.50586V1.50586C11.8008 0.955859 11.3508 0.505859 10.8008 0.505859H7.80078C7.25078 0.505859 6.80078 0.955859 6.80078 1.50586V5.50586C6.80078 6.05586 7.25078 6.50586 7.80078 6.50586ZM12.8008 1.50586V5.50586C12.8008 6.05586 13.2508 6.50586 13.8008 6.50586H16.8008C17.3508 6.50586 17.8008 6.05586 17.8008 5.50586V1.50586C17.8008 0.955859 17.3508 0.505859 16.8008 0.505859H13.8008C13.2508 0.505859 12.8008 0.955859 12.8008 1.50586Z" fill="#BABDCE"/>
+											</svg>
+									</a>
+									<a href="#" class="views__link line">
+										<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.13672 9.00586H3.13672C3.68672 9.00586 4.13672 8.55586 4.13672 8.00586V6.00586C4.13672 5.45586 3.68672 5.00586 3.13672 5.00586H1.13672C0.586719 5.00586 0.136719 5.45586 0.136719 6.00586V8.00586C0.136719 8.55586 0.586719 9.00586 1.13672 9.00586ZM1.13672 14.0059H3.13672C3.68672 14.0059 4.13672 13.5559 4.13672 13.0059V11.0059C4.13672 10.4559 3.68672 10.0059 3.13672 10.0059H1.13672C0.586719 10.0059 0.136719 10.4559 0.136719 11.0059V13.0059C0.136719 13.5559 0.586719 14.0059 1.13672 14.0059ZM1.13672 4.00586H3.13672C3.68672 4.00586 4.13672 3.55586 4.13672 3.00586V1.00586C4.13672 0.455859 3.68672 0.00585938 3.13672 0.00585938H1.13672C0.586719 0.00585938 0.136719 0.455859 0.136719 1.00586V3.00586C0.136719 3.55586 0.586719 4.00586 1.13672 4.00586ZM6.13672 9.00586H16.1367C16.6867 9.00586 17.1367 8.55586 17.1367 8.00586V6.00586C17.1367 5.45586 16.6867 5.00586 16.1367 5.00586H6.13672C5.58672 5.00586 5.13672 5.45586 5.13672 6.00586V8.00586C5.13672 8.55586 5.58672 9.00586 6.13672 9.00586ZM6.13672 14.0059H16.1367C16.6867 14.0059 17.1367 13.5559 17.1367 13.0059V11.0059C17.1367 10.4559 16.6867 10.0059 16.1367 10.0059H6.13672C5.58672 10.0059 5.13672 10.4559 5.13672 11.0059V13.0059C5.13672 13.5559 5.58672 14.0059 6.13672 14.0059ZM5.13672 1.00586V3.00586C5.13672 3.55586 5.58672 4.00586 6.13672 4.00586H16.1367C16.6867 4.00586 17.1367 3.55586 17.1367 3.00586V1.00586C17.1367 0.455859 16.6867 0.00585938 16.1367 0.00585938H6.13672C5.58672 0.00585938 5.13672 0.455859 5.13672 1.00586Z" fill="#BABDCE"/>
+											</svg>
+											
+									</a>
+								</div>
+		
+								<div class="col-6 personal">
+									<div class="personal__checkbox">
+										<input type="checkbox" name="personal" id="personal" class="checkbox" value="yes">
+										<label for="personal">
+											Only mine
+										</label>
+									</div>
+								</div>
+							
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-4 d-flex justify-content-end">
+					<div class="add-position">
+						<a href="#" class="add-position__btn" id="addPosition" data-bs-toggle="dropdown" aria-expanded="false">
+							+ New Position
+						</a>
+						<div class="add-position__block dropdown-menu dropdown-menu-end" aria-labelledby="addPosition">
+							<a href="#" class="add-position__link">Coming soon</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="wrapper bg-wrap">
+				<div class="connect-bl">
+					<img src="images/disk.svg" alt="" />
+					<p>Your positions will appear here</p>
+					<a href="#" class="art-button">Connect a wallet</a>
+				</div>
+			</div>
+
+			<div class="language d-none">DDAO available in: <a href="#">русский</a></div>
+		</div>
+	</section>
+
+
+	
+
+
+
+	<section class="modal fade" tabindex="-1" id="accountModal" aria-labelledby="accountModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-center">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Account</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body popup">
+				<div class="popup__wrap">
+					<div class="popup__connection row align-items-center">
+						<div class="col-12 col-lg-6">
+							<p>Connected with MetaMask</p>
+						</div>
+						<div class="col-12 col-lg-6 popup__connection-btn">
+							<a href="#" class="art-button art-btn-disconaction">Disconnect</a>
+						</div>
+						
+					</div>
+					<div class="popup__wallet-id">
+						<span class="status"></span>
+						<span class="wallet-id">0хС60В9се80хС60В9се80хС60В9се8</span>
+						
+					</div>
+					<div class="row addresses align-items-center addresses-margin">
+						<div class="col-10 col-lg-10">
+							<div class="row">
+								<div class="col-12 col-lg-8">
+									<p class="addresses__name">Trusted Addresses</p>
+								</div>
+								<div class="col-12 col-lg-4">
+									<a class="addresses__show">
+										Show
+										<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.93895 0.811018C1.2638 0.48617 1.79048 0.486171 2.11533 0.81102L5.64832 4.34402L9.18131 0.811019C9.50616 0.486171 10.0328 0.486171 10.3577 0.811019C10.6825 1.13587 10.6825 1.66255 10.3577 1.9874L6.23651 6.10859C6.08051 6.26459 5.86893 6.35222 5.64831 6.35222C5.4277 6.35222 5.21612 6.26459 5.06012 6.10859L0.938948 1.9874C0.6141 1.66255 0.614101 1.13587 0.93895 0.811018Z" fill="#636775"/>
+											</svg>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-2 col-lg-2">
+							
+							<button type="button" class="btn addresses__btn-plus" data-bs-toggle="modal" data-bs-target="#addAddress">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.02095 10.738V0.908491H6.25107V10.738H4.02095ZM0.221236 6.93832V4.70821H10.0508V6.93832H0.221236Z" fill="white"/>
+									</svg>
+							  </button>
+						</div>
+					</div>
+
+					<div class="row addresses-group addresses-group-margin">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<button type="button" class="btn btn-delete-address" data-bs-toggle="modal" data-bs-target="#deleteAddress">
+									<span>0хС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС6</span>
+								</button>								
+								<a href="#" class="address-copy">
+									<img src="images/copy.svg" alt="">
+								</a>
+								<img src="images/copied.svg" alt="" class="copied">									
+							</li>
+
+							<li class="list-group-item">								
+								<button type="button" class="btn btn-delete-address" data-bs-toggle="modal" data-bs-target="#deleteAddress">
+									<span>KKхС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС6</span>
+								</button>	
+								<a href="#" class="address-copy">
+									<img src="images/copy.svg" alt="">
+								</a>
+								<img src="images/copied.svg" alt="" class="copied">									
+							</li>
+
+							<li class="list-group-item">								
+								<button type="button" class="btn btn-delete-address" data-bs-toggle="modal" data-bs-target="#deleteAddress">
+									<span>0хС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС6</span>
+								</button>	
+								<a href="#" class="address-copy">
+									<img src="images/copy.svg" alt="">
+								</a>
+								<img src="images/copied.svg" alt="" class="copied">									
+							</li>
+
+							<li class="list-group-item">								
+								<button type="button" class="btn btn-delete-address" data-bs-toggle="modal" data-bs-target="#deleteAddress">
+									<span>0хС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС60хС60В0хС6</span>
+								</button>	
+								<a href="#" class="address-copy">
+									<img src="images/copy.svg" alt="">
+								</a>
+								<img src="images/copied.svg" alt="" class="copied">									
+							</li>
+							
+							
+							
+						  </ul>
+					</div>
+					<div class="popup__bottom row align-items-center">
+						<div class="col-12 col-lg-6">
+							<a href="#" class="popup__copy">
+								<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8633 1.84253H3C2.17157 1.84253 1.5 2.5141 1.5 3.34253V12.2058C1.5 13.0342 2.17157 13.7058 3 13.7058H4.69201V15.2058H3C1.34314 15.2058 0 13.8627 0 12.2058V3.34253C0 1.68567 1.34315 0.342529 3 0.342529H11.8633C13.5201 0.342529 14.8633 1.68567 14.8633 3.34253V4.52203H13.3633V3.34253C13.3633 2.5141 12.6917 1.84253 11.8633 1.84253ZM8.75768 7.03348H17.4041C18.2624 7.03348 18.9583 7.72933 18.9583 8.5877V17.2341C18.9583 18.0925 18.2624 18.7883 17.4041 18.7883H8.75768C7.89931 18.7883 7.20346 18.0925 7.20346 17.2341V8.5877C7.20346 7.72933 7.89931 7.03348 8.75768 7.03348ZM5.64924 8.5877C5.64924 6.87096 7.04094 5.47926 8.75768 5.47926H17.4041C19.1208 5.47926 20.5125 6.87096 20.5125 8.5877V17.2341C20.5125 18.9508 19.1208 20.3425 17.4041 20.3425H8.75768C7.04094 20.3425 5.64924 18.9508 5.64924 17.2341V8.5877Z" fill="#636775"/>
+								</svg>
+								<span>Copy Address</span>
+								<svg class="copied" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.3875 18.6958C14.9709 18.6958 18.7209 14.9458 18.7209 10.3625C18.7209 5.77917 14.9709 2.02917 10.3875 2.02917C5.8042 2.02917 2.0542 5.77917 2.0542 10.3625C2.0542 14.9458 5.8042 18.6958 10.3875 18.6958Z" stroke="#636775" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6.84619 10.3626L9.20452 12.7209L13.9295 8.00427" stroke="#636775" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								<span class="copied">Copied</span>
+									
+							</a>
+						</div>
+						<div class="col-12 col-lg-6">
+							<a href="#" class="popup__stats">
+								<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.9082 16.1759H5.9082C5.44987 16.1759 5.07487 15.8009 5.07487 15.3425V5.34253C5.07487 4.8842 5.44987 4.5092 5.9082 4.5092H10.0749C10.5332 4.5092 10.9082 4.1342 10.9082 3.67586C10.9082 3.21753 10.5332 2.84253 10.0749 2.84253H5.07487C4.14987 2.84253 3.4082 3.59253 3.4082 4.5092V16.1759C3.4082 17.0925 4.1582 17.8425 5.07487 17.8425H16.7415C17.6582 17.8425 18.4082 17.0925 18.4082 16.1759V11.1759C18.4082 10.7175 18.0332 10.3425 17.5749 10.3425C17.1165 10.3425 16.7415 10.7175 16.7415 11.1759V15.3425C16.7415 15.8009 16.3665 16.1759 15.9082 16.1759ZM12.5749 3.67586C12.5749 4.1342 12.9499 4.5092 13.4082 4.5092H15.5665L7.9582 12.1175C7.6332 12.4425 7.6332 12.9675 7.9582 13.2925C8.2832 13.6175 8.8082 13.6175 9.1332 13.2925L16.7415 5.6842V7.84253C16.7415 8.30086 17.1165 8.67586 17.5749 8.67586C18.0332 8.67586 18.4082 8.30086 18.4082 7.84253V3.67586C18.4082 3.21753 18.0332 2.84253 17.5749 2.84253H13.4082C12.9499 2.84253 12.5749 3.21753 12.5749 3.67586Z" fill="#636775"/>
+									</svg>						
+									<span>Your Stats</span>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		  </div>
+		</div>
+	  </section>
+
+	  <!-- modal add address-->
+	  <section class="modal fade" id="addAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-custom-size">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Add Trusted Address</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p class="modal-text">You can claim from any address in the trusted addresses list but receive your funds at your main address.</p>
+			  <input type="text" placeholder="Add Address" class="form-control" id="input-add">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary art-button btn-confirm">Confirm</button>
+			  	<button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+			  
+			</div>
+		  </div>
+		</div>
+	  </section>
+	<!-- modal add address end-->
+
+	<!-- modal delete address-->
+	<section class="modal fade" id="deleteAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-custom-size">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Delete Address</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p class="modal-text"></p>
+			  
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary art-button btn-del">Delete</button>
+			  	<button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+			  
+			</div>
+		  </div>
+		</div>
+	  </section>
+	<!-- modal delete address end-->
+	
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
