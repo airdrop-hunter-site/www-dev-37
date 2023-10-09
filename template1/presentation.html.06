@@ -1,0 +1,672 @@
+<!DOCTYPE HTML PUBLIC «-//W3C//DTD HTML 4.0 Transitional//EN»>
+<html xmlns="htttp://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 100%;
+      background: #313131;
+    }
+
+    [style*='Inter'] {
+      font-family: 'Inter', arial, sans-serif !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    .glob {
+            background-image: url(https://dev3-www.airdrop-hunter.site/images/ultraviolet-liquid-gradient-repeat-background-stylish-vibrant-wavy-blur-seamless-texture-abstract-smooth-fluid-tileable-wallpaper-vector.jpg);
+    }
+
+    .main {
+    width:660px;
+	background-image: linear-gradient(180deg, #ffcccc, #fff0f0);
+	background-image: url(https://dev3-www.airdrop-hunter.site/images/letter_bg660.jpg);
+    }
+
+    .table-600 {
+      width: 600px;
+    }
+
+    .title {
+      padding-bottom: 16px;
+    }
+
+    .header .main-descr {
+      padding-top: 12px;
+    }
+
+    .header .main-descr .semi-bold {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+      color: #5E5E5E;
+    }
+
+    .header .main-descr .black {
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 21px;
+      color: #343352;
+    }
+
+    .header .main-descr .medium {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+
+    .header .main-descr .medium span {
+      color: #019B7F;
+    }
+
+    .header .main-img {
+      padding-top: 10px;
+      padding-bottom: 12px;
+    }
+
+    .header .line {
+      padding-bottom: 32px;
+    }
+
+    .header .our-links {
+      padding-bottom: 50px;
+    }
+
+    .header .our-links .link {
+      margin-left: 16px;
+      margin-right: 16px;
+      background: #2400FF;
+      border-radius: 8px;
+    }
+
+    .header .our-links .link a {
+      border-radius: 8px;
+      font-size: 9px;
+      font-weight: 600;
+      line-height: 11px;
+      color: #ffffff;
+    }
+
+    .about {
+      padding-bottom: 32px;
+    }
+
+    .about .descr {
+      vertical-align: top;
+    }
+
+    .about .descr br {
+      display: none;
+    }
+
+    .about .descr p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: left;
+      color: #343352;
+    }
+
+    .about .descr p span {
+      color: #019B7F;
+    }
+
+    .about .image br {
+      display: none;
+    }
+
+    .tokens-info {
+      padding-bottom: 32px;
+    }
+
+    .tokens-info .descr ul {
+      text-align: left;
+    }
+
+    .tokens-info .descr ul li {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #343352;
+    }
+
+    .earnings {
+      padding-bottom: 70px;
+    }
+
+    .earnings .descr p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #343352;
+    }
+
+    .earnings .descr ul {
+      width: 300px;
+      padding-left: 20px;
+    }
+
+    .earnings .descr ul li {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #343352;
+    }
+
+    .get-to-start {
+      padding-bottom: 30px;
+    }
+
+    .get-to-start .steps ol {
+      text-align: left;
+    }
+
+    .get-to-start .steps ol li {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #616161;
+    }
+
+    .use-one-click {
+      padding-bottom: 34px;
+    }
+
+    .use-one-click .image {
+      padding-bottom: 16px;
+    }
+
+    .use-one-click .text {
+      padding-bottom: 35px;
+    }
+
+    .use-one-click .text p {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+      color: #EF940B;
+    }
+
+    .platforms .name {
+      padding-top: 7px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+
+    .footer-image {
+      padding-bottom: 21px;
+    }
+
+    .footer-title {
+      padding-bottom: 40px;
+    }
+
+    .our-links {
+      padding-bottom: 40px;
+    }
+
+    .our-links p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #616161;
+    }
+
+    .our-links a {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+
+    @media (max-width: 600px) {
+      .main {
+        width: 480px!important;
+      }
+
+      .table-600 {
+        width: 420px!important;
+      }
+
+      .our-links {
+        padding-bottom: 20px;
+      }
+
+      .about {
+        padding-bottom: 20px;
+      }
+      
+      .about .descr {
+        display: inline;
+        padding-bottom: 20px;
+      }
+
+      .about .descr br {
+        display: inline;
+      }
+
+      .about .image {
+        display: inline;
+      }
+
+      .about .image img {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .about .image br {
+        display: inline;
+      }
+
+      .tokens-info .image {
+        display: inline;
+      }
+
+      .tokens-info .image img {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .tokens-info .descr {
+        display: inline;
+      }
+
+      .tokens-info .descr br {
+        display: none!important;
+      }
+
+      .earnings {
+        padding-bottom: 20px;
+      }
+
+      .earnings .descr {
+        display: inline;
+      }
+
+      .earnings .descr br {
+        display: none!important;
+      }
+
+      .earnings .descr ul {
+        width: 100%;
+      }
+
+      .earnings .image {
+        display: inline;
+      }
+
+      .earnings .image img {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .platforms tr {
+        text-align: center;
+      }
+
+      .platforms td {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      table {
+        background: #EBF1FF!important;
+      }
+
+      .main {
+        width: 320px!important;
+      }
+
+      .table-600 {
+        width: 300px!important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table cellpadding="0" cellspacing="0" width="100%" class=glob>
+    <tr>
+      <td>
+        <table class="main" cellpadding="0" cellspacing="0" align="center">
+          <tr>
+            <td height="40"></td>
+          </tr>
+          <tr>
+            <td class="header">
+              <table class="" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td class="main-title" align="center">
+                    <img src="https://dev3-www.airdrop-hunter.site/images/presentation/main-title.png" alt="main title" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="main-descr" align="center">
+                    <p class="semi-bold" style="font-family: Arial, sans-serif, 'Inter';">
+                      Thanks for your interest in the AirdropHunter Service! 🎩
+                    </p>
+                    <p class="black" style="font-family: Arial, sans-serif, 'Inter';">
+                      AirdropHunter allows you to receive airdrops in different web3 protocols.
+                    </p>
+                    <br />
+                    <p class="medium" style="font-family: Arial, sans-serif, 'Inter';">
+                      <span>All you need</span>
+                      is to subscribe for your favorite project and top up the balance<br />
+                      of your accounts. 
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="main-img" align="center">
+                    <img src="https://dev3-www.airdrop-hunter.site/images/presentation/main-img.png" alt="main image" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="line" align="center">
+                    <img src="https://dev3-www.airdrop-hunter.site/images/presentation/line.png" alt="line" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="our-links">
+                    <table class="table-600" cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td class="link" width="84" height="26" align="center">
+                          <a href="https://app.airdrop-hunter.site/" target="_blank" style="font-family: Arial, sans-serif, 'Inter';">DAPP</a>
+                        </td>
+                        <td width="16"></td>
+                        <td class="link" width="84" height="26" align="center">
+                          <a href="https://airdrop-hunter.site/" target="_blank" style="font-family: Arial, sans-serif, 'Inter';">WEBSITE</a>
+                        </td>
+                        <td width="16"></td>
+                        <td class="link" width="84" height="26" align="center">
+                          <a href="https://twitter.com/AirHunter_Drop" target="_blank" style="font-family: Arial, sans-serif, 'Inter';">TWITTER</a>
+                        </td>
+                        <td width="16"></td>
+                        <td class="link" width="84" height="26" align="center">
+                          <a href="https://t.me/airdrop_hunter_bot" target="_blank" style="font-family: Arial, sans-serif, 'Inter';">TG BOT</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>  
+          </tr>
+          <tr>
+            <td class="title" align="center">
+              <img class="table-600" src="https://dev3-www.airdrop-hunter.site/images/presentation/about-title.png" alt="What is AirdropHunting?" />
+            </td>
+          </tr>
+          <tr>
+            <td class="about">
+              <table class="table-600" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td class="descr" width="260" align="left">
+                    <p style="font-family: Arial, sans-serif, 'Inter';">
+                      Airdrop hunting is the process of actively
+                      <span>seeking and participating in token giveaways by web3 projects.</span>
+                      Such promotions are often conducted as part of marketing campaigns to attract attention to a new blockchain project or platform.
+                    </p>
+                    <br />
+                  </td>
+                  <td class="image" align="right">
+                    <img src="https://dev3-www.airdrop-hunter.site/images/presentation/about-img.png" alt="about image" />
+                    <br />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="title" align="center">
+              <img class="table-600" src="https://dev3-www.airdrop-hunter.site/images/presentation/tokens-info-title.png" alt="Why are tokens distributed?" />
+            </td>
+          </tr>
+          <tr>
+            <td class="tokens-info">
+              <table class="table-600" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td class="image" width="215" align="left">
+                    <img src="https://dev3-www.airdrop-hunter.site/images/presentation/tokens-info-img.png" alt="tokens info image" />
+                  </td>
+                  <td class="descr">
+                    <ul>
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        attracting attention to a new project;
+                      </li>
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        increasing the potential user or investor base;
+                      </li>
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        distribution of governance tokens that allow holders to influence decisions within the project;
+                      </li>
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        launching a new blockchain system<br />
+                        for the project.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="title" align="center">
+              <img class="table-600" src="https://dev3-www.airdrop-hunter.site/images/presentation/earnings-title.png" alt="How much can you earn from airdrop hunting?" />
+            </td>
+          </tr>
+          <tr>
+            <td class="earnings">
+              <table class="table-600" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td class="descr">
+                    <p style="font-family: Arial, sans-serif, 'Inter';">
+                      Analysts have assessed the earnings<br />
+                      of airdrop hunters:
+                    </p>
+                    <ul>
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        <span style="color: #019B7F;">The average</span>
+                        income for a typical airdrop hunter is
+                        <span style="text-decoration: underline;">
+                          $9,384
+                        </span>
+                        per address (with a median figure of $6,497)
+                      </li>
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        In the premium segment, the corresponding figures are
+                        <span style="color: #019B7F; text-decoration: underline;">$18,935 and $14,288.</span>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="image" width="215">
+                    <img src="https://dev3-www.airdrop-hunter.site/images/presentation/earnings-img.png" alt="earnings image" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="title" align="center">
+              <img class="table-600" src="https://dev3-www.airdrop-hunter.site/images/presentation/get-to-start-title.png" alt="How to start earning with airdrop hunting? a step-by-step guide" />
+            </td>
+          </tr>
+          <tr>
+            <td class="get-to-start">
+              <table class="table-600" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td class="steps" align="center">
+                    <ol>
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        Create a cryptocurrency wallet. It can be an exchange wallet, a cloud wallet, or a "cold" wallet stored on a physical device.
+                      </li>
+                      <br />
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        Join aggregator platforms or social media communities that announce new airdrops.
+                      </li>
+                      <br />
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        Keep an eye on the participation requirements in the airdrop: some may require transactions, a certain volume, claiming NFTs, and other network activities.
+                      </li>
+                      <br />
+                      <li style="font-family: Arial, sans-serif, 'Inter';">
+                        After receiving the tokens, monitor their value and decide when to sell them or invest them in other projects.
+                      </li>
+                    </ol>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="title" align="center">
+              <img src="https://dev3-www.airdrop-hunter.site/images/presentation/or-big.png" alt="Or" />
+            </td>
+          </tr>
+          <tr>
+            <td class="title" align="center">
+              <a href="https://app.airdrop-hunter.site/" target="_blank">
+                <img class="table-600" src="https://dev3-www.airdrop-hunter.site/images/presentation/use-one-click-title.png" alt="How to start earning with airdrop hunting? a step-by-step guide" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="use-one-click">
+              <table class="table-600" cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                  <td class="image" align="center">
+                    <img src="https://dev3-www.airdrop-hunter.site/images/presentation/use-one-click-img.png" alt="use one click image" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text" align="center">
+                    <p style="font-family: Arial, sans-serif, 'Inter';">
+                      Promising airdrops in 2023?
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="platforms">
+                    <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                      <tr>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/LayerZero.png" alt="LayerZero" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            LayerZero
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/Metamask.png" alt="Metamask" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            Metamask
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/Starknet.png" alt="Starknet" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            Starknet
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/Polygon.png" alt="Polygon" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            Polygon
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/Arbitrum.png" alt="Arbitrum" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            Arbitrum
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/Zora.png" alt="Zora" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            Zora
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/Debank.png" alt="Debank" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            Debank
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/Scroll.png" alt="Scroll" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            Scroll
+                          </p>
+                        </td>
+                        <td align="center">
+                          <img src="https://dev3-www.airdrop-hunter.site/images/presentation/zkSync.png" alt="zkSync" />
+                          <p class="name" style="font-family: Arial, sans-serif, 'Inter';">
+                            zkSync
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="footer-image" align="center">
+              <img class="table-600" src="https://dev3-www.airdrop-hunter.site/images/presentation/footer-img1.png" alt="footer image" />
+            </td>
+          </tr>
+          <tr>
+            <td class="footer-title" align="center">
+              <img class="table-600" src="https://dev3-www.airdrop-hunter.site/images/presentation/footer-title1.png" alt="ALL THESE PROJECTS YOU CAN FIND ON AIRDROP HUNTER PLATFORM, WHAT ARE YOU WAITING FOR?" />
+            </td>
+          </tr>
+          <tr>
+            <td class="table-600 our-links" align="center">
+              <p style="font-family: Arial, sans-serif, 'Inter';">
+                Best regards, follow us on social media:
+              </p>
+              <a href="https://t.me/airdrop_hunter_public" target="_blank" style="font-family: Arial, sans-serif, 'Inter';">Telegram</a>
+              <a href="https://twitter.com/AirHunter_Drop" target="_blank" style="font-family: Arial, sans-serif, 'Inter';">Twitter</a>
+              <a href="https://www.youtube.com/channel/UCE6ojAKbktTAyfhN6n08fDg" target="_blank" style="font-family: Arial, sans-serif, 'Inter';">YouTube</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

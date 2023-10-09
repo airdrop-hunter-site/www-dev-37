@@ -1,0 +1,23 @@
+$white:#FFFFFF;
+$black:#000000;
+$accent:#2546FF;
+$light: #F2F2F2;
+$gray: #636775;
+$blueLight: #EBF1FF;
+$blueDark: #172882;
+$darkBlack: #21242A;
+
+%openColorBolder {
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+%openBlock {
+    z-index: 4;
+    opacity: 1;
+    transition: 0.5s;
+}

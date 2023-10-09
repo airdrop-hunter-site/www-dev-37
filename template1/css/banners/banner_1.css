@@ -1,0 +1,260 @@
+.top-banner {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.top-banner-wrapper {
+  position: relative;
+  padding: 130px 0;
+}
+
+.top-banner-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  background: url('/../../images/banner/banner-bg-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.top-banner-bg__img {
+  position: absolute;
+}
+
+.top-banner-bg__gradient_bottom-left {
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  object-fit: contain;
+}
+
+.top-banner-bg__gradient_top-right {
+  top: 0;
+  right: 0;
+  height: 100%;
+  object-fit: contain;
+}
+
+.top-banner-bg__circles {
+  width: 100%;
+  object-fit: cover;
+}
+
+.top-banner-bg__sphere_right {
+  right: 0;
+  bottom: 46px;
+}
+
+.top-banner-bg__sphere_left {
+  left: 46px;
+  bottom: 30%;
+}
+
+.top-banner-bg__litecoin {
+  left: 20%;
+  bottom: 0;
+}
+
+.top-banner-bg__bitcoin {
+  top: 29px;
+  left: 7%;
+}
+
+.top-banner-bg__moon {
+  top: 25%;
+  right: 8%;
+}
+
+.top-banner-bg__star_small {
+  top: 80px;
+  right: 12%;
+}
+
+.top-banner-bg__star_big {
+  top: 34px;
+  right: 18%;
+}
+
+.top-banner-bg__star_left {
+  top: 20%;
+  left: 16%;
+}
+
+.top-banner-row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top-banner__main-title {
+  margin-bottom: 45px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 55px;
+  text-align: center;
+  color: #fff;
+}
+
+.top-banner-info {
+  max-width: 570px;
+  margin: 0 auto 25px;
+  padding: 25px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 12px 27px 0px #0000001A;
+}
+
+.top-banner-info__descr {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.top-banner-info__btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-banner-info__btn {
+  border: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.top-banner-info__btn_launch {
+  background: linear-gradient(95.56deg, #2900FF 0.74%, #36287B 45.75%, #FF00B8 126.09%);
+}
+
+.top-banner-info__btn_send {
+  background: #1BBF00;
+}
+
+.top-banner-stats__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 1400.98px) {
+  .top-banner-bg {
+    background-position: center;
+  }
+  .top-banner-bg__gradient_bottom-left {
+    object-fit: cover;
+  }
+
+  .top-banner-bg__gradient_top-right {
+    object-fit: cover;
+  }
+
+  .top-banner-bg__circles {
+    height: 100%;
+  }
+
+  .top-banner-bg__sphere_left {
+    bottom: 25%;
+  }
+
+  .top-banner-bg__bitcoin {
+    top: 0;
+  }
+
+  .top-banner-bg__moon {
+    top: 35%;
+  }
+
+  .top-banner-bg__star_small {
+    right: 8%;
+  }
+
+  .top-banner-bg__star_big {
+    right: 14%;
+  }
+}
+
+@media (max-width: 1200.98px) {
+  .top-banner-bg__star_left {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .top-banner-bg__circles {
+    display: none;
+  }
+  
+  .top-banner-bg__sphere_right {
+    display: none;
+  }
+  
+  .top-banner-bg__sphere_left {
+    display: none;
+  }
+  
+  .top-banner-bg__litecoin {
+    display: none;
+  }
+  
+  .top-banner-bg__bitcoin {
+    display: none;
+  }
+  
+  .top-banner-bg__moon {
+    display: none;
+  }
+  
+  .top-banner-bg__star_small {
+    display: none;
+  }
+  
+  .top-banner-bg__star_big {
+    display: none;
+  }
+  
+  .top-banner-bg__star_left {
+    display: none;
+  }
+}
+
+@media (max-width: 600.98px) {
+  .top-banner-wrapper {
+    padding: 100px 0;
+  }
+
+  .top-banner__main-title {
+    margin-bottom: 36px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .top-banner-info {
+    max-width: none;
+  }
+
+  .top-banner-info__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-banner-info__btn_launch {
+    margin-bottom: 20px;
+  }
+}

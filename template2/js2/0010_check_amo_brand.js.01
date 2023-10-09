@@ -1,0 +1,46 @@
+function amo_brand()
+{
+    var x = document.getElementById("amo_brand");
+    var x2 = document.getElementById("aibot");
+//    var x2;
+    var y;
+
+//    console.log("x typeof: "+typeof(x));
+//    console.log("X2 typeof: "+typeof(x2));
+
+    if(x===undefined)return false;
+    if(x2===undefined)return false; 
+
+    y = x.className;
+//    console.log("Y typeof: "+typeof(y));
+
+
+    if(y===undefined)return false;
+    //console.log(y);
+    if(y == "amo-brand collapsed")
+    {
+	if(glob["ai_show"] == 0)
+	{
+	glob["ai_show"] = 1;
+	console.log("AI change to: 1");
+//	x2.className = 'aibot';
+	setTimeout(show_ai_div,200);
+	}
+    }
+    else
+    {
+    	if(glob["ai_show"] == 1)
+	{
+	glob["ai_show"] = 0;
+	console.log("AI change to: 0");
+	x2.className = 'd-none';
+	}
+    }
+}
+setInterval(amo_brand,100);
+
+function show_ai_div()
+{
+    var x2 = document.getElementById("aibot");
+	x2.className = 'aibot';
+}

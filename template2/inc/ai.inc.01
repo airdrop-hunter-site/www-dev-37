@@ -1,0 +1,16 @@
+<script>
+
+window.crmPluginConfig = {
+ onlinechat: { 
+   mode: 'frame', 
+   container: '#aibot',
+   locale: {
+    powered_by: 'AirDrop Hunter AI Bot',
+   }
+ }, 
+};
+
+
+(function(a,m,o,c,r,m){a[m]={id:"736934",hash:"3c02b58dda37e43af632fd294e5c8b159b364a277bcbda9a23be1c163d967df5",locale:"en",inline:true,setMeta:function(p){this.params=(this.params||[]).concat([p])}};a[o]=a[o]||function(){(a[o].q=a[o].q||[]).push(arguments)};var d=a.document,s=d.createElement('script');s.async=true;s.id=m+'_script';s.src='https://gso.kommo.com/js/button.js?1694102278';d.head&&d.head.appendChild(s)}(window,0,'crmPlugin',0,0,'crm_plugin'));
+
+</script>

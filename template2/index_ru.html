@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Airdrop Hunter</title>
+	<meta name="description" content="Airdrop Hunter">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css?v0001">
+	<script src="/js2/"></script>
+<!-- Meta Pixel Code -->
+<!-- Yandex.Metrika counter -->
+<!-- G1 -->
+<!-- AI -->
+</head>
+<style>
+.aibot2
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 5;
+}
+</style>
+
+
+<body class="ru">
+<!-- G2 -->
+	<header>
+		<div class="top-header container-fluid">
+			<div class="top-header-wrapper d-flex align-items-center">
+
+				<div class="top-header-logo">
+					<a href="/">
+                        <img src="images/logo.svg" alt="airdrop hunter site" />
+                    </a>
+				</div>
+
+                <div class="menu-block">
+                    <ul>
+                        <li>
+                            <a href="#about">
+                            О сервисе
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#offer">
+                            Принцип работы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://referral.airdrop-hunter.site/en" target="_blank">
+                            Для сообщества
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://developer.airdrop-hunter.site/en" target="_blank">
+                            Разработчикам
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+				<div class="top-header-info  d-flex align-items-center">
+						
+                    <div class="languages">
+
+                        <a href="#" class="languages__active" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="languages__btn d-flex align-items-center">
+                                <img src="images/lg/en.svg" alt="Selected language"/>
+                                <div class="languages-title">
+                                    <span class="long">English</span>
+                                    <span class="short">English</span>
+                                </div>
+                            </span>			
+                        </a>
+
+                        <div class="languages__links dropdown-menu" aria-labelledby="dropdownLanguages">
+
+                            <div class="lg-title-block d-flex">
+                                <div class="title">Change language</div>
+                                <a href="#" class="lg-close">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 8L8.85786 22.1421" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M23 22.1421L8.85787 7.99995" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="nav nav-tabs lg-abc d-flex">
+
+                                <button class="nav-link lg-abc-item lg-abc-all active"  id="pills-acb-all-tab" data-bs-toggle="pill" data-bs-target="#pills-acb-all" type="button" role="tab" aria-controls="pills-acb-all" aria-selected="true">
+                                    ALL
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-a-tab" data-bs-toggle="pill" data-bs-target="#pills-a" type="button" role="tab" aria-controls="pills-a" aria-selected="true">
+                                    A <sup>2</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-b-tab" data-bs-toggle="pill" data-bs-target="#pills-b" type="button" role="tab" aria-controls="pills-b" aria-selected="true">
+                                    B <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-c-tab" data-bs-toggle="pill" data-bs-target="#pills-c" type="button" role="tab" aria-controls="pills-c" aria-selected="true">
+                                    C <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-e-tab" data-bs-toggle="pill" data-bs-target="#pills-e" type="button" role="tab" aria-controls="pills-e" aria-selected="true">
+                                    E <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-f-tab" data-bs-toggle="pill" data-bs-target="#pills-f" type="button" role="tab" aria-controls="pills-f" aria-selected="true">
+                                    F <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-g-tab" data-bs-toggle="pill" data-bs-target="#pills-g" type="button" role="tab" aria-controls="pills-g" aria-selected="true">
+                                    G <sup>3</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-h-tab" data-bs-toggle="pill" data-bs-target="#pills-h" type="button" role="tab" aria-controls="pills-h" aria-selected="true">
+                                    H <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-i-tab" data-bs-toggle="pill" data-bs-target="#pills-i" type="button" role="tab" aria-controls="pills-i" aria-selected="true">
+                                    I <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-j-tab" data-bs-toggle="pill" data-bs-target="#pills-j" type="button" role="tab" aria-controls="pills-j" aria-selected="true">
+                                    J <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-k-tab" data-bs-toggle="pill" data-bs-target="#pills-k" type="button" role="tab" aria-controls="pills-k" aria-selected="true">
+                                    K <sup>2</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-l-tab" data-bs-toggle="pill" data-bs-target="#pills-l" type="button" role="tab" aria-controls="pills-l" aria-selected="true">
+                                    L <sup>1</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="true">
+                                    P <sup>2</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-r-tab" data-bs-toggle="pill" data-bs-target="#pills-r" type="button" role="tab" aria-controls="pills-r" aria-selected="true">
+                                    R <sup>2</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-s-tab" data-bs-toggle="pill" data-bs-target="#pills-s" type="button" role="tab" aria-controls="pills-s" aria-selected="true">
+                                    S <sup>3</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-t-tab" data-bs-toggle="pill" data-bs-target="#pills-t" type="button" role="tab" aria-controls="pills-t" aria-selected="true">
+                                    T <sup>2</sup>
+                                </button>
+
+                                <button class="nav-link lg-abc-item"  id="pills-u-tab" data-bs-toggle="pill" data-bs-target="#pills-u" type="button" role="tab" aria-controls="pills-u" aria-selected="true">
+                                    U <sup>2</sup>
+                                </button>
+
+                               
+                               
+                            </div>
+                            
+                            <div class="tab-content">
+
+                                <!-- All -->
+                                <div class="lg-tab tab-pane fade show active" id="pills-acb-all" role="tabpanel" aria-labelledby="pills-acb-all">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/en/" class="languages-link active">
+                                            <img src="images/lg/en.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">English</span>
+                                                <span class="short">English</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/pt/" class="languages-link">
+                                            <img src="images/lg/pt.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Portugueses</span>
+                                                <span class="short">Portugues</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/cn/" class="languages-link">
+                                            <img src="images/lg/cn.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">中文</span>
+                                                <span class="short">Chinese</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/kr/" class="languages-link">
+                                            <img src="images/lg/kr.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">한국인</span>
+                                                <span class="short">Korean</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/in/" class="languages-link">
+                                            <img src="images/lg/in.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">हिंदी</span>
+                                                <span class="short">Hindi</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/ru/" class="languages-link">
+                                            <img src="images/lg/ru.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Русский</span>
+                                                <span class="short">Russian</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/jp/" class="languages-link">
+                                            <img src="images/lg/jp.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">日本語</span>
+                                                <span class="short">Japanese</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/es/" class="languages-link">
+                                            <img src="images/lg/es.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Española</span>
+                                                <span class="short">Spanish</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/ar/" class="languages-link">
+                                            <img src="images/lg/ar.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">عربي</span>
+                                                <span class="short">Arabic</span>
+                                            </div>
+                                        </a>
+                                        <a href="/ua/" class="languages-link">
+                                            <img src="images/lg/ua.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Українська</span>
+                                                <span class="short">Ukrainian</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- A -->
+                                <div class="lg-tab tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/ar/" class="languages-link">
+                                            <img src="images/lg/ar.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">عربي</span>
+                                                <span class="short">Arabic</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/am/" class="languages-link">
+                                            <img src="images/lg/am.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">հայկական</span>
+                                                <span class="short">Armenian</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                 <!-- B -->
+                                 <div class="lg-tab tab-pane fade" id="pills-b" role="tabpanel" aria-labelledby="pills-b-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/be/" class="languages-link">
+                                            <img src="images/lg/be.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Беларускі</span>
+                                                <span class="short">Belarusian</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- C -->
+                                <div class="lg-tab tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">
+                                    <div class="lg-wrapper d-flex">
+
+
+                                        <a href="/cn/" class="languages-link">
+                                            <img src="images/lg/cn.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">中文</span>
+                                                <span class="short">Chinese</span>
+                                            </div>
+                                        </a>
+
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- E -->
+                                <div class="lg-tab tab-pane fade" id="pills-e" role="tabpanel" aria-labelledby="pills-e-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/en/" class="languages-link active">
+                                            <img src="images/lg/en.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">English</span>
+                                                <span class="short">English</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                 <!-- F -->
+                                 <div class="lg-tab tab-pane fade" id="pills-f" role="tabpanel" aria-labelledby="pills-f-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/fr/" class="languages-link">
+                                            <img src="images/lg/fr.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">French</span>
+                                                <span class="short">French</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- G -->
+                                <div class="lg-tab tab-pane fade" id="pills-g" role="tabpanel" aria-labelledby="pills-g-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/gr/" class="languages-link">
+                                            <img src="images/lg/gr.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Ελληνικά</span>
+                                                <span class="short">Greek</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/ge/" class="languages-link">
+                                            <img src="images/lg/ge.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">ქართული</span>
+                                                <span class="short">Georgian</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/de/" class="languages-link">
+                                            <img src="images/lg/de.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Deutsch</span>
+                                                <span class="short">German</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- H -->
+                                <div class="lg-tab tab-pane fade" id="pills-h" role="tabpanel" aria-labelledby="pills-h-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/in/" class="languages-link">
+                                            <img src="images/lg/in.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">हिंदी</span>
+                                                <span class="short">Hindi</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                 <!-- I -->
+                                 <div class="lg-tab tab-pane fade" id="pills-i" role="tabpanel" aria-labelledby="pills-i-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/it/" class="languages-link">
+                                            <img src="images/lg/it.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Italian</span>
+                                                <span class="short">Italian</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- J -->
+                                <div class="lg-tab tab-pane fade" id="pills-j" role="tabpanel" aria-labelledby="pills-j-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/jp/" class="languages-link">
+                                            <img src="images/lg/jp.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">日本語</span>
+                                                <span class="short">Japanese</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- K -->
+                                <div class="lg-tab tab-pane fade" id="pills-k" role="tabpanel" aria-labelledby="pills-k-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/kr/" class="languages-link">
+                                            <img src="images/lg/kr.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">한국인</span>
+                                                <span class="short">Korean</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/kz/" class="languages-link">
+                                            <img src="images/lg/kz.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Қазақ</span>
+                                                <span class="short">Kazakh</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- L -->
+                                <div class="lg-tab tab-pane fade" id="pills-l" role="tabpanel" aria-labelledby="pills-l-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/lt/" class="languages-link">
+                                            <img src="images/lg/lt.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Lietuvių</span>
+                                                <span class="short">Lithuanian</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- P -->
+                                <div class="lg-tab tab-pane fade" id="pills-p" role="tabpanel" aria-labelledby="pills-p-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/pt/" class="languages-link">
+                                            <img src="images/lg/pt.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Portugueses</span>
+                                                <span class="short">Portugues</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/pl/" class="languages-link">
+                                            <img src="images/lg/pl.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Polska</span>
+                                                <span class="short">Polska</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- R -->
+                                <div class="lg-tab tab-pane fade" id="pills-r" role="tabpanel" aria-labelledby="pills-r-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/ru/" class="languages-link">
+                                            <img src="images/lg/ru.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Русский</span>
+                                                <span class="short">Russian</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/ro/" class="languages-link">
+                                            <img src="images/lg/ro.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Română</span>
+                                                <span class="short">Romanian</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- S -->
+                                <div class="lg-tab tab-pane fade" id="pills-s" role="tabpanel" aria-labelledby="pills-s-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/es/" class="languages-link">
+                                            <img src="images/lg/es.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Española</span>
+                                                <span class="short">Spanish</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/sr/" class="languages-link">
+                                            <img src="images/lg/sr.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Српски</span>
+                                                <span class="short">Serbian</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/sk/" class="languages-link">
+                                            <img src="images/lg/sk.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Slovenský</span>
+                                                <span class="short">Slovak</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                <!-- T -->
+                                <div class="lg-tab tab-pane fade" id="pills-t" role="tabpanel" aria-labelledby="pills-t-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/tr/" class="languages-link">
+                                            <img src="images/lg/tr.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Türkçe</span>
+                                                <span class="short">Turkish</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/th/" class="languages-link">
+                                            <img src="images/lg/th.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">ภาษาไทย</span>
+                                                <span class="short">Thai</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                 <!-- U -->
+                                 <div class="lg-tab tab-pane fade" id="pills-u" role="tabpanel" aria-labelledby="pills-u-tab">
+                                    <div class="lg-wrapper d-flex">
+
+                                        <a href="/ua/" class="languages-link">
+                                            <img src="images/lg/ua.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">Українська</span>
+                                                <span class="short">Ukrainian</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="/uz/" class="languages-link">
+                                            <img src="images/lg/uz.svg" alt="" />
+                                            <div class="languages-title">
+                                                <span class="long">O'zbek</span>
+                                                <span class="short">Uzbek</span>
+                                            </div>
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            
+
+                            <button class="btn-back">
+                                back
+                            </button>
+                            
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="top-header-btns d-flex">
+                        <a href="https://app.airdrop-hunter.site/get100/" class="btn btn-light btn-present" id=get100>
+                            <img src="images/present.png" alt="" />
+                            $100 &#128072;
+                        </a>
+                        <a href="https://app.airdrop-hunter.site/" class="btn btn-dark" target="_blank" id=gotodapp>
+                            Перейти в 
+			                dApp
+                        </a>
+                    </div>
+
+                    <div class="hamburger hamburger--collapse">
+                        <div class="hamburger-box">
+                          <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!--<div class="mobile-btns">
+                    <a href="https://t.me/airdrop_hunter_bot" class="btn btn-light btn-present" target="_blank">
+                        <img src="images/present.png" alt="" />
+                        <span>
+			            Забери 100$
+			            </span>
+                    </a>
+                </div>-->
+
+			</div>
+			
+		</div>
+	</header>
+
+
+    <section class="top-banner">
+        <div class="top-banner-bg">
+            <img src="images/banner/bg.jpg" alt="" class="top-banner-bg__bg" />
+            <img src="images/banner/image-1.png" alt="" class="top-banner-bg__img-1" />
+            <img src="images/banner/image-2.png" alt="" class="top-banner-bg__img-2" />
+            <img src="images/banner/image-3.png" alt="" class="top-banner-bg__img-3" />
+            <img src="images/banner/image-4.png" alt="" class="top-banner-bg__img-4" />
+            <img src="images/banner/image-5.png" alt="" class="top-banner-bg__img-5" />
+            <img src="images/banner/image-6.png" alt="" class="top-banner-bg__img-6" />
+            <img src="images/banner/image-7.png" alt="" class="top-banner-bg__img-7" />
+        </div>
+        <div class="container-fluid">
+            <div class="top-banner-wrapper">
+
+                <div class="top-banner-info">                
+                    <h1>
+		    AirdropHunter ⚡
+		     позволяет получать аирдропы в разных web3 протоколах.
+                    </h1>
+                    <div class="launch-app-block d-flex">
+                        <a href="https://app.airdrop-hunter.site/" class="btn btn-color" target="_blank"  id=gotodapp2>
+			Перейти в 
+			dApp
+			</a>
+                        <p>
+			Начните получать эирдропы прямо сейчас! 
+			Полученными токенами можно участвовать в Governance платформы.
+			</p>
+                    </div>
+                    <div class="top-banner-bottom">
+                        <p>
+			Addresses 
+			DAPP: 
+			<strong>10.000+</strong></p>
+                        <p>
+			Проведенные транзакции:
+			 <strong>350.000+</strong></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+	<section class="media">
+        <div class="container-xl">
+            <div class="media-wrapper">
+                <div class="row g-0">
+                    <div class="media-title-block col-md-2 d-flex align-items-center">
+                        <div class="media-title">
+                            <span>
+			    Медиа
+			    </span>
+			     о Хантере 
+			    →
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-6 col-md-3">
+                                <a href="https://www.bloomberg.com/press-releases/2023-08-02/airdrophunter-redefines-airdrop-market-with-exponential-growth-and-private-investment-plans" class="media-logo" target="_blank" id=press_bloomberg>
+                                    <img src="images/logos/logo-blue-1.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://www.benzinga.com/pressreleases/23/07/33363355/ido-ico-launchpads-have-gradually-lost-their-prominence-following-the-recent-bull-run-in-the-market" class="media-logo" target="_blank" id=press_benzinga>
+                                    <img src="images/logos/logo-blue-2.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://apnews.com/press-release/marketersmedia/ido-ico-launchpads-lost-their-prominence-following-the-recent-bull-run-airdrops-are-the-new-and-upcoming-trend-33669053512f59991162b076f44c77c8" class="media-logo" target="_blank" id=press_apnews>
+                                    <img src="images/logos/logo-blue-3.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://finance.yahoo.com/news/airdrophunter-redefines-airdrop-market-exponential-150300398.html" class="media-logo" target="_blank" id=press_yahoo>
+                                    <img src="images/logos/logo-blue-4.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section bg-light">
+        <div class="container-xl">
+            <div class="row">
+                <div class="video-title-block">
+                    <div class="video-title">
+                        AirdropHunter 
+			анонсирует 
+			<span>
+			мобильное приложение 
+			🔥 
+			с интеграциями
+			</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="video-block">
+                    <img src="images/cover-1.jpg" alt="" class="video-bg" />
+                    <a href="#" class="video-play-btn" data-video="https://www.youtube.com/watch?v=mTbNps6_cyQ">
+                        <svg role="presentation" width="70" height="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="30" fill="black"></circle><path d="M41 29.7495L24.0014 19.2495L24.0061 40.2493L41 29.7495Z" fill="white"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="video-bottom row g-2">
+                <div class="col-md-6">
+                    <div class="video-signature">
+                        Скоро 
+			→
+                    </div>
+                </div>
+               
+                <div class="video-logos-wrap col-md-6">
+                    <div class="video-logos row g-2">
+                        <div class="col-6">
+			    <a href=# onclick="return false;" id=app_appstore class="appLink">
+                            <img src="images/logos/appstore.png" alt="" />
+			    </a>
+                        </div>
+                        <div class="col-6">
+			    <a href=# onclick="return false;" id=app_google class="appLink">
+                            <img src="images/logos/googleplay.png" alt="" />
+			    </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+	<section class="partners">
+        <div class="container-xl">
+            <div class="partners-wrapper">
+                <div class="row g-0">
+                    <div class="partners-title-block col-md-2 d-flex align-items-center">
+                        <div class="partners-title">
+                            Наши 
+			    <span>
+			    партнеры
+			     →
+			    </span>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="partners-wrap d-flex">
+                            <a href="#" class="partners-logo" target="_blank">
+                                <img src="images/logos/partner-logo-1.svg" alt="" />
+                            </a>
+                            <a href="#" class="partners-logo" target="_blank">
+                                <img src="images/logos/partner-logo-2.svg" alt="" />
+                            </a>
+                            <a href="#" class="partners-logo" target="_blank">
+                                <img src="images/logos/partner-logo-3.svg" alt="" />
+                            </a>
+                            <a href="#" class="partners-logo" target="_blank">
+                                <img src="images/logos/partner-logo-4.svg" alt="" />
+                            </a>
+                            <a href="#" class="partners-logo" target="_blank">
+                                <img src="images/logos/partner-logo-5.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages bg-light">
+        <div class="container-xl">
+
+            <div class="advantages-title-block">
+                <a name="about" id="about"></a>
+                <div class="title-block">
+                    Почему
+		     🧐 
+		    именно 
+		    <span>Airdrops?</span> 
+                    
+                </div>
+                <div class="subtitle">
+                    Самые успешные протоколы проводят громкий маркетинг, раздавая токены проекта. 
+		    Задача сервиса - передать эти токены в надежные руки.
+                </div>
+            </div>
+
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <div class="card-blue">
+                        <div class="card-blue-title">
+                            AirdropHunter 
+                        </div>
+                        <div class="card-blue-text">
+                            Кейсы, в которых были получены токены на ранней стадии: 
+			    <strong>UNI, DYDX, Aptos, 1inch, Goldfinch</strong>
+			     и другие.
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-blue">
+                        <div class="card-blue-title">
+                            Статистика 
+                        </div>
+                        <div class="card-blue-text">
+                            Лучшие проекты выдают в среднем от 
+			    $300 000 000 
+			    до 
+			    $1 000 000 000, 
+			    при этом на один аккаунт можно получить до 
+			    $5 000!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advantages-row row g-2">
+
+                <div class="col-md-4">
+                    <div class="card-frame">
+                        <div class="card-frame-wrap">
+                            <div class="card-frame-top d-flex align-items-center">
+                                <div class="card-frame-logo">
+                                    <img src="images/cards/op.svg" alt="" />
+                                </div>
+                                <div class="card-frame-title">
+                                    Optimism
+                                </div>
+                            </div>
+
+                            <div class="card-frame-text">
+                                За активность в сети блокчейн Optimism раздал более 200 млн токенов, что по сегодняшнему курсу составляет более полумиллиарда долларов.
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col-md-4">
+                    <div class="card-frame">
+                        <div class="card-frame-wrap">
+                            <div class="card-frame-top d-flex align-items-center">
+                                <div class="card-frame-logo">
+                                    <img src="images/cards/dydx.svg" alt="" />
+                                </div>
+                                <div class="card-frame-title">
+                                    dYdX
+                                </div>
+                            </div>
+
+                            <div class="card-frame-text">
+                                dYdX выпустил 7,5% от первоначального миллиардного запаса токенов. 
+				Стоимость 75 млн. токенов составляет более 1 млрд. долларов США.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card-frame">
+                        <div class="card-frame-wrap">
+                            <div class="card-frame-top d-flex align-items-center">
+                                <div class="card-frame-logo">
+                                    <img src="images/cards/arbitrum.svg" alt="" />
+                                </div>
+                                <div class="card-frame-title">
+                                    Arbitrum
+                                </div>
+                            </div>
+
+                            <div class="card-frame-text">
+                                Один из самых ожидаемых дропов, который к тому же является самым крупным, в момент превысил 1,5 млрд. долларов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="banner-form">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title-block">
+                        Подпишись, чтобы получить аирдроп!
+                    </div>
+                </div>
+                <div class="col-md-6 banner-form-form d-flex">
+                    <div class="d-flex subscribe-form">
+                        <form action="/mail.php" method="post" class="ajax_form needs-validation" id="subscribe">
+                            <input type="hidden" name="id" value="subscribe">
+                            <div class="form-group d-none">
+                                <input type="text" name="name" class="form-control" placeholder=
+			    "Ваше имя"
+			    >
+                            </div>
+                            <div class="form-group form-group-color">
+                                <div class="color-wrap">
+                                    <input type="text" placeholder="Email" name="email">
+                                </div>
+                                
+                                
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите email
+                                </div>
+                                
+                                <div class="success">
+                                    <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.733398" width="29" height="28.5333" rx="14.2667" fill="white"/>
+                                    <path d="M18.9466 10.734C18.725 10.7415 18.5148 10.8395 18.3607 11.0073C16.2732 13.2091 14.6926 15.0357 12.7282 17.1383L10.5711 15.2185C10.4859 15.1421 10.3872 15.0841 10.2807 15.0479C10.1741 15.0116 10.0619 14.9978 9.95026 15.0073C9.83866 15.0167 9.72993 15.0492 9.63026 15.1028C9.53059 15.1565 9.44193 15.2303 9.36936 15.32C9.29679 15.4097 9.24172 15.5136 9.2073 15.6257C9.17288 15.7379 9.15978 15.856 9.16875 15.9735C9.17772 16.0909 9.20858 16.2054 9.25957 16.3102C9.31057 16.4151 9.38069 16.5084 9.46595 16.5848L12.2356 19.0512C12.3989 19.1983 12.6091 19.275 12.8239 19.266C13.0388 19.2569 13.2424 19.1626 13.394 19.0022C15.6841 16.5868 17.3175 14.6539 19.5724 12.2756C19.6967 12.1493 19.7815 11.9863 19.8158 11.8081C19.85 11.6299 19.832 11.445 19.7641 11.2779C19.6963 11.1107 19.5818 10.9692 19.4358 10.8721C19.2898 10.775 19.1192 10.7268 18.9466 10.734Z" fill="#D501F3"/>
+                                    </svg>
+                                    <span>
+				    Ваш e-mail адрес добавлен в рассылку
+				    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="fotm-btn">
+                                <button type="submit" class="btn btn-color">
+                                    <span class="submit-btn">
+				    Подписаться
+				    </span>
+                                    <span class="submitted">
+				    Подписка оформленна! 
+				    </span>
+                                </button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="container-xl">
+            <div class="text-block-1">
+                <div class="title-block">
+                    Чем дальше развиваются технологии, тем больше новых блокчейнов рождается и тем больше новых проектов появляется, 
+		    <span>
+		    готовых щедро вознаградить своих первых последователей!
+		    </span>
+                    
+                </div>
+            </div>
+            <div class="text-block-2">
+                <div class="row text-block-2-wrap">
+                    <div class="col-md-6 text-block-2-text">
+                        <p>
+			Впереди много крупных проектов, которые потенциально готовы отдать свои токены активному сообществу.
+			</p>
+                    </div>
+                    <div class="col-md-6 text-block-2-img">
+                        <img src="images/logos.svg" alt="" />
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="offer" id="offer"></a>
+    <section class="banner-offer">
+        <div class="container-xl">
+            
+            <div class="banner-offer-wrapper">
+                <img src="images/icon-fire.png" alt="" class="banner-offer-icon" />
+                <div class="banner-offer-wrap">
+                    <img src="images/faces.png" alt="" class="banner-offer-bg" />
+                    <div class="title-block">
+		    Принцип работы?
+		    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pluses">
+        <div class="container-xl">
+
+            <div class="pluses-wrap">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="card-frame swiper-slide">
+                            <div class="card-frame-wrap">
+                                <div class="card-frame-plus">
+                                    <img src="images/plus.svg" alt="" />
+                                </div>
+                                <div class="card-frame-text">
+                                    Усилия сервиса направлены на глубокое исследование и анализ проектов, выявляя потенциал на получение 'эирдропов'. 
+				    Сервис не останавливается на достигнутом и команда активно общается с проектами, раскрывая все детали, обеспечивая максимально полную информацию о возможностях его получения!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-frame swiper-slide">
+                            <div class="card-frame-wrap">
+                                <div class="card-frame-plus">
+                                    <img src="images/plus.svg" alt="" />
+                                </div>
+                                <div class="card-frame-text">
+                                    Разработка детального Технического Задания (ТЗ) и изысканной стратегии, которая обеспечивает непревзойденные шансы на успешный 'эирдроп'. 
+				    С целью обеспечить вас наилучшими инструментами при использовании платформы!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-frame swiper-slide">
+                            <div class="card-frame-wrap">
+                                <div class="card-frame-plus">
+                                    <img src="images/plus.svg" alt="" />
+                                </div>
+                                <div class="card-frame-text">
+                                    Каждое решение, создаваемое выдающейся командой специалистов, является индивидуально подогнанным под разработанную стратегию. 
+				    Команда настойчиво адаптирует усилия, чтобы обеспечить оптимальное соответствие вашим целям и максимально эффективно подготовить вас к успешному участию в 'эирдропах'. 
+				    Это персональный подход к успеху!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-frame swiper-slide">
+                            <div class="card-frame-wrap">
+                                <div class="card-frame-plus">
+                                    <img src="images/plus.svg" alt="" />
+                                </div>
+                                <div class="card-frame-text">
+                                    Сервис осуществляет значительное количество транзакций и генерирует объемы, необходимые для подтверждения всех активностей.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-frame swiper-slide">
+                            <div class="card-frame-wrap">
+                                <div class="card-frame-plus">
+                                    <img src="images/plus.svg" alt="" />
+                                </div>
+                                <div class="card-frame-text">
+                                    Лутаем полученные токены, и распределяем их среди подписчиков!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-frame swiper-slide">
+                            <div class="card-frame-wrap">
+                                <div class="card-frame-plus">
+                                    <img src="images/plus.svg" alt="" />
+                                </div>
+                                <div class="card-frame-text">
+                                    Пользователи с обширными знаниями в области web3 получают возможность активно участвовать в управлении проектами через платформу.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+          
+        </div>
+    </section>
+
+    <section class="banner-payback">
+        <div class="container-xl">
+            <div class="banner-payback-wrapper">
+                <img src="images/icon-money.png" alt="" class="banner-payback-icon" />
+                <div class="banner-payback-wrap">
+                    <div class="payback-block">
+                        <img src="images/payback-bg.png" alt="" class="banner-payback-bg" />
+                        <div class="title-block">Какая окупаемость и чего можно ожидать?</div>
+                        <div class="subtitle">
+                            AirdropHunter 
+			    увеличивает шансы на получение дропов в несколько раз, что может довести окупаемость до 2X или даже 10X!
+			     ❤️
+                            
+                        </div>
+
+                        <div class="services-wrap d-flex">
+                            <a href="#" class="service-item mobile" target="_blank">
+                                <img src="images/logos/logo-round-1.png" alt="" />
+                                <span>Arbitrum Nova</span>
+                            </a>
+                            <a href="#" class="service-item" target="_blank">
+                                <img src="images/logos/logo-round-2.png" alt="" />
+                                <span>DeBank</span>
+                            </a>
+                            <a href="#" class="service-item mobile" target="_blank">
+                                <img src="images/logos/logo-round-3.png" alt="" />
+                                <span>LayerZero</span>
+                            </a>
+                            <a href="#" class="service-item mobile" target="_blank">
+                                <img src="images/logos/logo-round-4.png" alt="" />
+                                <span>StarkNet</span>
+                            </a>
+                            <a href="#" class="service-item" target="_blank">
+                                <img src="images/logos/logo-round-5.png" alt="" />
+                                <span>Polygon zkEVM</span>
+                            </a>
+                            <a href="#" class="service-item mobile" target="_blank">
+                                <img src="images/logos/logo-round-6.png" alt="" />
+                                <span>zkSync</span>
+                            </a>
+                            <a href="#" class="service-item mobile" target="_blank">
+                                <img src="images/logos/logo-round-7.png" alt="" />
+                                <span>Metamask</span>
+                            </a>
+                            <a href="#" class="service-item" target="_blank">
+                                <img src="images/logos/logo-round-8.png" alt="" />
+                                <span>Scroll</span>
+                            </a>
+                            <a href="#" class="service-item" target="_blank">
+                                <img src="images/logos/logo-round-9.png" alt="" />
+                                <span>Aleo</span>
+                            </a>
+                           
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps">
+        <div class="container-fluid">
+            <div class="steps-wrapper">
+
+                <div class="steps-container">
+                    <img src="images/icon-lupa.png" alt="" class="steps-icon" />
+                    
+                    <div class="title-block">
+                        Благодаря платформе 
+                        <span>Airdrop 😎 Hunter</span> 
+                        у вас есть возможность подготовить кошельки для дропов 
+                        <span>
+                        всего за несколько шагов!
+                        </span>
+                    </div>
+
+                    <div class="steps-desctop">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-step-1-tab" data-bs-toggle="pill" data-bs-target="#pills-step-1" type="button" role="tab" aria-controls="pills-step-1" aria-selected="true">Шаг 1</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-step-2-tab" data-bs-toggle="pill" data-bs-target="#pills-step-2" type="button" role="tab" aria-controls="pills-step-2" aria-selected="false">Шаг 2</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-step-3-tab" data-bs-toggle="pill" data-bs-target="#pills-step-3" type="button" role="tab" aria-controls="pills-step-3" aria-selected="false">Шаг 3</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-step-4-tab" data-bs-toggle="pill" data-bs-target="#pills-step-4" type="button" role="tab" aria-controls="pills-step-4" aria-selected="false">Шаг 4</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-step-5-tab" data-bs-toggle="pill" data-bs-target="#pills-step-5" type="button" role="tab" aria-controls="pills-step-5" aria-selected="false">Шаг 5</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-step-6-tab" data-bs-toggle="pill" data-bs-target="#pills-step-6" type="button" role="tab" aria-controls="pills-step-6" aria-selected="false">Шаг 6</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-step-7-tab" data-bs-toggle="pill" data-bs-target="#pills-step-7" type="button" role="tab" aria-controls="pills-step-7" aria-selected="false">Шаг 7</button>
+                            </li>
+                        </ul>
+
+
+                        <div class="steps-select">
+
+                            <a href="#" class="steps-select-active" id="stepsOptions" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>
+                                    Шаг 1
+                                </span>		
+                            </a>
+    
+                            <div class="steps-options dropdown-menu" aria-labelledby="stepsOptions">
+                                <div class="steps-options-link">
+                                    <a href="#" class="step-link active" data-value="pills-step-1-tab">
+                                        <span>
+                                            Шаг 1
+                                        </span>	
+                                    </a>
+                                </div>
+                                <div class="steps-options-link">
+                                    <a href="#" class="step-link" data-value="pills-step-2-tab">
+                                        <span>
+                                            Шаг 2
+                                        </span>	
+                                    </a>
+                                </div>
+                                <div class="steps-options-link">
+                                    <a href="#" class="step-link" data-value="pills-step-3-tab">
+                                        <span>
+                                            Шаг 3
+                                        </span>	
+                                    </a>
+                                </div>
+                                <div class="steps-options-link">
+                                    <a href="#" class="step-link" data-value="pills-step-4-tab">
+                                        <span>
+                                            Шаг 4
+                                        </span>	
+                                    </a>
+                                </div>
+                                <div class="steps-options-link">
+                                    <a href="#" class="step-link" data-value="pills-step-5-tab">
+                                        <span>
+                                            Шаг 5
+                                        </span>	
+                                    </a>
+                                </div>
+                                <div class="steps-options-link">
+                                    <a href="#" class="step-link" data-value="pills-step-6-tab">
+                                        <span>
+                                            Шаг 6
+                                        </span>	
+                                    </a>
+                                </div>
+                                <div class="steps-options-link">
+                                    <a href="#" class="step-link" data-value="pills-step-7-tab">
+                                        <span>
+                                            Шаг 7
+                                        </span>	
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-step-1" role="tabpanel" aria-labelledby="pills-step-1-tab">
+                                <div class="step-item row">
+                                    <div class="col-md-6">
+                                        <div class="step-item-image" data-toggle="lightbox">
+                                            <a href="/images/steps/desc-step-1.jpg" data-fslightbox="first" class="image-desc">
+                                                <img src="images/steps/desc-step-1.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            <a href="/images/steps/mobile-step-1.jpg" data-fslightbox="second" class="image-mobile">
+                                                <img src="images/steps/mobile-step-1.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item-content">
+                                            <div class="step-item-title">
+						1. 
+						Шаг первый.
+                                                Выберите проект</div>
+                                            <p>                                            
+                                                Подсоедините свой кошелек к децентрализованному приложению 
+						AirdropHunter
+						<br>
+                                                Внесите депозит на платформу и оформите подписку в выбранном проекте.
+						</p>
+                                            <p>  
+                                            <strong>
+						Средства, которые вы внесли на платформу, используются только для оформления подписки на аккаунты и выводу с платформы не подлежат!
+					    </strong>
+					    </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-step-2" role="tabpanel" aria-labelledby="pills-step-2-tab">
+                                <div class="step-item row">
+                                    <div class="col-md-6">
+                                        <div class="step-item-image">
+                                            <a href="/images/steps/desc-step-2.jpg" data-fslightbox="first" class="image-desc">
+                                                <img src="images/steps/desc-step-2.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            <a href="/images/steps/mobile-step-2.jpg" data-fslightbox="second" class="image-mobile">
+                                                <img src="images/steps/mobile-step-2.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item-content">
+                                            <div class="step-item-title">
+						2. 
+						Шаг второй.
+                                                Инициализация аккаунтов и дистрибьюция пополняемой ликвидности на аккаунты
+					    </div>
+                                            <p>
+					    Для пополнения аккаунтов средства должны быть на вашем Metamask кошельке.
+					    </p>
+                                            <p>
+					    Сумма для пополнения всех кошельков размещена в 
+					    Initial actions → Cost Summary.
+					    </p>
+                                            <ul>
+                                                <li>
+						перейдите в карточку продукта
+						</li>
+                                                <li>
+						раздел
+						 "Initial actions"</li>
+                                                <li>
+						подпишите транзакции на пункте один
+						</li>
+                                                <li>
+						подпишите транзакцию на пункте два
+						</li>
+                                            </ul>
+                                            <p>
+					    Данная транзакция распределит ваши средства по аккаунтам подписки по принципу работы суб-аккаунтов OKX, Binance. 
+					    После окончания круга средства будут на ваших кошельках за вычетом комиссии сети необходимой для работы сервиса.
+					    </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-step-3" role="tabpanel" aria-labelledby="pills-step-3-tab">
+                                <div class="step-item row">
+                                    <div class="col-md-6">
+                                        <div class="step-item-image">
+                                            <a href="/images/steps/desc-step-3.jpg" data-fslightbox="first" class="image-desc">
+                                                <img src="images/steps/desc-step-3.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            <a href="/images/steps/mobile-step-3.jpg" data-fslightbox="second" class="image-mobile">
+                                                <img src="images/steps/mobile-step-3.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item-content">
+                                            <div class="step-item-title">
+					    3. 
+					    Шаг третий. Хранение кошельков
+					    </div>
+                                            <p>
+					    Скачайте JSON-файл и сохраните его в надежном месте на холодном диске или USB. 
+					    Помните. 
+					    Вы несете ответственность за сохранность вашего JSON. 
+					    Не раскрывайте и не показывайте никому свои seed-фразы.
+					    </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-step-4" role="tabpanel" aria-labelledby="pills-step-4-tab">
+                                <div class="step-item row">
+                                    <div class="col-md-6">
+                                        <div class="step-item-image">
+                                            <a href="/images/steps/desc-step-4.jpg" data-fslightbox="first" class="image-desc">
+                                                <img src="images/steps/desc-step-4.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            <a href="/images/steps/mobile-step-4-new.jpg" data-fslightbox="second" class="image-mobile">
+                                                <img src="images/steps/mobile-step-4-new.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item-content">
+                                            <div class="step-item-title">
+					    4. 
+					    Шаг четвертый.
+                                                Работа сервиса
+					    </div>
+                                            <p>
+					    После пополнение кошельков ликвидностью вы увидите надпись 
+					    "Everything is fine. Expect a circle".
+					    </p>
+                                            <p> 
+					    После этого сервис начнет свою работу, а напротив каждого шага, по мере выполнения транзакций, в интерфейсе, будут появляться ссылки на эксплорер.
+					    </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-step-5" role="tabpanel" aria-labelledby="pills-step-5-tab">
+                                <div class="step-item row">
+                                    <div class="col-md-6">
+                                        <div class="step-item-image">
+                                            <a href="/images/steps/desc-step-5.jpg" data-fslightbox="first" class="image-desc">
+                                                <img src="images/steps/desc-step-5.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            <a href="/images/steps/mobile-step-5.jpg" data-fslightbox="second" class="image-mobile">
+                                                <img src="images/steps/mobile-step-5.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item-content">
+                                            <div class="step-item-title">
+						5. 
+						Шаг пятый.
+                                                Статус отслеживания транзакций
+					    </div>
+                                            <ul><li>
+					    Перейдите в карточку подписанного продукта
+					    </li><li>
+					    Нажмите 
+					    "Initial actions"</li><li>
+					    После 
+					    "Details"
+					    </li></ul>
+                                            <p>
+					    В таблице вы увидите все транзакции, выполненные сервисом, с ссылками на эксплорер.
+					    </p>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-step-6" role="tabpanel" aria-labelledby="pills-step-6-tab">
+                                <div class="step-item row">
+                                    <div class="col-md-6">
+                                        <div class="step-item-image">
+                                            <a href="/images/steps/desc-step-6.jpg" data-fslightbox="first" class="image-desc">
+                                                <img src="images/steps/desc-step-6.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            <a href="/images/steps/mobile-step-6-new.jpg" data-fslightbox="second" class="image-mobile">
+                                                <img src="images/steps/mobile-step-6-new.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item-content">
+                                            <div class="step-item-title">
+					    6. 
+					    Шаг шестой 
+                                                Ожидание работы
+					    </div>
+                                            <p>
+					    Клейм полученных аидропов будет проходит по принципу работы суб-аккаунтов OKX, Binance, когда средства изначально собираются на суб-аккунты и только после этого попадают на главный кошелек пользователя. 
+					    </p>
+                                            <p>
+					    Обязательно подписывайтесь на 
+					    <a href="https://t.me/airdrop_hunter_bot" target="_blank" rel="noreferrer noopener"><u>Telegram</u></a>
+					    и 
+					    <a href="https://twitter.com/airhunter_drop" target="_blank" rel="noreferrer noopener"><u>Twitter</u></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-step-7" role="tabpanel" aria-labelledby="pills-step-7-tab">
+                                <div class="step-item row">
+                                    <div class="col-md-6">
+                                        <div class="step-item-image">
+                                            <a href="/images/steps/desc-step-7.jpg" data-fslightbox="first" class="image-desc">
+                                                <img src="images/steps/desc-step-7.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                            <a href="/images/steps/mobile-step-7-new.jpg" data-fslightbox="second" class="image-mobile">
+                                                <img src="images/steps/mobile-step-7-new.jpg" alt="" class="img-fluid" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item-content">
+                                            <div class="step-item-title">
+					    7. 
+					    Шаг седьмой.
+                                                Governance</div>
+                                            <p>
+					    Токенами, которые были получены в результате аирдропов можно принимать участие в Governance проектов.
+					    </p>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-form">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title-block">
+                        Подпишись, чтобы получить аирдроп!
+                    </div>
+                </div>
+                <div class="col-md-6 banner-form-form d-flex">
+                    <div class="d-flex subscribe-form">
+                        <form action="/mail.php" method="post" class="ajax_form needs-validation" id="subscribe2">
+                            <input type="hidden" name="id" value="subscribe">
+                            <div class="form-group d-none">
+                                <input type="text" name="name" class="form-control" placeholder=
+			    "Ваше имя"
+			    >
+                            </div>
+                            <div class="form-group form-group-color">
+                                <div class="color-wrap">
+                                    <input type="text" placeholder="Email"
+				 name="email">
+                                </div>
+                                
+                                
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите email
+                                </div>
+                                
+                                <div class="success">
+                                    <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.733398" width="29" height="28.5333" rx="14.2667" fill="white"/>
+                                    <path d="M18.9466 10.734C18.725 10.7415 18.5148 10.8395 18.3607 11.0073C16.2732 13.2091 14.6926 15.0357 12.7282 17.1383L10.5711 15.2185C10.4859 15.1421 10.3872 15.0841 10.2807 15.0479C10.1741 15.0116 10.0619 14.9978 9.95026 15.0073C9.83866 15.0167 9.72993 15.0492 9.63026 15.1028C9.53059 15.1565 9.44193 15.2303 9.36936 15.32C9.29679 15.4097 9.24172 15.5136 9.2073 15.6257C9.17288 15.7379 9.15978 15.856 9.16875 15.9735C9.17772 16.0909 9.20858 16.2054 9.25957 16.3102C9.31057 16.4151 9.38069 16.5084 9.46595 16.5848L12.2356 19.0512C12.3989 19.1983 12.6091 19.275 12.8239 19.266C13.0388 19.2569 13.2424 19.1626 13.394 19.0022C15.6841 16.5868 17.3175 14.6539 19.5724 12.2756C19.6967 12.1493 19.7815 11.9863 19.8158 11.8081C19.85 11.6299 19.832 11.445 19.7641 11.2779C19.6963 11.1107 19.5818 10.9692 19.4358 10.8721C19.2898 10.775 19.1192 10.7268 18.9466 10.734Z" fill="#D501F3"/>
+                                    </svg>
+                                    <span>
+				    Ваш e-mail адрес добавлен в рассылку
+				    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="fotm-btn">
+                                <button type="submit" class="btn btn-color">
+                                    <span class="submit-btn">
+				    Подписаться
+				    </span>
+                                    <span class="submitted">
+				    Подписка оформленна! 
+				    </span>
+                                </button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-overview">
+        <div class="container-xl">
+        <div class="title-block">
+            Видео обзор 
+            <span>
+            использования платформы.
+            </span> 👍  
+        </div>
+
+            <div class="row">
+                <div class="video-block">
+                    <img src="images/cover-2-ru.jpg" alt="" class="video-bg" />
+                    <a href="#" class="video-play-btn" data-video="https://www.youtube.com/watch?v=U9pUR0ik7fw">
+                        <svg role="presentation" width="70" height="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="30" fill="black"></circle><path d="M41 29.7495L24.0014 19.2495L24.0061 40.2493L41 29.7495Z" fill="white"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <div id="aibot" class="d-none"></div>
+
+    <footer>
+
+        <div class="banner-deposit">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title-block">
+                            Сделай свой депозит и начни получать Airdrops
+                        </div>
+                    </div>
+                    <div class="col-md-6 banner-deposit-btns d-flex">
+                        <div class="row g-2 btns">
+                            <div class="col-6">
+                                <a href="https://t.me/airdrop_hunter_bot" class="btn btn-light" target="_blank">
+                                    Забери 100$
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://app.airdrop-hunter.site/" class="btn btn-white" target="_blank"  id=gotodap3>
+                                    Перейти в 
+				    dApp
+                                </a>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+            <div class="container-xl">
+              <h2 class="title-block">
+                FAQ
+              </h2>
+              <div class="row">
+                <div class="faq-content d-flex flex-column">
+                  <div class="faq-content__inner">
+                    <button class="faq-content__question" type="button" data-bs-toggle="collapse" data-bs-target="#Answer_1">
+                      <p class="faq-content__text">
+                        Сколько нужно полностью затрат на один проект?
+                      </p>
+                      <span>
+                        <svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="2px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#BEBEBE">
+                              <path d="M0,11 L22,11"></path>
+                              <path d="M11,0 L11,22"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-content__answer collapse" id="Answer_1">
+                      <p class="faq-content__descr">
+                        <b>
+                            Обратите внимание на следующее:
+                        </b>
+                        <ol>
+                            <li>
+                                Оплата подписки на аккаунты производится из внутреннего кабинета приложения.
+                            </li>
+                            <li>
+                                Сумму депозита нельзя вернуть с платформы.
+                            </li>
+                            <li>
+                                Суммы депозита в разных сетях на платформе не суммируются. 
+                                Поэтому при пополнении платформы выбирайте одну сеть.
+                            </li>
+                        </ol>
+                        Не забудьте, что после оформления подписки на аккаунты, необходимо пополнить их ликвидностью. 
+                        Сумма для пополнения указана на странице продукта в разделе
+                        "Detail, Initial Actions, Cost Summary". 
+                        Вы можете пополнить аккаунты этой суммой позже.
+                        <br /><br />
+                        В среднем, для каждого аккаунта требуется около 100 долларов для пополнения. 
+                        Следовательно, чтобы принять участие в будущих раздачах аирдропов от проектов, необходимо сначала оформить подписку на аккаунты, а затем произвести их пополнение. 
+                        При выборе 10 аккаунтов общая сумма участия с учетом подписки и пополнения аккаунтов составит примерно 1300 долларов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-content__inner">
+                    <button class="faq-content__question" type="button" data-bs-toggle="collapse" data-bs-target="#Answer_2">
+                      <p class="faq-content__text">
+                        Как связаться с менеджером если AI не помог?
+                      </p>
+                      <span>
+                        <svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="2px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#BEBEBE">
+                              <path d="M0,11 L22,11"></path>
+                              <path d="M11,0 L11,22"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-content__answer collapse" id="Answer_2">
+                      <p class="faq-content__descr">
+                        Для того чтобы оформить запрос на техническую поддержку 
+                        AirdropHunter, 
+                        выполните следующие шаги:
+                        <ol>
+                            <li>
+                                Перейдите на приложение
+                                AirdropHunter
+                                по следующей ссылке:
+                                <a href="https://app.airdrop-hunter.site/" target="_blank">
+                                    https://app.airdrop-hunter.site/.
+                                </a>
+                            </li>
+                            <li>
+                                Подключите свой веб3 кошелек и нажмите на значок трех точек, расположенный в правом верхнем углу.
+                            </li>
+                            <li>
+                                В выпадающем меню выберите
+                                "Support"
+                                (Поддержка).
+                            </li>
+                            <li>
+                                В разделе
+                                "Contact"
+                                (Контакт) укажите ваш предпочтительный канал связи.
+                            </li>
+                            <li>
+                                В поле
+                                "Message"
+                                (Сообщение) опишите проблему, с которой вы столкнулись, в деталях.
+                            </li>
+                            <li>
+                                Ожидайте ответа менеджера, который свяжется с вами в течение 24 часов.
+                            </li>
+                        </ol>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-content__inner">
+                    <button class="faq-content__question" type="button" data-bs-toggle="collapse" data-bs-target="#Answer_3">
+                      <p class="faq-content__text">
+                        Какой кошелек мне использовать для оплаты?
+                      </p>
+                      <span>
+                        <svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="2px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#BEBEBE">
+                              <path d="M0,11 L22,11"></path>
+                              <path d="M11,0 L11,22"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-content__answer collapse" id="Answer_3">
+                      <p class="faq-content__descr">
+                        Для участия в проекте и получения аирдропов необходимо использовать собственный веб3 кошелек, наприиер Metamask, и осуществлять все операции только через него на платформе.
+                        Пожалуйста, перед началом использования платформы внимательно ознакомьтесь с инструкцией по ее использованию.
+                        Это поможет вам успешно взаимодействовать с проектом и избежать возможных ошибок.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-content__inner">
+                    <button class="faq-content__question" type="button" data-bs-toggle="collapse" data-bs-target="#Answer_4">
+                      <p class="faq-content__text">
+                        Как вернуть деньги с платформы
+                        Airdrop Hunter?
+                      </p>
+                      <span>
+                        <svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="2px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#BEBEBE">
+                              <path d="M0,11 L22,11"></path>
+                              <path d="M11,0 L11,22"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-content__answer collapse" id="Answer_4">
+                      <p class="faq-content__descr">
+                        Уважаемый клиент платформы
+                        AirdropHunter,
+                        <br />
+                        Пожалуйста, обратите особое внимание на следующее уведомление:
+                        <b>
+                            сумму депозита с платформы будет вернуть нельзя.
+                        </b>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-content__inner">
+                    <button class="faq-content__question" type="button" data-bs-toggle="collapse" data-bs-target="#Answer_5">
+                      <p class="faq-content__text">
+                        Как вернуть деньги с пополненных аккаунтов?
+                      </p>
+                      <span>
+                        <svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="2px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#BEBEBE">
+                              <path d="M0,11 L22,11"></path>
+                              <path d="M11,0 L11,22"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-content__answer collapse" id="Answer_5">
+                      <p class="faq-content__descr">
+                        Мы не рекомендуем выводить средства с пополненных аккаунтов до завершения полного цикла работы сервиса и до того момента, пока не будет произведено распределение аирдропа от проекта. 
+                        Однако, если вы всё же решите осуществить вывод средств, то вы можете это сделать, используя секретные фразы кошельков.
+                        Эти секретные фразы можно скачать в разделе
+                        "Detail, Generate EVM Wallets".
+                        <br /><br />
+                        При этом, пожалуйста, имейте в виду, что при выводе средств вы соглашаетесь на возможность недоведения сервисом до конца всех этапов выполнения транзакций.
+                        Внимательно взвесьте свои решения и риски, связанные с выводом средств.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-content__inner">
+                    <button class="faq-content__question" type="button" data-bs-toggle="collapse" data-bs-target="#Answer_6">
+                      <p class="faq-content__text">
+                        После того как пройдут все тесты деньги возвращаются на кошелек?
+                      </p>
+                      <span>
+                        <svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="2px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#BEBEBE">
+                              <path d="M0,11 L22,11"></path>
+                              <path d="M11,0 L11,22"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-content__answer collapse" id="Answer_6">
+                      <p class="faq-content__descr">
+                        Оставшиеся средства можно будет вернуть на ваш личный кошелек.
+                        Этот процесс будет доступен двумя удобными способами:
+                        вы сможете воспользоваться своими приватными ключами, которые легко скачать в разделе
+                        "Detail, Generate EVM Wallets",
+                        или воспользоваться удобным функционалом, который мы скоро представим нашим пользователям.
+                        Следите за нашими объявлениями, чтобы быть в курсе всех возможностей!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-content__inner">
+                    <button class="faq-content__question" type="button" data-bs-toggle="collapse" data-bs-target="#Answer_7">
+                      <p class="faq-content__text">
+                        Все действия выполняет сервис самостоятельно?
+                      </p>
+                      <span>
+                        <svg role="presentation" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="2px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(1.000000, 1.000000)" stroke="#BEBEBE">
+                              <path d="M0,11 L22,11"></path>
+                              <path d="M11,0 L11,22"></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-content__answer collapse" id="Answer_7">
+                      <p class="faq-content__descr">
+                        Сервис AirdropHunter максимально оптимизирован для вашего удобства.
+                        После инициализации аккаунтов вам не потребуется выполнять дополнительные действия.
+                        Все последующие транзакции, указанные в карточке, будут автоматически выполнены сервисом.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+        <div class="footer-info">
+            <div class="container-xl">
+                <p>Авторские права
+                © 2023
+                Все права защищены.
+                </p>
+                <div class="footer-info-links d-flex">
+                    <a href="/docs/airdrophunter_terms_of_use.pdf" target="_blank">Пользовательское Соглашение</a>
+                    <a href="/docs/airdrophunter_privacy_policy.pdf" target="_blank">Политика конфиденциальности</a>
+                </div>
+                <div class="sotial-block d-flex">
+                    <a href="https://t.me/airdrop_hunter_bot" target="_blank">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_558_9914)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 30C23.2842 30 30 23.2842 30 15C30 6.7158 23.2842 0 15 0C6.7158 0 0 6.7158 0 15C0 23.2842 6.7158 30 15 30ZM21.5931 9.5832C21.7089 8.2692 20.3211 8.8104 20.3211 8.8104C19.2966 9.2346 18.24 9.6654 17.172 10.101C13.86 11.4519 10.4388 12.8475 7.5243 14.2212C5.9439 14.8008 6.8691 15.3804 6.8691 15.3804L9.3744 16.1535C10.5309 16.5015 11.1474 16.1148 11.1474 16.1148L16.5438 12.4434C18.471 11.1294 18.0084 12.2115 17.5458 12.6753L13.4988 16.5399C12.882 17.0811 13.1904 17.5449 13.4601 17.7768C14.2251 18.4515 16.1061 19.686 16.9272 20.2248C17.1408 20.3649 17.2827 20.4582 17.3148 20.4822C17.5074 20.6367 18.5481 21.3324 19.242 21.1779C19.9359 21.0231 20.013 20.1342 20.013 20.1342L20.9379 14.0664C21.0765 13.0131 21.2358 12.0006 21.363 11.1918C21.483 10.428 21.5745 9.8463 21.5931 9.5832Z" fill="#DDDDDD"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_558_9914">
+                            <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/AirHunter_Drop" target="_blank" class="twitter">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" rx="15" fill="#DDDDDD"/>
+                            <path d="M8.03413 8L13.4394 15.7218L8 22H9.22419L13.9864 16.5034L17.834 22H22L16.2906 13.8438L21.3536 8H20.1294L15.7437 13.0623L12.2001 8H8.03413ZM9.83439 8.96344H11.7482L20.1995 21.0364H18.2856L9.83439 8.96344Z" fill="white"/>
+                            </svg>
+                            
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCE6ojAKbktTAyfhN6n08fDg" target="_blank" >
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_558_9916)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 30C23.2842 30 30 23.2842 30 15C30 6.7158 23.2842 0 15 0C6.7158 0 0 6.7158 0 15C0 23.2842 6.7158 30 15 30ZM20.37 9.7878C21.5214 9.8916 22.17 10.5963 22.3122 11.7192C22.4118 12.5028 22.5 13.6248 22.5 14.8317C22.5 16.9509 22.3122 18.1761 22.3122 18.1761C22.1358 19.2945 21.5952 19.9017 20.4582 20.0301C19.1877 20.1741 16.3302 20.2401 15.0606 20.2401C13.7466 20.2401 11.0895 20.1849 9.7626 20.0745C8.6226 19.9794 7.8444 19.3425 7.6878 18.2091C7.5738 17.3835 7.5 16.4025 7.5 14.8425C7.5 13.1061 7.5627 12.3711 7.71 11.5866C7.9197 10.467 8.454 9.9246 9.6744 9.7986C10.9548 9.6663 12.165 9.6 14.8731 9.6C16.197 9.6 19.0515 9.6684 20.37 9.7878ZM13.4052 12.7161V17.0283L17.511 14.85L13.4052 12.7161Z" fill="#DDDDDD"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_558_9916">
+                            <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+	<script src="js/script.js?v0020"></script>
+
+
+</body>
+</html>
