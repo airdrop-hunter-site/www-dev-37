@@ -258,6 +258,12 @@ body {
 }
 
 @media (max-width: 480.98px) {
+
+  .top-banner-info__btn {
+    border: none;
+    width: 180px;
+  }
+
   .banner-modal-content {
     max-width: 300px;
   }

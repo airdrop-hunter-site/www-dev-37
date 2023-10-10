@@ -1761,6 +1761,10 @@
         .top-header__wallet-link {
             padding: 9px 6px 11px;
         }
+
+        .nobuyed label div {
+            font-size: 10px;
+        }
     }
 
     .r {
@@ -2283,8 +2287,7 @@
     }
 </style>
 
-<body id=body class="">
-
+<body id=body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ2PTHNS" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -2819,10 +2822,11 @@
         </div>
 
         <!-- news -->
-        
+
         <div class="container">
             <div class="news-hide mb-4 bg-body mt-4">
                 <div class="d-flex align-items-center">
+                    <a class="show-link" href="#">
                     <label class="hide-buttons__wrapper">
                         <button class="button slide-item__hide">
                             <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
@@ -2832,8 +2836,9 @@
                                 <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
                             </svg>
                         </button>
-                        <a class="show-link" href="#">Show</a>
+                        <p>Show</p>
                     </label>
+                </a>
                     <span class="buttons-separator d-inline"></span>
                     <h5 class="mb-0 w-25 text-nowrap me-md-0 me-5 fw-bold"><small>AirdropHunter’s NEWS</small></h5>
                     <span class="ms-auto text-custom-muted d-none d-sm-flex overflow-hidden">
@@ -2851,7 +2856,7 @@
                             <p class="news-data__text news-date__time">15:24</p>
                         </div>
                         <div class="news-title__wrapper">
-                            <h3 class="news-title__wrapper__content">Test1</h3>
+                            <h3 class="news-title__wrapper__content" id="popup-cus-open-mob1">Test1</h3>
                         </div>
                         <div class="news-description__wrapper">
                             <p class="news-description__text">
@@ -2864,13 +2869,15 @@
                             </p>
                         </div>
 
-                        <div class="read-link-desc__wrapper">
+                        <div class="read-link-desc__wrapper" id="popup-cus-open">
                             <a href="#" class="read-link read-link__desc">Read more</a>
                         </div>
 
                         <div class="slider-buttons-content">
                             <div class="slider-item-buttons__wrapper">
+                                <a class="hide-link" href="#">
                                 <label class="hide-buttons__wrapper">
+                                    
                                     <button class="button slide-item__hide">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                             viewBox="0 0 18 18" fill="none">
@@ -2879,10 +2886,10 @@
                                             <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
                                         </svg>
                                     </button>
-                                    <a class="hide-link" href="#">Hide</a>
+                                    <p>Hide</p>
                                 </label>
-                                <span class="buttons-separator"></span>
-                                <a href="#" class="read-link read-link__mobile">Read more</a>
+                            </a>
+                                
                             </div>
 
                             <button class="slider-button prev-button">
@@ -2922,7 +2929,7 @@
                             <p class="news-data__text news-date__time">15:24</p>
                         </div>
                         <div class="news-title__wrapper">
-                            <h3 class="news-title__wrapper__content">Test2</h3>
+                            <h3 class="news-title__wrapper__content" id="popup-cus-open-mob2">Test2</h3>
                         </div>
                         <div class="news-description__wrapper">
                             <p class="news-description__text">
@@ -2934,24 +2941,27 @@
                                 network over Ethereum. Starknet is a decentralized Validity-Rollup
                             </p>
                         </div>
-                        <div class="read-link-desc__wrapper">
+                        <div class="read-link-desc__wrapper" id="popup-cus-open">
                             <a href="#" class="read-link read-link__desc">Read more</a>
                         </div>
                         <div class="slider-buttons-content">
                             <div class="slider-item-buttons__wrapper">
                                 <label class="hide-buttons__wrapper">
-                                    <button class="button slide-item__hide">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                            viewBox="0 0 18 18" fill="none">
-                                            <path d="M7 5L13 5" stroke="black" stroke-linecap="round" />
-                                            <path d="M5 13L12.2426 5.75736" stroke="black" stroke-linecap="round" />
-                                            <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hide-link" href="#">Hide</a>
+                                    <a class="hide-link" href="#">
+                                        <label class="hide-buttons__wrapper">
+                                            
+                                            <button class="button slide-item__hide">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18" fill="none">
+                                                    <path d="M7 5L13 5" stroke="black" stroke-linecap="round" />
+                                                    <path d="M5 13L12.2426 5.75736" stroke="black" stroke-linecap="round" />
+                                                    <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
+                                                </svg>
+                                            </button>
+                                            <p>Hide</p>
+                                        </label>
+                                    </a>
                                 </label>
-                                <span class="buttons-separator"></span>
-                                <a href="#" class="read-link read-link__mobile">Read more</a>
                             </div>
 
                             <button class="slider-button prev-button">
@@ -2989,7 +2999,7 @@
                             <p class="news-data__text news-date__time">15:24</p>
                         </div>
                         <div class="news-title__wrapper">
-                            <h3 class="news-title__wrapper__content">Test3</h3>
+                            <h3 class="news-title__wrapper__content" id="popup-cus-open-mob3">Test3</h3>
                         </div>
                         <div class="news-description__wrapper">
                             <p class="news-description__text">
@@ -3001,24 +3011,27 @@
                                 network over Ethereum. Starknet is a decentralized Validity-Rollup
                             </p>
                         </div>
-                        <div class="read-link-desc__wrapper">
+                        <div class="read-link-desc__wrapper" id="popup-cus-open">
                             <a href="#" class="read-link read-link__desc">Read more</a>
                         </div>
                         <div class="slider-buttons-content">
                             <div class="slider-item-buttons__wrapper">
                                 <label class="hide-buttons__wrapper">
-                                    <button class="button slide-item__hide">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                            viewBox="0 0 18 18" fill="none">
-                                            <path d="M7 5L13 5" stroke="black" stroke-linecap="round" />
-                                            <path d="M5 13L12.2426 5.75736" stroke="black" stroke-linecap="round" />
-                                            <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hide-link" href="#">Hide</a>
+                                    <a class="hide-link" href="#">
+                                        <label class="hide-buttons__wrapper">
+                                            
+                                            <button class="button slide-item__hide">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18" fill="none">
+                                                    <path d="M7 5L13 5" stroke="black" stroke-linecap="round" />
+                                                    <path d="M5 13L12.2426 5.75736" stroke="black" stroke-linecap="round" />
+                                                    <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
+                                                </svg>
+                                            </button>
+                                            <p>Hide</p>
+                                        </label>
+                                    </a>
                                 </label>
-                                <span class="buttons-separator"></span>
-                                <a href="#" class="read-link read-link__mobile">Read more</a>
                             </div>
                             <button class="slider-button prev-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
@@ -3055,7 +3068,7 @@
                             <p class="news-data__text news-date__time">15:24</p>
                         </div>
                         <div class="news-title__wrapper">
-                            <h3 class="news-title__wrapper__content">Test4</h3>
+                            <h3 class="news-title__wrapper__content" id="popup-cus-open-mob4">Test4</h3>
                         </div>
                         <div class="news-description__wrapper">
                             <p class="news-description__text">
@@ -3067,24 +3080,27 @@
                                 network over Ethereum. Starknet is a decentralized Validity-Rollup
                             </p>
                         </div>
-                        <div class="read-link-desc__wrapper">
+                        <div class="read-link-desc__wrapper" id="popup-cus-open">
                             <a href="#" class="read-link read-link__desc">Read more</a>
                         </div>
                         <div class="slider-buttons-content">
                             <div class="slider-item-buttons__wrapper">
                                 <label class="hide-buttons__wrapper">
-                                    <button class="button slide-item__hide">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                            viewBox="0 0 18 18" fill="none">
-                                            <path d="M7 5L13 5" stroke="black" stroke-linecap="round" />
-                                            <path d="M5 13L12.2426 5.75736" stroke="black" stroke-linecap="round" />
-                                            <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
-                                        </svg>
-                                    </button>
-                                    <a class="hide-link" href="#">Hide</a>
+                                    <a class="hide-link" href="#">
+                                        <label class="hide-buttons__wrapper">
+                                            
+                                            <button class="button slide-item__hide">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18" fill="none">
+                                                    <path d="M7 5L13 5" stroke="black" stroke-linecap="round" />
+                                                    <path d="M5 13L12.2426 5.75736" stroke="black" stroke-linecap="round" />
+                                                    <path d="M13 5L13 11" stroke="black" stroke-linecap="round" />
+                                                </svg>
+                                            </button>
+                                            <p>Hide</p>
+                                        </label>
+                                    </a>
                                 </label>
-                                <span class="buttons-separator"></span>
-                                <a href="#" class="read-link read-link__mobile">Read more</a>
                             </div>
                             <button class="slider-button prev-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
@@ -3120,7 +3136,7 @@
 
 
             <!-- links anchors -->
-            <section class="slider-links__wrapper">
+            <section class="slick-menu slider-links__wrapper">
                 <button class="anchors-button btn-anchors__prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path d="M7.58582 13.2426L3.34318 8.99997" stroke="black" stroke-linecap="round" />
@@ -3128,7 +3144,7 @@
                         <path d="M3.34314 9L7.58578 4.75736" stroke="black" stroke-linecap="round" />
                     </svg>
                 </button>
-                <div class="slider-wrapper">
+                <div class="slider-menu slider-wrapper">
                     <div class="slider-item">
                         <a href="#link-bank">
                             <img class="slider-img__link" src="/images/news-anchors/b.svg">
@@ -3157,7 +3173,7 @@
                     <div class="slider-item">
                         
                         <a href="#link-StarkNet">
-                            <img class="slider-img__link" src="/images/news-anchors/6.svg">
+                            <img class="slider-img__link" src="/images/6.svg">
                         </a>
                     </div>
                     <div class="slider-item">
@@ -3177,7 +3193,7 @@
                     </div>
                     <div class="slider-item">
                         <a href="#link-Zora">
-                            <img class="slider-img__link" src="/images/news-anchors/10.svg">
+                            <img class="slider-img__link" src="/images/10.svg">
                         </a>
                     </div>
                     <div class="slider-item">
@@ -3213,7 +3229,7 @@
                     <div class="slider-item">
                         
                         <a href="#link-StarkNet">
-                            <img class="slider-img__link" src="/images/news-anchors/6.svg">
+                            <img class="slider-img__link" src="/images/6.svg">
                         </a>
                     </div>
                     <div class="slider-item">
@@ -3233,7 +3249,7 @@
                     </div>
                     <div class="slider-item">
                         <a href="#link-Zora">
-                            <img class="slider-img__link" src="/images/news-anchors/10.svg">
+                            <img class="slider-img__link" src="/images/10.svg">
                         </a>
                     </div>
                     <div class="slider-item">
@@ -3648,8 +3664,7 @@
                                 </div>
 
                                 <div class="grid-item__title2">
-
-                                    <img src=/images/news-anchors/6.svg class="grid-ico">
+                                    <img src=/images/6.svg class="grid-ico">
                                     <span id=airdrop_name_starknet>StarkNet</span>
 
                                 </div>
@@ -5017,8 +5032,8 @@
                                 </div>
 
                                 <div class="grid-item__title2" id="link-Zora">
-
-                                    <img src=/images/news-anchors/10.svg class="grid-ico">
+                                
+                                    <img src=/images/10.svg class="grid-ico">
                                     <span id=airdrop_name_zora>Zora</span>
 
                                 </div>
@@ -5166,6 +5181,7 @@
 
             </div>
         </section>
+
     </div>
 
     <section class="modal fade" tabindex="-1" id="accountModal" aria-labelledby="accountModalLabel" aria-hidden="true">
@@ -8994,6 +9010,41 @@
             </div>
     </section>
 
+                        <!-- popup news-->
+                        <div id="popup-cus">
+                            <div class="card modal-news">
+                                <div id="popup-cus-close" class="d-flex flex-row-reverse">
+                                    <img src="/images/popup-close.svg">
+                                </div>
+                              <div class="card-body popup-cus__today">
+                                    <div class="d-flex flex-row">
+                                        <p>Today  · 15:24</p>
+                                    </div>
+                                    <h5 class="card-title popup-cus__title">Starknet is a decentralized Validity-Rollup</h5>
+                                    <div class="popup-cus__text-block">
+                                        <p class="card-text">
+                                        Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum.  
+                                        </p>
+                                        <p class="card-text">
+                                         Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. 
+                                        </p>
+                                        <p class="card-text">
+                                        Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. 
+                                        </p>
+                                        <p class="card-text">
+                                         Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. 
+                                         </p>
+                                         <p class="card-text">
+                                          Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. 
+                                          </p>
+                                        <p class="card-text">
+                                         Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. Starknet is a decentralized Validity-Rollup (often referred to as ZK-Rollup). It operates as a Layer 2 network over Ethereum. 
+                                       </p>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      <!---->
 
     <script src="/js/bootstrap.bundle.min.js"></script>
 
@@ -9111,8 +9162,8 @@
                 arrows: true,
                 nextArrow: $nextButton,
                 prevArrow: $prevButton,
-                infinite: false,
                 swipe: false,
+                infinite: true,
                 responsive: [
                     {
                         breakpoint: 961,
@@ -9169,6 +9220,7 @@
                 } else {
                     $nextButton.show();
                 }
+                $nextButton.show();
             }
 
             // links anchors
@@ -9202,7 +9254,131 @@
                 ]
             });
         });
+
+        $('#popup-cus-open').click(function(){
+            $("#popup-cus").css("display", "flex");
+        });
+        $('#popup-cus-close').click(function(){
+            $("#popup-cus").css("display", "none");
+        });
+
+        $('#popup-cus-open-mob1').click(function(){
+            if ($(window).width() < 1020) {
+                $("#popup-cus").css("display", "flex");
+            } 
+        });
+
+        $('#popup-cus-open-mob2').click(function(){
+            if ($(window).width() < 1020) {
+                $("#popup-cus").css("display", "flex");
+            } 
+        });
+
+        $('#popup-cus-open-mob3').click(function(){
+            if ($(window).width() < 1020) {
+                $("#popup-cus").css("display", "flex");
+            } 
+        });
+
+        $('#popup-cus-open-mob4').click(function(){
+            if ($(window).width() < 1020) {
+                $("#popup-cus").css("display", "flex");
+            } 
+        });
+
     </script>
+    <style>
+
+        .modal-news{
+            margin: 0px 100px 0px 100px;
+        }
+
+    #popup-cus{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 9999999;
+        background: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .popup-cus__today{
+        color: #999;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; 
+        margin: 11px 0px 0px 8px;
+    }
+
+    .popup-cus__title{
+        color: #000;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 135%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .popup-cus__text-block{
+        overflow-y: scroll;
+        height: 508px;
+        margin: 24px 0px 20px 0px;
+    }
+
+    .popup-cus__text-block p{
+        color: #303030;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%; 
+    }
+
+    #popup-cus-close{
+        margin: 24px 25px 0px 0px;
+    }
+
+    .slick-menu .slick-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 58px;
+        min-height: 58px;
+        border-radius: 15px;
+    }
+    .slick-menu .slick-slide:hover {
+        background: #23acde;
+    }
+
+    @media (max-width: 960px) {
+        .slick-menu .slick-slide{
+            min-width: 70px;
+            min-height: 70px;
+            border-radius: 15px;
+        }
+
+        .slick-menu .slick-slide img{
+            width: 60px;
+        }
+
+        .modal-news{
+            margin: 0px 12px 0px 12px;
+        }
+
+        .slick-menu .slider-wrapper {
+            padding: 14px 15px;
+        }
+    }
+
+    </style>
 
 </body>
 
