@@ -9009,7 +9009,7 @@
                 </div>
             </div>
     </section>
-
+                        <!-- Написал новый popup, так как popup из bootstrap не хочет работать. -->      
                         <!-- popup news-->
                         <div id="popup-cus">
                             <div class="card modal-news">
@@ -9255,6 +9255,8 @@
             });
         });
 
+        /* Кастомный popup */
+
         $('#popup-cus-open').click(function(){
             $("#popup-cus").css("display", "flex");
         });
@@ -9288,7 +9290,7 @@
 
     </script>
     <style>
-
+        /* Кастомный popup */
         .modal-news{
             margin: 0px 100px 0px 100px;
         }
@@ -9345,6 +9347,8 @@
     #popup-cus-close{
         margin: 24px 25px 0px 0px;
     }
+
+    /* Внесенные изменения в слайдер */
 
     .slick-menu .slick-slide{
         display: flex;
