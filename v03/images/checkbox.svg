@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cheks">
+<rect id="bg" x="0.5" y="0.5" width="23" height="23" rx="3.5" fill="#54AAD9" stroke="#54AAD9"/>
+<path id="check" d="M10.6581 17.6898L10.6316 17.7162L4.03186 11.1165L6.18088 8.96744L10.6581 13.4447L17.8192 6.28369L19.9682 8.43271L10.6846 17.7163L10.6581 17.6898Z" fill="white"/>
+</g>
+</svg>

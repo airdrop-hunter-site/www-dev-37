@@ -1,0 +1,154 @@
+
+import {
+    EthereumClient,
+    w3mConnectors,
+    w3mProvider,
+    WagmiCore,
+    WagmiCoreChains,
+    WagmiCoreConnectors,
+} from "https://unpkg.com/@web3modal/ethereum@2.7.1";
+window.WagmiCore = WagmiCore;
+const {getAccount,watchNetwork,watchAccount} = window.WagmiCore;
+const ethers = window.ethers;
+import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.6.2";
+const { mainnet, polygon, polygonZkEvm, avalanche, arbitrum, bsc, optimism, zkSync } = WagmiCoreChains;
+const { configureChains, createConfig } = window.WagmiCore;
+const arbitrumNova = {
+    id: 42170,
+    name: 'Arbitrum Nova',
+    network: 'arbitrum-nova',
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpcUrls: {
+        blast: {
+            http: ['https://arbitrum-nova.public.blastapi.io'],
+            webSocket: ['wss://arbitrum-nova.public.blastapi.io'],
+        },
+        default: {
+            http: ['https://nova.arbitrum.io/rpc'],
+        },
+        public: {
+            http: ['https://nova.arbitrum.io/rpc'],
+        },
+        },
+    blockExplorers: {
+        etherscan: { name: 'Arbiscan', url: 'https://nova.arbiscan.io' },
+        blockScout: {
+            name: 'BlockScout',
+            url: 'https://nova-explorer.arbitrum.io/',
+        },
+        default: { name: 'Arbiscan', url: 'https://nova.arbiscan.io' },
+    },
+    contracts: {
+        multicall3: {
+            address: '0xca11bde05977b3631167028862be2a173976ca11',
+            blockCreated: 1746963,
+        },
+    },
+}
+const chains = [mainnet, polygon, polygonZkEvm, avalanche, arbitrum, arbitrumNova, bsc, optimism, zkSync];
+const projectId = "6df403f022ddeb0b74d8eb348bdb72b0";
+let chainId;
+const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);
+const wagmiConfig = createConfig({
+    autoConnect: true,
+    connectors: [
+        ...w3mConnectors({ chains, version: 2, projectId }),
+        new WagmiCoreConnectors.CoinbaseWalletConnector({
+            chains,
+            options: {
+                appName: 'Airdrop Hunter',
+            },
+        }),
+    ],
+    publicClient,
+});
+const unwatch1 = watchNetwork((network) => {
+    console.log(network);
+    modal_txs_close_timeout();
+    window.set_selected_chain_id(network.chain===undefined?0:network.chain.id)}
+    );
+const unwatch2 = watchAccount((account) => {window.set_selectedAccount(account.address,"wallet_connect")});
+window.ethereumClient = new EthereumClient(wagmiConfig, chains);
+export const web3Modal = new Web3Modal(
+    {
+        projectId,
+        explorerRecommendedWalletIds: [
+            'c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e97267d96',
+            '971e689d0a5be527bac79629b4ee9b925e82208e5168b733496a09c0faed0709',
+            'c286eebc742a537cd1d6818363e9dc53b21759a1e8e5d9b263d0c03ec7703576',
+            '2a3c89040ac3b723a1972a33a125b1db11e258a6975d3a61252cd64e6ea5ea01',
+            'c03dfee351b6fcc421b4494ea33b9d4b92a984f87aa76d1663bb28705e95034a',
+           
+            '4622a2b2d6af1c9844944291e5e7351a6aa24cd7b23099efac1b2fd875da31a0',
+        ],
+        explorerExcludedWalletIds: 'ALL',
+        enableNetworkView: false,
+        walletImages: {
+            coinbaseWallet: '/images/coinbase.webp',
+        },
+        chainImages: {
+            1101: '/images/polygon-zkevm-logo.png',
+            42170: '/images/arbitrum-nova-logo.png'
+        },
+        themeVariables: {
+            '--w3m-z-index': 100001,
+        }
+    },
+    window.ethereumClient
+);
+window.Web3Modal = Web3Modal;
+let web3modal = new Web3Modal({ projectId:projectId}, window.ethereumClient);
+window.set_web3modal(web3modal);
+const getChainIdWC = async () => {
+    console.log("WC chain: ");
+    console.log(window.ethereumClient.getNetwork());
+}
+const getAccountWC = async () => {
+    console.log("WC account: ");
+	let t = window.ethereumClient.getNetwork()
+        let chainId;
+	if(t.chain !== undefined)
+	chainId = t.chain.id;
+	console.log("chain_id: '"+chainId+"'");
+	const walletClient = await window.WagmiCore.getWalletClient({ chainId });
+	const { account, chain, transport } = walletClient;
+	console.log(account.address);
+	console.log(chain);
+}
+function getEthersProvider({ chainId }) {
+    const publicClient = window.WagmiCore.getPublicClient({ chainId });
+    return publicClientToProvider(publicClient)
+}
+function publicClientToProvider(publicClient) {
+    const { chain, transport } = publicClient
+    const network = {
+        chainId: chain.id,
+        name: chain.name,
+        ensAddress: chain.contracts?.ensRegistry?.address,
+    }
+    if (transport.type === 'fallback')
+        return new ethers.providers.FallbackProvider(
+            (transport.transports).map(
+                ({ value }) => new ethers.providers.JsonRpcProvider(value?.url, network)
+    )
+)
+    return new ethers.providers.JsonRpcProvider(transport.url, network)
+}
+async function getEthersSigner({ chainId }) {
+    const walletClient = await window.WagmiCore.getWalletClient({ chainId });
+    if (!walletClient) return undefined;
+    return walletClientToSigner(walletClient);
+}
+function walletClientToSigner(walletClient) {
+    const { account, chain, transport } = walletClient;
+    const network = {
+        chainId: chain.id,
+        name: chain.name,
+        ensAddress: chain.contracts?.ensRegistry?.address,
+    }
+   
+    const provider = new ethers.providers.Web3Provider(transport, network);
+    const signer = provider.getSigner(account.address);
+   
+    return signer;
+}
