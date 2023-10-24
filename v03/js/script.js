@@ -599,3 +599,6 @@ function newsHandleTabletChange(e) {
 
 newsMediaQuery.addListener(newsHandleTabletChange);
 newsHandleTabletChange(newsMediaQuery);
+
+
+
