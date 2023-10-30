@@ -4,7 +4,7 @@ let selectTheme = document.querySelectorAll('.select_theme');
 
 
 themeCheckbox.forEach(button => {
-    button.addEventListener('click', function () { // К каждой добавляем обработчик событий на клик
+    button.onclick =  function () { // К каждой добавляем обработчик событий на клик
         if (button.checked){
             theme = "dark";
             selected = 0;
@@ -18,19 +18,19 @@ themeCheckbox.forEach(button => {
         });
          
         applyTheme(theme); // Вызываем функцию, которая меняет тему и передаем в нее её название
-    });
+    };
 });
 
 
 
 selectTheme.forEach(select =>{
-    select.addEventListener('change', function(){
+    select.onchange = function(){
         theme = this.options[this.selectedIndex].value;
         themeCheckbox.forEach(button =>{
             button.click()
         });
         applyTheme(theme);
-    })
+    }
 })
 
 function applyTheme(themeName) {
@@ -60,3 +60,32 @@ if(activeTheme === null || activeTheme === 'dark') { // Если значени�
         select.selectedIndex = 1
     });
 }
+
+
+var toggle = document.querySelector('.hamburger');
+  
+  toggle.onclick = function(e) {
+    this.classList.toggle('opened');
+    $(".mobile_menu").slideToggle()
+    
+  };
+
+
+//   (function () {
+//     var media_row = document.querySelector('.media_row');
+  
+//     var observer = new IntersectionObserver(entries => {
+//       entries.forEach(entry => {
+//         if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()) {
+//           return;
+//         }
+  
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add('scaleIn-animation');
+//         }
+//       });   
+//     });
+  
+//     observer.observe(media_row);
+//     // observer.observe(document.querySelector('.grid_wrap'))
+//   })();

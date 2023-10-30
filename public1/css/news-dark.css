@@ -2,11 +2,17 @@ html, body {
   background: var(--bg-dark, #2B2F4B);
 }
 
+header {
+  background-color: rgba(255, 255, 255, 0.01);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
 .top-header-logo svg path, .footer_left_part svg path {
   fill: #FFF;
 }
 
-.menu-block ul li a {
+.menu-block ul li a, .mobile_links ul li a {
   color: #FFF;
 }
 
@@ -21,10 +27,6 @@ html, body {
 
 .moon path {
   fill: #FFF;
-}
-
-.news_content {
-  background: var(--bg-dark, #2B2F4B);
 }
 
 .news_nav_row {
@@ -44,30 +46,14 @@ html, body {
 }
 
 .grid_title {
-  overflow: hidden;
   color: #FFF;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-wrap: balance;
-  font-family: Arial;
-  font-size: 18.085px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.017px; /* 127.273% */
-  text-transform: capitalize;
 }
 
 .grid_text {
   color: #CCC;
-  font-family: Arial;
-  font-size: 13.153px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 17.098px */
 }
 
 .media_item {
-  border-radius: 25px;
   border: 1px solid #585858;
   background: #2D3340;
   -webkit-backdrop-filter: blur(15px);
@@ -95,9 +81,6 @@ html, body {
 }
 
 .footer_input {
-  display: flex;
-  border: 1px solid #D4D4D4;
-  background: #F1F6FF;
   border: 1px solid #585858;
   background: #FFF;
 }

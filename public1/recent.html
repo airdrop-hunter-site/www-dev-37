@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style-news.css">
     <link rel="stylesheet" title="theme" href="">
+    <script>
+        var theme = localStorage.getItem('theme');
+        if(theme != null) {
+            document.querySelector('[title="theme"]').setAttribute('href', `css/news-${theme}.css`);
+        }
+    </script>
 	<script src="/js2/"></script>
     <script src="js/jquery.3.5.1.min.js"></script>
     <script src="js/bootstrap.4.5.2.min.js"></script>
@@ -624,19 +630,581 @@
                             <img src="images/present.png" alt="" />
                             $100 &#128072;
                         </a>
-                        <a href="https://app.airdrop-hunter.site/" class="btn btn-dark" target="_blank" id=gotodapp>
-                            Go to dApp
+                        <a href="https://app.airdrop-hunter.site/" class="btn btn_gradient" target="_blank" id=gotodapp>
+                            <div class="hover_element"></div>
+                            <div class="btn_text">Go to dApp</div>
                         </a>
                     </div>
 
                     <div class="hamburger hamburger--collapse">
                         <div class="hamburger-box">
-                          <div class="hamburger-inner"></div>
+                            <span class="bar-top"></span>
+                            <span class="bar-mid"></span>
+                            <span class="bar-bot"></span>
                         </div>
                     </div>
                     
 
                 </div>
+                <div class="mobile_menu">
+                    <div class="mobile_menu_flex">
+                        <div class="mobile_links">
+                            <ul>
+                                <li>
+                                    <a href="#about">
+                                        About Airdrops
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#offer">
+                                        What we offer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://referral.airdrop-hunter.site/en" target="_blank">
+                                        For Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.airdrop-hunter.site/en" target="_blank">
+                                        For Developers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn_block">
+                            <a href="https://app.airdrop-hunter.site/get100/" class="btn btn-light btn-present" id=get100>
+                                <img src="images/present.png" alt="" />
+                                $100 &#128072;
+                            </a>
+                            <a href="https://app.airdrop-hunter.site/" class="btn btn_gradient" target="_blank" id=gotodapp>
+                                <div class="hover_element"></div>
+                                <div class="btn_text">Go to dApp</div>
+                            </a>
+                        </div>
+                        <div class="languages">
+    
+                            <a href="#" class="languages__active" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="languages__btn d-flex align-items-center">
+                                    <img src="images/lg/en.svg" alt="Selected language"/>
+                                    <div class="languages-title">
+                                        <span class="long">English</span>
+                                        <span class="short">English</span>
+                                    </div>
+                                </span>			
+                            </a>
+    
+                            <div class="languages__links dropdown-menu" aria-labelledby="dropdownLanguages">
+    
+                                <div class="lg-title-block d-flex">
+                                    <div class="title">Change language</div>
+                                    <a href="#" class="lg-close">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23 8L8.85786 22.1421" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                                            <path d="M23 22.1421L8.85787 7.99995" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+    
+                                <div class="nav nav-tabs lg-abc d-flex">
+    
+                                    <button class="nav-link lg-abc-item lg-abc-all active"  id="pills-acb-all-tab" data-bs-toggle="pill" data-bs-target="#pills-acb-all" type="button" role="tab" aria-controls="pills-acb-all" aria-selected="true">
+                                        ALL
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-a-tab" data-bs-toggle="pill" data-bs-target="#pills-a" type="button" role="tab" aria-controls="pills-a" aria-selected="true">
+                                        A <sup>2</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-b-tab" data-bs-toggle="pill" data-bs-target="#pills-b" type="button" role="tab" aria-controls="pills-b" aria-selected="true">
+                                        B <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-c-tab" data-bs-toggle="pill" data-bs-target="#pills-c" type="button" role="tab" aria-controls="pills-c" aria-selected="true">
+                                        C <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-e-tab" data-bs-toggle="pill" data-bs-target="#pills-e" type="button" role="tab" aria-controls="pills-e" aria-selected="true">
+                                        E <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-f-tab" data-bs-toggle="pill" data-bs-target="#pills-f" type="button" role="tab" aria-controls="pills-f" aria-selected="true">
+                                        F <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-g-tab" data-bs-toggle="pill" data-bs-target="#pills-g" type="button" role="tab" aria-controls="pills-g" aria-selected="true">
+                                        G <sup>3</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-h-tab" data-bs-toggle="pill" data-bs-target="#pills-h" type="button" role="tab" aria-controls="pills-h" aria-selected="true">
+                                        H <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-i-tab" data-bs-toggle="pill" data-bs-target="#pills-i" type="button" role="tab" aria-controls="pills-i" aria-selected="true">
+                                        I <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-j-tab" data-bs-toggle="pill" data-bs-target="#pills-j" type="button" role="tab" aria-controls="pills-j" aria-selected="true">
+                                        J <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-k-tab" data-bs-toggle="pill" data-bs-target="#pills-k" type="button" role="tab" aria-controls="pills-k" aria-selected="true">
+                                        K <sup>2</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-l-tab" data-bs-toggle="pill" data-bs-target="#pills-l" type="button" role="tab" aria-controls="pills-l" aria-selected="true">
+                                        L <sup>1</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="true">
+                                        P <sup>2</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-r-tab" data-bs-toggle="pill" data-bs-target="#pills-r" type="button" role="tab" aria-controls="pills-r" aria-selected="true">
+                                        R <sup>2</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-s-tab" data-bs-toggle="pill" data-bs-target="#pills-s" type="button" role="tab" aria-controls="pills-s" aria-selected="true">
+                                        S <sup>3</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-t-tab" data-bs-toggle="pill" data-bs-target="#pills-t" type="button" role="tab" aria-controls="pills-t" aria-selected="true">
+                                        T <sup>2</sup>
+                                    </button>
+    
+                                    <button class="nav-link lg-abc-item"  id="pills-u-tab" data-bs-toggle="pill" data-bs-target="#pills-u" type="button" role="tab" aria-controls="pills-u" aria-selected="true">
+                                        U <sup>2</sup>
+                                    </button>
+    
+                                   
+                                   
+                                </div>
+                                
+                                <div class="tab-content">
+    
+                                    <!-- All -->
+                                    <div class="lg-tab tab-pane fade show active" id="pills-acb-all" role="tabpanel" aria-labelledby="pills-acb-all">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/en/" class="languages-link active">
+                                                <img src="images/lg/en.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">English</span>
+                                                    <span class="short">English</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/pt/" class="languages-link">
+                                                <img src="images/lg/pt.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Portugueses</span>
+                                                    <span class="short">Portugues</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/cn/" class="languages-link">
+                                                <img src="images/lg/cn.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">中文</span>
+                                                    <span class="short">Chinese</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/kr/" class="languages-link">
+                                                <img src="images/lg/kr.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">한국인</span>
+                                                    <span class="short">Korean</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/in/" class="languages-link">
+                                                <img src="images/lg/in.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">हिंदी</span>
+                                                    <span class="short">Hindi</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/ru/" class="languages-link">
+                                                <img src="images/lg/ru.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Русский</span>
+                                                    <span class="short">Russian</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/jp/" class="languages-link">
+                                                <img src="images/lg/jp.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">日本語</span>
+                                                    <span class="short">Japanese</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/es/" class="languages-link">
+                                                <img src="images/lg/es.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Española</span>
+                                                    <span class="short">Spanish</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/ar/" class="languages-link">
+                                                <img src="images/lg/ar.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">عربي</span>
+                                                    <span class="short">Arabic</span>
+                                                </div>
+                                            </a>
+                                            <a href="/ua/" class="languages-link">
+                                                <img src="images/lg/ua.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Українська</span>
+                                                    <span class="short">Ukrainian</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- A -->
+                                    <div class="lg-tab tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/ar/" class="languages-link">
+                                                <img src="images/lg/ar.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">عربي</span>
+                                                    <span class="short">Arabic</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/am/" class="languages-link">
+                                                <img src="images/lg/am.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">հայկական</span>
+                                                    <span class="short">Armenian</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                     <!-- B -->
+                                     <div class="lg-tab tab-pane fade" id="pills-b" role="tabpanel" aria-labelledby="pills-b-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/be/" class="languages-link">
+                                                <img src="images/lg/be.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Беларускі</span>
+                                                    <span class="short">Belarusian</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- C -->
+                                    <div class="lg-tab tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+    
+                                            <a href="/cn/" class="languages-link">
+                                                <img src="images/lg/cn.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">中文</span>
+                                                    <span class="short">Chinese</span>
+                                                </div>
+                                            </a>
+    
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- E -->
+                                    <div class="lg-tab tab-pane fade" id="pills-e" role="tabpanel" aria-labelledby="pills-e-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/en/" class="languages-link active">
+                                                <img src="images/lg/en.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">English</span>
+                                                    <span class="short">English</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                     <!-- F -->
+                                     <div class="lg-tab tab-pane fade" id="pills-f" role="tabpanel" aria-labelledby="pills-f-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/fr/" class="languages-link">
+                                                <img src="images/lg/fr.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">French</span>
+                                                    <span class="short">French</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- G -->
+                                    <div class="lg-tab tab-pane fade" id="pills-g" role="tabpanel" aria-labelledby="pills-g-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/gr/" class="languages-link">
+                                                <img src="images/lg/gr.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Ελληνικά</span>
+                                                    <span class="short">Greek</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/ge/" class="languages-link">
+                                                <img src="images/lg/ge.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">ქართული</span>
+                                                    <span class="short">Georgian</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/de/" class="languages-link">
+                                                <img src="images/lg/de.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Deutsch</span>
+                                                    <span class="short">German</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- H -->
+                                    <div class="lg-tab tab-pane fade" id="pills-h" role="tabpanel" aria-labelledby="pills-h-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/in/" class="languages-link">
+                                                <img src="images/lg/in.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">हिंदी</span>
+                                                    <span class="short">Hindi</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                     <!-- I -->
+                                     <div class="lg-tab tab-pane fade" id="pills-i" role="tabpanel" aria-labelledby="pills-i-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/it/" class="languages-link">
+                                                <img src="images/lg/it.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Italian</span>
+                                                    <span class="short">Italian</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- J -->
+                                    <div class="lg-tab tab-pane fade" id="pills-j" role="tabpanel" aria-labelledby="pills-j-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/jp/" class="languages-link">
+                                                <img src="images/lg/jp.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">日本語</span>
+                                                    <span class="short">Japanese</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- K -->
+                                    <div class="lg-tab tab-pane fade" id="pills-k" role="tabpanel" aria-labelledby="pills-k-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/kr/" class="languages-link">
+                                                <img src="images/lg/kr.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">한국인</span>
+                                                    <span class="short">Korean</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/kz/" class="languages-link">
+                                                <img src="images/lg/kz.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Қазақ</span>
+                                                    <span class="short">Kazakh</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- L -->
+                                    <div class="lg-tab tab-pane fade" id="pills-l" role="tabpanel" aria-labelledby="pills-l-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/lt/" class="languages-link">
+                                                <img src="images/lg/lt.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Lietuvių</span>
+                                                    <span class="short">Lithuanian</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- P -->
+                                    <div class="lg-tab tab-pane fade" id="pills-p" role="tabpanel" aria-labelledby="pills-p-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/pt/" class="languages-link">
+                                                <img src="images/lg/pt.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Portugueses</span>
+                                                    <span class="short">Portugues</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/pl/" class="languages-link">
+                                                <img src="images/lg/pl.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Polska</span>
+                                                    <span class="short">Polska</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- R -->
+                                    <div class="lg-tab tab-pane fade" id="pills-r" role="tabpanel" aria-labelledby="pills-r-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/ru/" class="languages-link">
+                                                <img src="images/lg/ru.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Русский</span>
+                                                    <span class="short">Russian</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/ro/" class="languages-link">
+                                                <img src="images/lg/ro.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Română</span>
+                                                    <span class="short">Romanian</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- S -->
+                                    <div class="lg-tab tab-pane fade" id="pills-s" role="tabpanel" aria-labelledby="pills-s-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/es/" class="languages-link">
+                                                <img src="images/lg/es.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Española</span>
+                                                    <span class="short">Spanish</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/sr/" class="languages-link">
+                                                <img src="images/lg/sr.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Српски</span>
+                                                    <span class="short">Serbian</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/sk/" class="languages-link">
+                                                <img src="images/lg/sk.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Slovenský</span>
+                                                    <span class="short">Slovak</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    <!-- T -->
+                                    <div class="lg-tab tab-pane fade" id="pills-t" role="tabpanel" aria-labelledby="pills-t-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/tr/" class="languages-link">
+                                                <img src="images/lg/tr.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Türkçe</span>
+                                                    <span class="short">Turkish</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/th/" class="languages-link">
+                                                <img src="images/lg/th.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">ภาษาไทย</span>
+                                                    <span class="short">Thai</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                     <!-- U -->
+                                     <div class="lg-tab tab-pane fade" id="pills-u" role="tabpanel" aria-labelledby="pills-u-tab">
+                                        <div class="lg-wrapper d-flex">
+    
+                                            <a href="/ua/" class="languages-link">
+                                                <img src="images/lg/ua.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">Українська</span>
+                                                    <span class="short">Ukrainian</span>
+                                                </div>
+                                            </a>
+    
+                                            <a href="/uz/" class="languages-link">
+                                                <img src="images/lg/uz.svg" alt="" />
+                                                <div class="languages-title">
+                                                    <span class="long">O'zbek</span>
+                                                    <span class="short">Uzbek</span>
+                                                </div>
+                                            </a>
+                                        
+                                        </div>
+                                    </div>
+    
+                                    
+                                </div>
+                                
+    
+                                <button class="btn-back">
+                                    back
+                                </button>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div class="mobile_menu">
 
                 <!--<div class="mobile-btns">
                     <a href="https://t.me/airdrop_hunter_bot" class="btn btn-light btn-present" target="_blank">

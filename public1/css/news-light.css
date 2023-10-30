@@ -3,6 +3,12 @@
           backdrop-filter: blur(3px);
 }
 
+header {
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
 .related_news, .latest {
   background: #EBF1FF;
   -webkit-backdrop-filter: blur(6.5px);
@@ -35,7 +41,14 @@
   background-image: url(../images/news/videow_bg1.png);
 }
 
-.menu-block ul li a {
+.big_new {
+  background: url(../images/news/big_new_bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.menu-block ul li a, .mobile_links ul li a {
   color: #373737;
 }
 
@@ -44,30 +57,14 @@
 }
 
 .grid_title {
-  overflow: hidden;
   color: #000;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-wrap: balance;
-  font-family: Arial;
-  font-size: 18.085px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.017px; /* 127.273% */
-  text-transform: capitalize;
 }
 
 .grid_text {
   color: #373737;
-  font-family: Arial;
-  font-size: 13.153px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 17.098px */
 }
 
 .media_item {
-  border-radius: 25px;
   border: 1px solid #E3E3E3;
   background: #FFF;
   -webkit-backdrop-filter: blur(15px);
@@ -91,7 +88,6 @@
 }
 
 .footer_input {
-  display: flex;
   border: 1px solid #D4D4D4;
   background: #F1F6FF;
 }
