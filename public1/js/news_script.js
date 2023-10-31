@@ -89,3 +89,12 @@ var toggle = document.querySelector('.hamburger');
 //     observer.observe(media_row);
 //     // observer.observe(document.querySelector('.grid_wrap'))
 //   })();
+
+
+let pages = document.querySelectorAll('.news_page');
+let pages_len = pages.length;
+let counter = 0;
+pages.forEach(page =>{
+    counter += 1
+    page.innerHTML = counter + ' / ' + pages_len;
+})
