@@ -5,6 +5,7 @@ let selectTheme = document.querySelectorAll('.select_theme');
 
 themeCheckbox.forEach(button => {
     button.onclick =  function () { // К каждой добавляем обработчик событий на клик
+        clicked = this
         if (button.checked){
             theme = "dark";
             selected = 0;
@@ -16,6 +17,11 @@ themeCheckbox.forEach(button => {
         selectTheme.forEach(select =>{
             select.selectedIndex = selected;
         });
+        themeCheckbox.forEach(button => {
+            if (button !== clicked){
+                button.click()
+            }
+        })
          
         applyTheme(theme); // Вызываем функцию, которая меняет тему и передаем в нее её название
     };
@@ -98,3 +104,33 @@ pages.forEach(page =>{
     counter += 1
     page.innerHTML = counter + ' / ' + pages_len;
 })
+
+
+let languages_btn = document.querySelector('.languages__active');
+let languages_links = document.querySelector('.languages__links');
+let body = document.querySelector('body');
+languages_btn.onclick = function(){
+    languages_links.classList.toggle('show')
+    // body.classList.toggle('body_languages_showed')
+    // showed = document.querySelector('*:not(.languages)')
+    // console.log(showed);
+    // if (showed){
+    //     showed.onclick = function(){
+    //         languages_links.classList.remove('show')
+    //     }
+    // }
+
+}
+
+document.querySelector('.lg-close').onclick = function(){
+    languages_links.classList.remove('show')
+    // body.classList.toggle('body_languages_showed')
+}
+
+// body.onclick = function(e){
+//     const withinBoundaries = e.composedPath().includes(languages_links);
+ 
+// 	if ( ! withinBoundaries ) {
+// 		languages_links.classList.remove('show'); // скрываем элемент т к клик был за его пределами
+// 	}
+// }

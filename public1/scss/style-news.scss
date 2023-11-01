@@ -76,6 +76,12 @@ header{
     flex-wrap: wrap;
 }
 
+#top_slider{
+    @media (max-width: 576px){
+        display: none;
+    }
+}
+
 .top-header-wrap {
     justify-content: space-between;
     max-width: 967px;
@@ -157,17 +163,21 @@ header{
     }
 }
 
-
+.dropdown-menu{
+    transition: all 0.3s ease-in-out;
+}
 .dropdown-menu.show {
-    top: 10px!important;
+    // top: 10px!important;
     min-height: 395px;
+    // margin: 10px;
+    
     @media (max-width: 991px) {
-        width: 96%;
-        left: 2%!important;
+        // width: 96%;
+        // left: 2%!important;
         right: auto!important;
         transform: none!important;
-        margin: 0!important;
-        top: 82px !important;
+        // margin: 0!important;
+        // top: 82px !important;
         height: auto;
         display: block;
         opacity: 1;
@@ -178,11 +188,20 @@ header{
 
 .languages {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     height: 30px;
+    transition: all 0.3s ease-in-out;
+    
     @media (max-width: 1061px) {
         margin-bottom: 0;
         height: 46px;
-        display: none;
+        // display: none;
+    }
+    @media (max-width: 576px){
+        margin-right: 10px;
     }
     &__active {
         display: inline-block;
@@ -258,14 +277,16 @@ header{
         width: 395px;
         @extend %openColorBolder;
         @media (max-width: 991px) {
-            margin-left: -116px!important;
+            margin-left: 0px!important;
         }
-        @media (max-width: 500px) {
+        @media (max-width: 576px) {
             height: 395px;
             overflow: auto;
             min-height: 300px;
-            width: 246px;
+            width: 280px;
             margin-left: -39px !important;
+            // padding: 5px;
+            
         }
         &.open {
             @extend %openBlock;
@@ -613,7 +634,7 @@ header{
     top: 0;
     right: 0;
     border-radius: 50%;
-    @media (min-width: 576px) {
+    @media (min-width: 577px) {
         display: none;
     }
 }
@@ -3304,7 +3325,7 @@ body.mobile .overlay {
 .mobile_menu{
     display: none;
     width: 100%;
-    @media (min-width: 576px) {
+    @media (min-width: 577px) {
         display: none !important;
     }
 }
@@ -3332,5 +3353,7 @@ body.mobile .overlay {
 .btn_block{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 12px;
 }

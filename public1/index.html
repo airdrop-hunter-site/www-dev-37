@@ -56,7 +56,7 @@
                     </a>
 				</div>
 
-                <div class="theme_slider">
+                <div id="top_slider" class="theme_slider">
                     <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
                         <path d="M11.9165 7.28142C11.9165 8.9797 10.4241 10.3564 8.58317 10.3564C6.74222 10.3564 5.24984 8.9797 5.24984 7.28142C5.24984 5.58314 6.74222 4.20642 8.58317 4.20642C10.4241 4.20642 11.9165 5.58314 11.9165 7.28142Z" fill="black"/>
                         <path d="M8.58317 3.43767C8.85781 3.43436 9.07958 3.22977 9.08317 2.97642V1.13142C9.08317 0.876675 8.85931 0.670166 8.58317 0.670166C8.30703 0.670166 8.08317 0.876675 8.08317 1.13142V2.97642C8.08676 3.22977 8.30853 3.43436 8.58317 3.43767Z" fill="black"/>
@@ -101,12 +101,13 @@
                         </li>
                     </ul>
                 </div>
+                
 
 				<div class="top-header-info  d-flex align-items-center">
 						
                     <div class="languages">
 
-                        <a href="#" class="languages__active" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div  class="languages__active" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="languages__btn d-flex align-items-center">
                                 <img src="images/lg/en.svg" alt="Selected language"/>
                                 <div class="languages-title">
@@ -114,7 +115,7 @@
                                     <span class="short">English</span>
                                 </div>
                             </span>			
-                        </a>
+                        </div>
 
                         <div class="languages__links dropdown-menu" aria-labelledby="dropdownLanguages">
 
@@ -626,6 +627,7 @@
                     </div>
 
                     <div class="top-header-btns d-flex">
+                        
                         <a href="https://app.airdrop-hunter.site/get100/" class="btn btn-light btn-present" id=get100>
                             <img src="images/present.png" alt="" />
                             $100 &#128072;
@@ -681,527 +683,28 @@
                                 <div class="hover_element"></div>
                                 <div class="btn_text">Go to dApp</div>
                             </a>
-                        </div>
-                        <div class="languages">
-    
-                            <a href="#" class="languages__active" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="languages__btn d-flex align-items-center">
-                                    <img src="images/lg/en.svg" alt="Selected language"/>
-                                    <div class="languages-title">
-                                        <span class="long">English</span>
-                                        <span class="short">English</span>
-                                    </div>
-                                </span>			
-                            </a>
-    
-                            <div class="languages__links dropdown-menu" aria-labelledby="dropdownLanguages">
-    
-                                <div class="lg-title-block d-flex">
-                                    <div class="title">Change language</div>
-                                    <a href="#" class="lg-close">
-                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M23 8L8.85786 22.1421" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-                                            <path d="M23 22.1421L8.85787 7.99995" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>
-                                    </a>
-                                </div>
-    
-                                <div class="nav nav-tabs lg-abc d-flex">
-    
-                                    <button class="nav-link lg-abc-item lg-abc-all active"  id="pills-acb-all-tab" data-bs-toggle="pill" data-bs-target="#pills-acb-all" type="button" role="tab" aria-controls="pills-acb-all" aria-selected="true">
-                                        ALL
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-a-tab" data-bs-toggle="pill" data-bs-target="#pills-a" type="button" role="tab" aria-controls="pills-a" aria-selected="true">
-                                        A <sup>2</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-b-tab" data-bs-toggle="pill" data-bs-target="#pills-b" type="button" role="tab" aria-controls="pills-b" aria-selected="true">
-                                        B <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-c-tab" data-bs-toggle="pill" data-bs-target="#pills-c" type="button" role="tab" aria-controls="pills-c" aria-selected="true">
-                                        C <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-e-tab" data-bs-toggle="pill" data-bs-target="#pills-e" type="button" role="tab" aria-controls="pills-e" aria-selected="true">
-                                        E <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-f-tab" data-bs-toggle="pill" data-bs-target="#pills-f" type="button" role="tab" aria-controls="pills-f" aria-selected="true">
-                                        F <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-g-tab" data-bs-toggle="pill" data-bs-target="#pills-g" type="button" role="tab" aria-controls="pills-g" aria-selected="true">
-                                        G <sup>3</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-h-tab" data-bs-toggle="pill" data-bs-target="#pills-h" type="button" role="tab" aria-controls="pills-h" aria-selected="true">
-                                        H <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-i-tab" data-bs-toggle="pill" data-bs-target="#pills-i" type="button" role="tab" aria-controls="pills-i" aria-selected="true">
-                                        I <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-j-tab" data-bs-toggle="pill" data-bs-target="#pills-j" type="button" role="tab" aria-controls="pills-j" aria-selected="true">
-                                        J <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-k-tab" data-bs-toggle="pill" data-bs-target="#pills-k" type="button" role="tab" aria-controls="pills-k" aria-selected="true">
-                                        K <sup>2</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-l-tab" data-bs-toggle="pill" data-bs-target="#pills-l" type="button" role="tab" aria-controls="pills-l" aria-selected="true">
-                                        L <sup>1</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-p-tab" data-bs-toggle="pill" data-bs-target="#pills-p" type="button" role="tab" aria-controls="pills-p" aria-selected="true">
-                                        P <sup>2</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-r-tab" data-bs-toggle="pill" data-bs-target="#pills-r" type="button" role="tab" aria-controls="pills-r" aria-selected="true">
-                                        R <sup>2</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-s-tab" data-bs-toggle="pill" data-bs-target="#pills-s" type="button" role="tab" aria-controls="pills-s" aria-selected="true">
-                                        S <sup>3</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-t-tab" data-bs-toggle="pill" data-bs-target="#pills-t" type="button" role="tab" aria-controls="pills-t" aria-selected="true">
-                                        T <sup>2</sup>
-                                    </button>
-    
-                                    <button class="nav-link lg-abc-item"  id="pills-u-tab" data-bs-toggle="pill" data-bs-target="#pills-u" type="button" role="tab" aria-controls="pills-u" aria-selected="true">
-                                        U <sup>2</sup>
-                                    </button>
-    
-                                   
-                                   
-                                </div>
-                                
-                                <div class="tab-content">
-    
-                                    <!-- All -->
-                                    <div class="lg-tab tab-pane fade show active" id="pills-acb-all" role="tabpanel" aria-labelledby="pills-acb-all">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/en/" class="languages-link active">
-                                                <img src="images/lg/en.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">English</span>
-                                                    <span class="short">English</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/pt/" class="languages-link">
-                                                <img src="images/lg/pt.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Portugueses</span>
-                                                    <span class="short">Portugues</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/cn/" class="languages-link">
-                                                <img src="images/lg/cn.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">中文</span>
-                                                    <span class="short">Chinese</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/kr/" class="languages-link">
-                                                <img src="images/lg/kr.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">한국인</span>
-                                                    <span class="short">Korean</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/in/" class="languages-link">
-                                                <img src="images/lg/in.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">हिंदी</span>
-                                                    <span class="short">Hindi</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/ru/" class="languages-link">
-                                                <img src="images/lg/ru.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Русский</span>
-                                                    <span class="short">Russian</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/jp/" class="languages-link">
-                                                <img src="images/lg/jp.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">日本語</span>
-                                                    <span class="short">Japanese</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/es/" class="languages-link">
-                                                <img src="images/lg/es.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Española</span>
-                                                    <span class="short">Spanish</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/ar/" class="languages-link">
-                                                <img src="images/lg/ar.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">عربي</span>
-                                                    <span class="short">Arabic</span>
-                                                </div>
-                                            </a>
-                                            <a href="/ua/" class="languages-link">
-                                                <img src="images/lg/ua.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Українська</span>
-                                                    <span class="short">Ukrainian</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- A -->
-                                    <div class="lg-tab tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/ar/" class="languages-link">
-                                                <img src="images/lg/ar.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">عربي</span>
-                                                    <span class="short">Arabic</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/am/" class="languages-link">
-                                                <img src="images/lg/am.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">հայկական</span>
-                                                    <span class="short">Armenian</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                     <!-- B -->
-                                     <div class="lg-tab tab-pane fade" id="pills-b" role="tabpanel" aria-labelledby="pills-b-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/be/" class="languages-link">
-                                                <img src="images/lg/be.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Беларускі</span>
-                                                    <span class="short">Belarusian</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- C -->
-                                    <div class="lg-tab tab-pane fade" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-    
-                                            <a href="/cn/" class="languages-link">
-                                                <img src="images/lg/cn.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">中文</span>
-                                                    <span class="short">Chinese</span>
-                                                </div>
-                                            </a>
-    
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- E -->
-                                    <div class="lg-tab tab-pane fade" id="pills-e" role="tabpanel" aria-labelledby="pills-e-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/en/" class="languages-link active">
-                                                <img src="images/lg/en.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">English</span>
-                                                    <span class="short">English</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                     <!-- F -->
-                                     <div class="lg-tab tab-pane fade" id="pills-f" role="tabpanel" aria-labelledby="pills-f-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/fr/" class="languages-link">
-                                                <img src="images/lg/fr.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">French</span>
-                                                    <span class="short">French</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- G -->
-                                    <div class="lg-tab tab-pane fade" id="pills-g" role="tabpanel" aria-labelledby="pills-g-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/gr/" class="languages-link">
-                                                <img src="images/lg/gr.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Ελληνικά</span>
-                                                    <span class="short">Greek</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/ge/" class="languages-link">
-                                                <img src="images/lg/ge.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">ქართული</span>
-                                                    <span class="short">Georgian</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/de/" class="languages-link">
-                                                <img src="images/lg/de.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Deutsch</span>
-                                                    <span class="short">German</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- H -->
-                                    <div class="lg-tab tab-pane fade" id="pills-h" role="tabpanel" aria-labelledby="pills-h-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/in/" class="languages-link">
-                                                <img src="images/lg/in.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">हिंदी</span>
-                                                    <span class="short">Hindi</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                     <!-- I -->
-                                     <div class="lg-tab tab-pane fade" id="pills-i" role="tabpanel" aria-labelledby="pills-i-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/it/" class="languages-link">
-                                                <img src="images/lg/it.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Italian</span>
-                                                    <span class="short">Italian</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- J -->
-                                    <div class="lg-tab tab-pane fade" id="pills-j" role="tabpanel" aria-labelledby="pills-j-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/jp/" class="languages-link">
-                                                <img src="images/lg/jp.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">日本語</span>
-                                                    <span class="short">Japanese</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- K -->
-                                    <div class="lg-tab tab-pane fade" id="pills-k" role="tabpanel" aria-labelledby="pills-k-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/kr/" class="languages-link">
-                                                <img src="images/lg/kr.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">한국인</span>
-                                                    <span class="short">Korean</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/kz/" class="languages-link">
-                                                <img src="images/lg/kz.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Қазақ</span>
-                                                    <span class="short">Kazakh</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- L -->
-                                    <div class="lg-tab tab-pane fade" id="pills-l" role="tabpanel" aria-labelledby="pills-l-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/lt/" class="languages-link">
-                                                <img src="images/lg/lt.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Lietuvių</span>
-                                                    <span class="short">Lithuanian</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- P -->
-                                    <div class="lg-tab tab-pane fade" id="pills-p" role="tabpanel" aria-labelledby="pills-p-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/pt/" class="languages-link">
-                                                <img src="images/lg/pt.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Portugueses</span>
-                                                    <span class="short">Portugues</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/pl/" class="languages-link">
-                                                <img src="images/lg/pl.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Polska</span>
-                                                    <span class="short">Polska</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- R -->
-                                    <div class="lg-tab tab-pane fade" id="pills-r" role="tabpanel" aria-labelledby="pills-r-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/ru/" class="languages-link">
-                                                <img src="images/lg/ru.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Русский</span>
-                                                    <span class="short">Russian</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/ro/" class="languages-link">
-                                                <img src="images/lg/ro.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Română</span>
-                                                    <span class="short">Romanian</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- S -->
-                                    <div class="lg-tab tab-pane fade" id="pills-s" role="tabpanel" aria-labelledby="pills-s-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/es/" class="languages-link">
-                                                <img src="images/lg/es.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Española</span>
-                                                    <span class="short">Spanish</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/sr/" class="languages-link">
-                                                <img src="images/lg/sr.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Српски</span>
-                                                    <span class="short">Serbian</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/sk/" class="languages-link">
-                                                <img src="images/lg/sk.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Slovenský</span>
-                                                    <span class="short">Slovak</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    <!-- T -->
-                                    <div class="lg-tab tab-pane fade" id="pills-t" role="tabpanel" aria-labelledby="pills-t-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/tr/" class="languages-link">
-                                                <img src="images/lg/tr.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Türkçe</span>
-                                                    <span class="short">Turkish</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/th/" class="languages-link">
-                                                <img src="images/lg/th.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">ภาษาไทย</span>
-                                                    <span class="short">Thai</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                     <!-- U -->
-                                     <div class="lg-tab tab-pane fade" id="pills-u" role="tabpanel" aria-labelledby="pills-u-tab">
-                                        <div class="lg-wrapper d-flex">
-    
-                                            <a href="/ua/" class="languages-link">
-                                                <img src="images/lg/ua.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">Українська</span>
-                                                    <span class="short">Ukrainian</span>
-                                                </div>
-                                            </a>
-    
-                                            <a href="/uz/" class="languages-link">
-                                                <img src="images/lg/uz.svg" alt="" />
-                                                <div class="languages-title">
-                                                    <span class="long">O'zbek</span>
-                                                    <span class="short">Uzbek</span>
-                                                </div>
-                                            </a>
-                                        
-                                        </div>
-                                    </div>
-    
-                                    
-                                </div>
-                                
-    
-                                <button class="btn-back">
-                                    back
-                                </button>
-                                
-                                
-                                
+                            <div class="theme_slider">
+                                <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M11.9165 7.28142C11.9165 8.9797 10.4241 10.3564 8.58317 10.3564C6.74222 10.3564 5.24984 8.9797 5.24984 7.28142C5.24984 5.58314 6.74222 4.20642 8.58317 4.20642C10.4241 4.20642 11.9165 5.58314 11.9165 7.28142Z" fill="black"/>
+                                    <path d="M8.58317 3.43767C8.85781 3.43436 9.07958 3.22977 9.08317 2.97642V1.13142C9.08317 0.876675 8.85931 0.670166 8.58317 0.670166C8.30703 0.670166 8.08317 0.876675 8.08317 1.13142V2.97642C8.08676 3.22977 8.30853 3.43436 8.58317 3.43767Z" fill="black"/>
+                                    <path d="M8.58317 11.1252C8.30853 11.1285 8.08676 11.3331 8.08317 11.5864V13.4314C8.08317 13.6862 8.30703 13.8927 8.58317 13.8927C8.85931 13.8927 9.08317 13.6862 9.08317 13.4314V11.5864C9.07958 11.3331 8.85781 11.1285 8.58317 11.1252Z" fill="black"/>
+                                    <path d="M4.92984 4.56312C5.12505 4.74298 5.44129 4.74298 5.6365 4.56312C5.83147 4.38304 5.83147 4.0913 5.6365 3.91122L4.22317 2.60742C4.09852 2.48402 3.9108 2.43322 3.73364 2.47495C3.55649 2.51669 3.41816 2.6443 3.37291 2.80773C3.32767 2.97116 3.38274 3.14433 3.5165 3.25932L4.92984 4.56312Z" fill="black"/>
+                                    <path d="M12.2365 9.99972C12.0395 9.83037 11.7325 9.83537 11.5421 10.011C11.3517 10.1867 11.3463 10.4699 11.5298 10.6516L12.9432 11.9554C13.0364 12.0425 13.1638 12.0913 13.2965 12.0907C13.4294 12.092 13.557 12.0431 13.6498 11.9554C13.8448 11.7753 13.8448 11.4836 13.6498 11.3035L12.2365 9.99972Z" fill="black"/>
+                                    <path d="M4.4165 7.28142C4.41291 7.02806 4.19115 6.82348 3.9165 6.82017H1.9165C1.64036 6.82017 1.4165 7.02668 1.4165 7.28142C1.4165 7.53616 1.64036 7.74267 1.9165 7.74267H3.9165C4.19115 7.73936 4.41291 7.53478 4.4165 7.28142Z" fill="black"/>
+                                    <path d="M15.2498 6.82017H13.2498C12.9737 6.82017 12.7498 7.02668 12.7498 7.28142C12.7498 7.53616 12.9737 7.74267 13.2498 7.74267H15.2498C15.526 7.74267 15.7498 7.53616 15.7498 7.28142C15.7498 7.02668 15.526 6.82017 15.2498 6.82017Z" fill="black"/>
+                                    <path d="M4.92984 9.99972L3.5165 11.3035C3.32153 11.4836 3.32153 11.7753 3.5165 11.9554C3.60932 12.0431 3.73697 12.092 3.86984 12.0907C4.00255 12.0913 4.12991 12.0425 4.22317 11.9554L5.6365 10.6516C5.82008 10.4699 5.81466 10.1867 5.62425 10.011C5.43384 9.83537 5.12684 9.83037 4.92984 9.99972Z" fill="black"/>
+                                    <path d="M11.9165 4.69842C12.0492 4.699 12.1766 4.65022 12.2698 4.56312L13.6498 3.25932C13.7836 3.14433 13.8387 2.97116 13.7934 2.80773C13.7482 2.6443 13.6099 2.51669 13.4327 2.47495C13.2555 2.43322 13.0678 2.48402 12.9432 2.60742L11.5298 3.91122C11.3349 4.0913 11.3349 4.38304 11.5298 4.56312C11.631 4.65828 11.7724 4.70774 11.9165 4.69842Z" fill="black"/>
+                                  </svg>
+                                <label>
+                                    <input type = 'checkbox' checked>
+                                    <span class = 'slider'></span>
+                                </label>
+                                <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                    <path d="M15.5235 7.48443C15.5235 10.9082 12.5148 13.6836 8.8035 13.6836C5.09214 13.6836 2.0835 10.9082 2.0835 7.48443C2.0835 4.06071 5.09214 1.28523 8.8035 1.28523C9.29725 1.28294 9.78956 1.33455 10.2702 1.43898C8.36806 1.94138 7.12317 3.62184 7.30682 5.43916C7.49046 7.25647 9.0506 8.69571 11.0206 8.86512C12.9906 9.03453 14.8122 7.88612 15.3568 6.13143C15.47 6.57479 15.526 7.02895 15.5235 7.48443Z" fill="#CDCDCD"/>
+                                </svg>
                             </div>
                         </div>
+                        
                         
                     </div>
                 </div class="mobile_menu">
@@ -1239,7 +742,7 @@
                                 
                                 
                                 <div class="pagination">
-                                    <p class="news_page">1 / 3</p>
+                                    <p class="news_page"></p>
                                     <button class="news_prev_page">
                                         <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="33.698" cy="33.8137" r="33.1868" transform="rotate(90 33.698 33.8137)" fill="#F3F3F3"/>
@@ -1283,7 +786,7 @@
                                 
                                 
                                 <div class="pagination">
-                                    <p class="news_page">1 / 3</p>
+                                    <p class="news_page"></p>
                                     <button class="news_prev_page">
                                         <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="33.698" cy="33.8137" r="33.1868" transform="rotate(90 33.698 33.8137)" fill="#F3F3F3"/>
@@ -1326,7 +829,7 @@
                                 
                                 
                                 <div class="pagination">
-                                    <p class="news_page">1 / 3</p>
+                                    <p class="news_page"></p>
                                     <button class="news_prev_page">
                                         <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="33.698" cy="33.8137" r="33.1868" transform="rotate(90 33.698 33.8137)" fill="#F3F3F3"/>
@@ -1753,6 +1256,7 @@
         </div>
     </section>
     <script type="text/javascript" src="js/news_script.js"></script>
+    <!-- <script type="text/javascript" src="js/languages.js"></script> -->
     <script type="text/javascript" src="css/slick/slick-unmin.js"></script>
     <script>
         $(document).ready(() => {
