@@ -1,3 +1,4 @@
+@import "vars";
 html, body{
     background: var(--bg-dark, #2B2F4B);
 }
@@ -5,6 +6,102 @@ html, body{
 header{
     background-color: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(20px);
+}
+
+.header_opened{
+    background: #2B2F4B;
+    // box-shadow: 0px 2px 15px 0px #21242a;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.languages{
+    &__active {
+        @media (max-width: 991px) {
+            background: #21242A;
+            &::before {
+                background: #CCC;
+            }
+            &::after {
+                background: url(../images/icon-arrow-down-dark-theme.svg) top center no-repeat;
+            }
+        }
+        &.notavailable {
+            border: 1px solid #FF1066;
+        }
+    }
+
+    &__btn {
+        & .long {
+            @media (max-width: 991px) {
+                color: #707072;
+
+            }
+        }
+        
+    }
+    &__links {
+        background: #2B2F4B;
+        border: 1px solid #21242A;
+        & .name {
+            color: $gray;
+        }
+
+    }
+}
+
+.lg-title-block {
+    border-bottom: 1px solid #E3E3E3;
+
+    & .title {
+        color: #FFF;
+    }
+    & .lg-close svg path{
+        stroke: #fff;
+    }
+}
+
+.nav-tabs .lg-abc-item{
+    color: #FFF;
+    background: #2B2F4B;
+    &:hover {
+        background: #22253b;
+        border: 1px solid rgba(245, 248, 255, 1);
+    }
+    &.active {
+        border: 1px solid #E3E3E3;
+    }
+    & sup {
+        color: #FFF;
+
+    }
+}
+
+.languages-link {
+
+    & .short {
+
+        color: #FFF;
+
+    }
+
+    & .long {
+        color: #FFF;
+
+    }
+    &.active {
+        border: 1px solid #E3E3E3;
+    }
+    &:hover {
+        background: #22253b;
+        // transition: 0.5s;
+        & span {
+            color: #fff;
+            // transition: 0.5s;
+            body.dark-theme & {
+                color: $white;
+            }
+        }
+    }
 }
 
 .top-header-logo svg path, .footer_left_part svg path{
@@ -37,7 +134,7 @@ header{
 .recent, .project_news, .videos{
     // opacity: 0.7;
     // background: #EBF1FF;
-    background: #21242A;
+    background: #242734;
 }
 
 
@@ -121,4 +218,15 @@ header{
 
 .grey_text{
     color: #CBCBCB!important;
+}
+
+.never_text{
+    color:  #FFF;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.30);
+}
+
+.never_wrap{
+    background: var(--blockbg-dark, #21242A);
+    backdrop-filter: blur(2px);
+
 }
