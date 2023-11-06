@@ -1606,6 +1606,7 @@ button {
 @media (max-width: 926px) {
   .before_footer_wrap {
     flex-wrap: wrap;
+    gap: 30px;
   }
   .before_footer_wrap .footer_never {
     display: none;
@@ -1642,6 +1643,11 @@ button {
 .footer_container {
   padding: 0 66px;
   max-width: 1440px;
+}
+@media (max-width: 926px) {
+  .footer_container {
+    padding: 0 20px;
+  }
 }
 
 .footer_menu {

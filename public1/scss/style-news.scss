@@ -3143,6 +3143,7 @@ body.mobile .overlay {
     // flex-wrap: wrap;
     @media (max-width: 926px) {
         flex-wrap: wrap;
+        gap: 30px;
         .footer_never{
             display: none;
         }
@@ -3174,6 +3175,9 @@ body.mobile .overlay {
 .footer_container{
     padding: 0 66px;
     max-width: 1440px;
+    @media (max-width: 926px) {
+        padding: 0 20px;
+    }
 }
 
 .footer_menu{
