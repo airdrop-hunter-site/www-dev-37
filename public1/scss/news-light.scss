@@ -116,7 +116,8 @@ header{
 }
 
 .select_theme{
-    background-image: url(../images/news/light_svg.svg);
+    background: url(../images/news/light_svg.svg) 10% center no-repeat, url(../images/news/select_arrow.svg) 90% center no-repeat;
+    
     color: #1D1D1D;
 }
 
@@ -133,4 +134,20 @@ header{
     background: rgba(255, 255, 255, 0.70);
     backdrop-filter: blur(2px);
 
+}
+
+.btn_gradient{
+    background: linear-gradient(76deg, #FA0CFF -18.47%, #FF3ECA 26.74%, #FFB648 74.88%);
+    color: #FFF;
+    
+    &:hover .hover_element {
+        background: #FFF;  
+    }
+}
+
+.pagination{
+    
+    button:hover svg path{
+        stroke: #3D8AFF;
+    }
 }

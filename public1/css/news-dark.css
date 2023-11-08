@@ -170,7 +170,7 @@ body.dark-theme .languages-link:hover span {
 }
 
 .select_theme {
-  background-image: url(../images/news/dark_svg.svg);
+  background: url(../images/news/dark_svg.svg) 10% center no-repeat, url(../images/news/select_arrow.svg) 90% center no-repeat;
   background-color: #2B2F4B;
   color: #FFF;
 }
@@ -196,4 +196,22 @@ body.dark-theme .languages-link:hover span {
   background: var(--blockbg-dark, #21242A);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+}
+
+.btn_gradient, .btn-light {
+  background: #FFF;
+  color: #000;
+  border: 1px solid #FFF;
+}
+.btn_gradient:hover, .btn-light:hover {
+  background: transparent;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.pagination button:hover svg path {
+  stroke: #FFF;
+}
+.pagination button:hover svg circle {
+  fill: #2546FF;
 }/*# sourceMappingURL=news-dark.css.map */

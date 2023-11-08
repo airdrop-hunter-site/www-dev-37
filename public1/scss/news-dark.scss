@@ -203,7 +203,10 @@ header{
 }
 
 .select_theme{
-    background-image: url(../images/news/dark_svg.svg);
+    // background-repeat: no-repeat;
+    // background-position: 10%;
+    // background-image: url(../images/news/dark_svg.svg) left top no-repeat, url(../images/news/select_arrow.svg) right top no-repeat;
+    background: url(../images/news/dark_svg.svg) 10% center no-repeat, url(../images/news/select_arrow.svg) 90% center no-repeat;
     background-color: #2B2F4B;
     color: #FFF;
 }
@@ -229,4 +232,26 @@ header{
     background: var(--blockbg-dark, #21242A);
     backdrop-filter: blur(2px);
 
+}
+
+.btn_gradient, .btn-light{
+    background: #FFF;
+    color: #000;
+    border: 1px solid #FFF;
+    
+    &:hover {
+        background: transparent;
+        border: 1px solid #FFF;
+        color: #FFF;
+    }
+}
+
+.pagination{
+    
+    button:hover svg path{
+        stroke: #FFF;
+    }
+    button:hover svg circle{
+        fill: #2546FF;
+    }
 }
