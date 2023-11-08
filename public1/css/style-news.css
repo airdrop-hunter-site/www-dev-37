@@ -995,7 +995,7 @@ body.mobile .overlay {
   padding-right: 26px; */
   overflow: hidden;
   max-height: 217.72px;
-  height: 95px;
+  height: 93px;
   flex-grow: 1;
 }
 
@@ -1166,7 +1166,7 @@ button {
     font-size: 17px;
   }
   .news_text, .view_the_page {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 190%;
   }
   .view_the_page {
