@@ -1404,8 +1404,8 @@ button {
   border-radius: 25px;
 }
 .media_item:hover {
-  background: #5279FF;
-  border-color: #5279FF;
+  background: #23ACDE;
+  border-color: #23ACDE;
 }
 .media_item:hover svg path {
   transition: all 0.3s ease-in-out;

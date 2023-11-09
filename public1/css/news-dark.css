@@ -209,6 +209,12 @@ body.dark-theme .languages-link:hover span {
   color: #FFF;
 }
 
+.leave_request_btn:hover {
+  background: #2546FF;
+  border: 1px solid #2546FF;
+  color: #FFFFFF;
+}
+
 .pagination button:hover svg path {
   stroke: #FFF;
 }

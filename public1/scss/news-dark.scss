@@ -246,6 +246,14 @@ header{
     }
 }
 
+.leave_request_btn{
+    &:hover {
+        background: $accent;
+        border: 1px solid $accent;
+        color: $white;
+    }
+}
+
 .pagination{
     
     button:hover svg path{
