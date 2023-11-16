@@ -1,0 +1,404 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet" />
+    <style>
+        body {
+            
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        .body_table{
+            background: linear-gradient(180deg, #ACE7E8 0%, #B6C2FE 47.53%, #ADB7FF 113.08%, #ACE7E8 157.33%);
+        }
+        [style*="Raleway"] {
+            font-family: 'Raleway', arial, sans-serif !important;
+        }
+        .middle_part{
+            background: linear-gradient(180deg, #CFE4F6 0%, #D1D8FC 48.85%, #C6D0F9 100%);
+        }
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .menu a {
+            color: #6c6c6c;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.28px;
+            text-decoration: none;
+        }
+
+        .menu td {
+            padding-left: 30px;
+        }
+
+        .header-td {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .features-td {
+            padding-top: 100px;
+            padding-bottom: 30px;
+        }
+
+        .features-td p {
+            color: #8c8c8c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.28px;
+        }
+
+        .blockqoute-td {
+            padding-top: 150px;
+            padding-bottom: 50px;
+        }
+
+        .block-td p {
+            color: #8c8c8c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.28px;
+        }
+
+        .block-table td {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .block-table {
+            border-top: 1px solid #e6e6e6;
+            border-left: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .author {
+            padding-top: 20px;
+        }
+
+        .author h3 {
+            margin-top: 20px;
+            color: #686868;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.56px;
+            margin-bottom: 5px;
+        }
+
+        .author p {
+            color: #8c8c8c;
+            font-size: 13px;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.52px;
+            margin: 0;
+        }
+
+        .footer-td {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .footer-menu-td {
+            padding-top: 60px;
+            padding-bottom: 35px;
+        }
+
+        .footer-menu-td a {
+            color: #bcc9dd;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.36px;
+            text-decoration: none;
+        }
+
+        .copyright-td {
+            color: #bcc9dd;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.31px;
+        }
+
+        .copyright-td a {
+            font-weight: 600;
+            text-decoration: none;
+            color: #bcc9dd;
+        }
+
+        @media (max-width: 870px) {
+            .table-850 {
+                width: 600px !important;
+            }
+
+            .table-600 {
+                width: 550px !important;
+            }
+
+            .block-table {
+                width: 200px !important;
+            }
+
+            .block-table p br {
+                display: none !important;
+            }
+
+            .features-td td {
+                display: block !important;
+                margin-bottom: 50px !important;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .table-850 {
+                width: 400px !important;
+            }
+
+            .table-600 {
+                width: 320px !important;
+            }
+
+            .block-td {
+                display: block !important;
+                margin-bottom: 50px !important;
+                padding: 0 !important;
+            }
+
+            .blockqoute-td tr {
+                display: block !important;
+            }
+
+            .block-table {
+                width: 320px !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            .author {
+                width: 200px !important;
+            }
+
+            .logo {
+                display: block !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+                width: 200px !important;
+                margin-bottom: 20px !important;
+            }
+
+            .logo img {
+                margin: 0 auto !important;
+            }
+
+            .menu {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .table-850 {
+                width: 300px !important;
+            }
+
+            .table-600 {
+                width: 260px !important;
+            }
+
+            .block-table {
+                width: 260px !important;
+            }
+
+            .author {
+                width: 130px !important;
+            }
+
+            .blockqoute-td {
+                padding-top: 50px !important;
+                padding-bottom: 50px !important;
+            }
+
+            .footer-menu-td table {
+                width: 260px !important;
+            }
+            
+            .menu td {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+        письмо</div>
+    <table class="body_table" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" align="center" width="100%">
+                    <tr>
+                        <td align="center">
+                            <img width="100%" src="https://dev6-public2.airdrop-hunter.site/emails_images/header_row.png" alt="" />
+                        </td>
+                    </tr>
+                </table>
+                <table class="table_435" cellpadding="0" cellspacing="0" align="center" width="435">
+                    <tr>
+                        <td align="center">
+                            <img src="https://dev6-public2.airdrop-hunter.site/emails_images/punch.png" alt="" />
+                            <p text-align="center">Thanks for your interest in the AirdropHunter Service! 🎩</p>
+                            <p text-align="center">AirdropHunter allows you to receive airdrops in different web3 protocols.</p>
+                            <p text-align="center">All you need to do is purchase accounts within your preferred project and add liquidity. The service will do the rest for you!</p>
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" align="center" width="100%">
+                    <tr>
+                        <td align="center">
+                            <img width="100%" src="https://dev6-public2.airdrop-hunter.site/emails_images/emojes_row1.png" alt="" />
+                        </td>
+                    </tr>
+                </table>
+                <table class="table_556 middle_part" cellpadding="0" cellspacing="0" align="center" width="556">
+                    <tr>
+                        <td align="center">
+                            <p text-align="center">How much can you earn from airdrop hunting?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td align="left">
+                                        <p>Analysts have assessed the earnings of airdrop hunters: The average income for a typical airdrop hunter is $9,384 per address (with a median figure of $6,497) In the premium segment, the corresponding figures are $18,935 and $14,288.</p>
+                                    </td>
+                                    <td align="right">
+                                        <img src="money_phone.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p text-align="center">What is AirdropHunting?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left">
+                                        <p>Airdrop hunting is the process of actively seeking and participating in token giveaways by web3 projects. Such promotions are often conducted as part of marketing campaigns to attract attention to a new blockchain, project or a platform. 
+                                        </p>
+                                    </td>
+                                    <td width="261" align="right">
+                                        <img src="dicaprio.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p text-align="center">Promising airdrops in 2023?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="airdrops_row.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p text-align="center">What is the purpose of distributing tokens?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="215" align="right">
+                                        <img src="why.png" alt="">
+                                    </td>
+                                    <td align="left">
+                                        <p>Airdrop mechanic helps test new web3 networks (Testing networks)
+                                            Create buzz and attract users (Marketing tool)
+                                            Rewarding loyal users keeps communities active (Community retention)
+                                            Airdrops can navigate legal constraints. Regulatory Compliance (SEC)
+                                            Boost liquidity in protocols and DApps (Early Liquidity)
+                                        </p>
+                                    </td>
+                                    
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" align="center" width="100%">
+                    <tr>
+                        <td align="center">
+                            <img width="100%" src="footer_row.png" alt="" />
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td>
+                            <a href="#"><img src="dapp_btn.svg" alt=""></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="website_btn.svg" alt=""></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="x_btn.svg" alt=""></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="tg_btn.svg" alt=""></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="60">
+
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

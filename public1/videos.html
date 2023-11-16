@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style-news.css">
     <link rel="stylesheet" title="theme" href="">
+    <script>
+        var theme = localStorage.getItem('theme');
+        if(theme != null) {
+            document.querySelector('[title="theme"]').setAttribute('href', `css/news-${theme}.css`);
+        }
+    </script>
 	<script src="/js2/"></script>
     <script src="js/jquery.3.5.1.min.js"></script>
     <script src="js/bootstrap.4.5.2.min.js"></script>
@@ -24,7 +30,7 @@
 <!-- AI -->
 </head>
 
-<body>
+<body class="recent_page">
     <header>
 		<div class="top-header container-fluid">
 			<div class="top-header-wrapper d-flex align-items-center">
@@ -50,7 +56,7 @@
                     </a>
 				</div>
 
-                <div class="theme_slider">
+                <div id="top_slider" class="theme_slider">
                     <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
                         <path d="M11.9165 7.28142C11.9165 8.9797 10.4241 10.3564 8.58317 10.3564C6.74222 10.3564 5.24984 8.9797 5.24984 7.28142C5.24984 5.58314 6.74222 4.20642 8.58317 4.20642C10.4241 4.20642 11.9165 5.58314 11.9165 7.28142Z" fill="black"/>
                         <path d="M8.58317 3.43767C8.85781 3.43436 9.07958 3.22977 9.08317 2.97642V1.13142C9.08317 0.876675 8.85931 0.670166 8.58317 0.670166C8.30703 0.670166 8.08317 0.876675 8.08317 1.13142V2.97642C8.08676 3.22977 8.30853 3.43436 8.58317 3.43767Z" fill="black"/>
@@ -93,14 +99,20 @@
                                 For Developers
                             </a>
                         </li>
+                        <li>
+                            <a href="https://developer.airdrop-hunter.site/en" target="_blank">
+                                News
+                            </a>
+                        </li>
                     </ul>
                 </div>
+                
 
 				<div class="top-header-info  d-flex align-items-center">
 						
                     <div class="languages">
 
-                        <a href="#" class="languages__active" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div  class="languages__active" id="dropdownLanguages" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="languages__btn d-flex align-items-center">
                                 <img src="images/lg/en.svg" alt="Selected language"/>
                                 <div class="languages-title">
@@ -108,18 +120,18 @@
                                     <span class="short">English</span>
                                 </div>
                             </span>			
-                        </a>
+                        </div>
 
                         <div class="languages__links dropdown-menu" aria-labelledby="dropdownLanguages">
 
                             <div class="lg-title-block d-flex">
                                 <div class="title">Change language</div>
-                                <a href="#" class="lg-close">
+                                <button class="lg-close">
                                     <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M23 8L8.85786 22.1421" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
                                         <path d="M23 22.1421L8.85787 7.99995" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
                                     </svg>
-                                </a>
+                                </button>
                             </div>
 
                             <div class="nav nav-tabs lg-abc d-flex">
@@ -620,23 +632,93 @@
                     </div>
 
                     <div class="top-header-btns d-flex">
+                        
                         <a href="https://app.airdrop-hunter.site/get100/" class="btn btn-light btn-present" id=get100>
                             <img src="images/present.png" alt="" />
                             $100 &#128072;
                         </a>
-                        <a href="https://app.airdrop-hunter.site/" class="btn btn-dark" target="_blank" id=gotodapp>
-                            Go to dApp
+                        <a href="https://app.airdrop-hunter.site/" class="btn btn_gradient" target="_blank" id=gotodapp>
+                            <div class="hover_element"></div>
+                            <div class="btn_text">Go to dApp</div>
                         </a>
                     </div>
 
                     <div class="hamburger hamburger--collapse">
                         <div class="hamburger-box">
-                          <div class="hamburger-inner"></div>
+                            <span class="bar-top"></span>
+                            <span class="bar-mid"></span>
+                            <span class="bar-bot"></span>
                         </div>
                     </div>
                     
 
                 </div>
+                <div class="mobile_menu">
+                    <div class="mobile_menu_flex">
+                        <div class="mobile_links">
+                            <ul>
+                                <li>
+                                    <a href="#about">
+                                        About Airdrops
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#offer">
+                                        What we offer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://referral.airdrop-hunter.site/en" target="_blank">
+                                        For Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.airdrop-hunter.site/en" target="_blank">
+                                        For Developers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.airdrop-hunter.site/en" target="_blank">
+                                        News
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn_block">
+                            <a href="https://app.airdrop-hunter.site/get100/" class="btn btn-light btn-present" id=get100>
+                                <img src="images/present.png" alt="" />
+                                $100 &#128072;
+                            </a>
+                            <a href="https://app.airdrop-hunter.site/" class="btn btn_gradient" target="_blank" id=gotodapp>
+                                <div class="hover_element"></div>
+                                <div class="btn_text">Go to dApp</div>
+                            </a>
+                            
+                        </div>
+                        <div class="theme_slider">
+                            <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                <path d="M11.9165 7.28142C11.9165 8.9797 10.4241 10.3564 8.58317 10.3564C6.74222 10.3564 5.24984 8.9797 5.24984 7.28142C5.24984 5.58314 6.74222 4.20642 8.58317 4.20642C10.4241 4.20642 11.9165 5.58314 11.9165 7.28142Z" fill="black"/>
+                                <path d="M8.58317 3.43767C8.85781 3.43436 9.07958 3.22977 9.08317 2.97642V1.13142C9.08317 0.876675 8.85931 0.670166 8.58317 0.670166C8.30703 0.670166 8.08317 0.876675 8.08317 1.13142V2.97642C8.08676 3.22977 8.30853 3.43436 8.58317 3.43767Z" fill="black"/>
+                                <path d="M8.58317 11.1252C8.30853 11.1285 8.08676 11.3331 8.08317 11.5864V13.4314C8.08317 13.6862 8.30703 13.8927 8.58317 13.8927C8.85931 13.8927 9.08317 13.6862 9.08317 13.4314V11.5864C9.07958 11.3331 8.85781 11.1285 8.58317 11.1252Z" fill="black"/>
+                                <path d="M4.92984 4.56312C5.12505 4.74298 5.44129 4.74298 5.6365 4.56312C5.83147 4.38304 5.83147 4.0913 5.6365 3.91122L4.22317 2.60742C4.09852 2.48402 3.9108 2.43322 3.73364 2.47495C3.55649 2.51669 3.41816 2.6443 3.37291 2.80773C3.32767 2.97116 3.38274 3.14433 3.5165 3.25932L4.92984 4.56312Z" fill="black"/>
+                                <path d="M12.2365 9.99972C12.0395 9.83037 11.7325 9.83537 11.5421 10.011C11.3517 10.1867 11.3463 10.4699 11.5298 10.6516L12.9432 11.9554C13.0364 12.0425 13.1638 12.0913 13.2965 12.0907C13.4294 12.092 13.557 12.0431 13.6498 11.9554C13.8448 11.7753 13.8448 11.4836 13.6498 11.3035L12.2365 9.99972Z" fill="black"/>
+                                <path d="M4.4165 7.28142C4.41291 7.02806 4.19115 6.82348 3.9165 6.82017H1.9165C1.64036 6.82017 1.4165 7.02668 1.4165 7.28142C1.4165 7.53616 1.64036 7.74267 1.9165 7.74267H3.9165C4.19115 7.73936 4.41291 7.53478 4.4165 7.28142Z" fill="black"/>
+                                <path d="M15.2498 6.82017H13.2498C12.9737 6.82017 12.7498 7.02668 12.7498 7.28142C12.7498 7.53616 12.9737 7.74267 13.2498 7.74267H15.2498C15.526 7.74267 15.7498 7.53616 15.7498 7.28142C15.7498 7.02668 15.526 6.82017 15.2498 6.82017Z" fill="black"/>
+                                <path d="M4.92984 9.99972L3.5165 11.3035C3.32153 11.4836 3.32153 11.7753 3.5165 11.9554C3.60932 12.0431 3.73697 12.092 3.86984 12.0907C4.00255 12.0913 4.12991 12.0425 4.22317 11.9554L5.6365 10.6516C5.82008 10.4699 5.81466 10.1867 5.62425 10.011C5.43384 9.83537 5.12684 9.83037 4.92984 9.99972Z" fill="black"/>
+                                <path d="M11.9165 4.69842C12.0492 4.699 12.1766 4.65022 12.2698 4.56312L13.6498 3.25932C13.7836 3.14433 13.8387 2.97116 13.7934 2.80773C13.7482 2.6443 13.6099 2.51669 13.4327 2.47495C13.2555 2.43322 13.0678 2.48402 12.9432 2.60742L11.5298 3.91122C11.3349 4.0913 11.3349 4.38304 11.5298 4.56312C11.631 4.65828 11.7724 4.70774 11.9165 4.69842Z" fill="black"/>
+                              </svg>
+                            <label>
+                                <input type = 'checkbox' checked>
+                                <span class = 'slider'></span>
+                            </label>
+                            <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                                <path d="M15.5235 7.48443C15.5235 10.9082 12.5148 13.6836 8.8035 13.6836C5.09214 13.6836 2.0835 10.9082 2.0835 7.48443C2.0835 4.06071 5.09214 1.28523 8.8035 1.28523C9.29725 1.28294 9.78956 1.33455 10.2702 1.43898C8.36806 1.94138 7.12317 3.62184 7.30682 5.43916C7.49046 7.25647 9.0506 8.69571 11.0206 8.86512C12.9906 9.03453 14.8122 7.88612 15.3568 6.13143C15.47 6.57479 15.526 7.02895 15.5235 7.48443Z" fill="#CDCDCD"/>
+                            </svg>
+                        </div>
+                        
+                        
+                    </div>
+                </div class="mobile_menu">
 
                 <!--<div class="mobile-btns">
                     <a href="https://t.me/airdrop_hunter_bot" class="btn btn-light btn-present" target="_blank">
@@ -654,163 +736,58 @@
     
     <section class="recent">
         <div class="container grid_container">
-            <div class="recent_head_row head_row">
-                <h2 class="recent_title title">Recent</h2>
-                <a href="#" class="view_more">View more →</a>
+            <div class="videos_row head_row">
+                <h2 class="videos_title title">Videos</h2>
             </div>
             <div class="grid_wrap">
-                <div class="recent_grid grid">
-                    <div class="grid_item">
+                <div class="videos_grid grid">
+                    <a class="grid_item" href="https://www.youtube.com/watch?v=m-RVRy7GYHc&t=1s&ab_channel=AirDropHunter">
                         <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_1.png" alt="">
+                            <img class="grid_big_img" src="images/news/videos/videos1.jpg" alt="">
                             <img class="fire" src="images/news/recent_fire.svg" alt="">
                         </div>
                         <div class="grid_info">
-                            <h3 class="grid_title">Following SEC delays, ARK Invest and 21Shares file for spot Ether ETF</h3>
-                            <div class="grid_text">The two firms currently have a spot Bitcoin exchange</div>
+                            <h3 class="grid_title"><span class="blue_text">AIRDROP HUNTER</span> Presentation 2023 | Token 2049 Singapore</h3>
+                            <div class="grid_text">AirdropHunter is a decentralized Web3 marketplace with different one click tools interactions like airdrops, nodes, p2e, guilds, on-chain arbitrage etc.</div>
                             <div class="grid_time">3 hours ago</div>
                         </div>
-                    </div>
+                    </a>
     
-                    <div class="grid_item">
+                    <a class="grid_item" href="https://www.youtube.com/watch?v=U9pUR0ik7fw&ab_channel=AirDropHunter">
                         <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_2.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
+                            <img class="grid_big_img" src="images/news/videos/videos2.jpg" alt="">
+                            <img class="fire" src="images/news/recent_search.svg" alt="">
                         </div>
                         <div class="grid_info">
-                            <h3 class="grid_title">Bitcoin ETF applications: Who is filing and when the SEC may decide</h3>
-                            <div class="grid_text">Despite BlackRock’s application for a Bitcoin spot ETF</div>
-                            <div class="grid_time">5 hours ago</div>
-                        </div>
-                    </div>
-    
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_3.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title">Crypto market ‘dramatically underestimates’ bullishness of spot Bitcoin ETFs</h3>
-                            <div class="grid_text">“It’s reckless not to aggressively accumulate BTC at current levels” </div>
-                            <div class="grid_time">13 hours ago</div>
-                        </div>
-                    </div>
-    
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_4.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title">FASB rules ‘eliminate the poor optics’ that shied firms from crypto: Analyst</h3>
-                            <div class="grid_text">“The change should help MicroStrategy’’</div>
-                            <div class="grid_time">14 hours ago</div>
-                        </div>
-                    </div>
-    
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_5.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title">More than <span class="blue_text">120 ETH ($100,000) trades</span></h3>
-                            <div class="grid_text">in the first months of the platform's operation</div>
-                            <div class="grid_time">20 hours ago</div>
-                        </div>
-                    </div>
-    
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_6.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title"><span class="blue_text">More than 500</span> active users</h3>
-                            <div class="grid_text">in the first months of the platform's operation</div>
+                            <h3 class="grid_title">КАК ИСПОЛЬЗОВАТЬ <span class="blue_text">AIRDROP HUNTER</span>?</h3>
+                            <div class="grid_text">В видео кратко обьяняется принцип взамодейтсвия c AirdropHunter.</div>
                             <div class="grid_time">3 hours ago</div>
                         </div>
-                    </div>
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_4.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title">FASB rules ‘eliminate the poor optics’ that shied firms from crypto: Analyst</h3>
-                            <div class="grid_text">“The change should help MicroStrategy’’</div>
-                            <div class="grid_time">14 hours ago</div>
-                        </div>
-                    </div>
+                    </a>
     
-                    <div class="grid_item">
+                    <a class="grid_item" href="https://www.youtube.com/watch?v=QmY1OItzOKo&ab_channel=AirDropHunter">
                         <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_5.png" alt="">
+                            <img class="grid_big_img" src="images/news/videos/videos3.jpg" alt="">
                             <img class="fire" src="images/news/recent_fire.svg" alt="">
                         </div>
                         <div class="grid_info">
-                            <h3 class="grid_title">More than <span class="blue_text">120 ETH ($100,000) trades</span></h3>
-                            <div class="grid_text">in the first months of the platform's operation</div>
-                            <div class="grid_time">20 hours ago</div>
-                        </div>
-                    </div>
-    
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_6.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title"><span class="blue_text">More than 500</span> active users</h3>
-                            <div class="grid_text">in the first months of the platform's operation</div>
+                            <h3 class="grid_title">Как использовать <span class="blue_text">реферальную ссылку</span></h3>
+                            <div class="grid_text">В видео кратко обьяняется принцип взамодейтсвия c AirdropHunter.</div>
                             <div class="grid_time">3 hours ago</div>
                         </div>
-                    </div>
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_4.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title">FASB rules ‘eliminate the poor optics’ that shied firms from crypto: Analyst</h3>
-                            <div class="grid_text">“The change should help MicroStrategy’’</div>
-                            <div class="grid_time">14 hours ago</div>
-                        </div>
-                    </div>
+                    </a>
     
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_5.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title">More than <span class="blue_text">120 ETH ($100,000) trades</span></h3>
-                            <div class="grid_text">in the first months of the platform's operation</div>
-                            <div class="grid_time">20 hours ago</div>
-                        </div>
-                    </div>
-    
-                    <div class="grid_item">
-                        <div class="grid_img">
-                            <img class="grid_big_img" src="images/news/recent_6.png" alt="">
-                            <img class="fire" src="images/news/recent_fire.svg" alt="">
-                        </div>
-                        <div class="grid_info">
-                            <h3 class="grid_title"><span class="blue_text">More than 500</span> active users</h3>
-                            <div class="grid_text">in the first months of the platform's operation</div>
-                            <div class="grid_time">3 hours ago</div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
-        </div>
 
+        </div>
     </section>
     
     
     
     <section class="before_footer">
-        <div class="container-fluid">
+        <div class="container-fluid footer_container">
             <div class="before_footer_wrap">
                 <div class="footer_left_part">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="46" viewBox="0 0 61 46" fill="none">
@@ -836,19 +813,32 @@
                         </defs>
                     </svg>
                     <p class="footer_text">The marketplace allows to participate in different web3 activities</p>
-                    <div class="footer_btns">
+                    <!-- <div class="footer_btns">
                         <a href="https://app.airdrop-hunter.site/get100/" class="btn_100" id=get100>
                             <img src="images/present.png" alt="" />
                             $100 &#128072;
                         </a>
                         <a href="https://app.airdrop-hunter.site/" class="btn btn-dark" target="_blank" id=gotodapp>Go to dApp</a>
-                    </div>
-                    <p class="footer_big_text">Never want to miss airdrops?</p>
-                    
-                    <div class="footer_input">
-                        <input class="input_email" placeholder="Mail" type="email" name="" id="email">
-                        <input class="input_arrow" type="submit" value="">
+                    </div> -->
+                    <div class="btn_block">
+                        <a href="https://app.airdrop-hunter.site/get100/" class="btn btn-light btn-present" id=get100>
+                            <img src="images/present.png" alt="" />
+                            $100 &#128072;
+                        </a>
+                        <a href="https://app.airdrop-hunter.site/" class="btn btn_gradient" target="_blank" id=gotodapp>
+                            <div class="hover_element"></div>
+                            <div class="btn_text">Go to dApp</div>
+                        </a>
                         
+                    </div>
+                    <div class="footer_never">
+                        <p class="footer_big_text">Never want to miss airdrops?</p>
+                        <p class="never_text">Sign up for our newsletter </p>
+                        <div class="footer_input">
+                            <input class="input_email" placeholder="Mail" type="email" name="" id="email">
+                            <input class="input_arrow" type="submit" value="">
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="footer_menu">
@@ -882,13 +872,13 @@
                         
                     </div>
 
-                </div>
+                </div>  
             </div>
         </div>
 
     <!-- </section>
     <section class="footer"> -->
-        <div class="container-fluid">
+        <div class="container-fluid footer_container">
             <div class="footer_row">
                 <select class="select_theme" name="" id="">
                     <option value="dark">Dark</option>
@@ -896,35 +886,57 @@
                 </select>
                 
                 <div class="socials">
-                    <a href="#">
+                    <a href="https://github.com/airdrop-hunter-site">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <g clip-path="url(#clip0_3371_13727)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00662 0.859375C3.57917 0.859375 0 4.46493 0 8.92549C0 12.491 2.29329 15.5092 5.4747 16.5775C5.87246 16.6578 6.01816 16.4039 6.01816 16.1903C6.01816 16.0033 6.00505 15.3624 6.00505 14.6945C3.7778 15.1754 3.31399 13.733 3.31399 13.733C2.95606 12.7982 2.42572 12.5579 2.42572 12.5579C1.69674 12.0638 2.47882 12.0638 2.47882 12.0638C3.28744 12.1172 3.71175 12.8918 3.71175 12.8918C4.42745 14.1203 5.58074 13.7732 6.04471 13.5594C6.11092 13.0386 6.32315 12.678 6.5485 12.4778C4.77211 12.2908 2.90313 11.5964 2.90313 8.49806C2.90313 7.61667 3.22107 6.89556 3.72486 6.33473C3.64538 6.13446 3.36693 5.30633 3.80451 4.19795C3.80451 4.19795 4.48055 3.98424 6.00488 5.02592C6.6575 4.84935 7.33054 4.75954 8.00662 4.75878C8.68266 4.75878 9.37181 4.85236 10.0082 5.02592C11.5327 3.98424 12.2087 4.19795 12.2087 4.19795C12.6463 5.30633 12.3677 6.13446 12.2882 6.33473C12.8053 6.89556 13.1101 7.61667 13.1101 8.49806C13.1101 11.5964 11.2411 12.2773 9.45146 12.4778C9.74318 12.7315 9.99492 13.2122 9.99492 13.9734C9.99492 15.0551 9.98181 15.9232 9.98181 16.1902C9.98181 16.4039 10.1277 16.6578 10.5253 16.5776C13.7067 15.5091 16 12.491 16 8.92549C16.0131 4.46493 12.4208 0.859375 8.00662 0.859375Z" fill="#94A7C6"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3371_13727">
+                                    <rect width="16" height="16" fill="white" transform="translate(0 0.859375)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/airhunter_drop">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                             <path d="M0 0.5L6 8.5L0 15.5H1L7 9.5L11 15.5H16L9 6.5L15 0.5H14L9 5.5L5 0.5H0ZM2 1.5H4L14 14.5H12L2 1.5Z" fill="#94A7C6"/>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="https://t.me/airdrop_hunter_bot">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
                             <path d="M16.9994 0.998485C16.9994 0.938005 16.9994 0.998485 16.9994 0.998485C16.9328 0.938005 17.0659 0.998485 16.9994 0.998485C16.7997 0.938005 16.199 0.938005 15.9994 0.998485C15.9994 0.998485 1.79802 5.51465 0.999381 5.99848C0.733167 6.05896 1.06593 5.93801 0.999381 5.99848C0.866274 6.36136 0.999381 6.99848 0.999381 6.99848L4.99938 7.99848V7.99848C5.79802 7.51465 13.6001 3.17992 13.9994 2.99848C14.0659 2.99848 13.9994 2.93801 13.9994 2.99848C13.7997 3.5428 7.06593 8.99848 6.99938 8.99848V8.99848V8.99848V11.9985C6.99938 11.9985 6.93452 12.9662 7.99938 11.9985C8.79802 11.2727 9.60006 11.3009 9.99938 10.9985C11.2639 11.7847 12.467 12.5146 12.9994 12.9985C13.0659 13.059 12.8663 12.9985 12.9994 12.9985C13.1325 13.059 13.8663 12.9985 13.9994 12.9985C14.199 12.9985 13.8663 13.1194 13.9994 12.9985C14.1325 12.8775 13.9328 12.1194 13.9994 11.9985C13.9994 11.9985 16.8663 3.26855 16.9994 1.99848V1.99848C17.0659 1.81705 16.9994 1.11944 16.9994 0.998485Z" fill="#94A7C6"/>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="https://medium.com/@airdrophunter_official">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <g clip-path="url(#clip0_2981_108257)">
+                            <path d="M5.26256 12.6171C7.75463 12.6171 9.77496 10.5793 9.77496 8.06547C9.77496 5.55166 7.75478 3.51367 5.26256 3.51367C2.77033 3.51367 0.75 5.55212 0.75 8.06547C0.75 10.5788 2.77049 12.6171 5.26256 12.6171Z" fill="#94A7C6"/>
+                            <path d="M14.7252 8.06548C14.7252 10.4317 13.715 12.3507 12.4689 12.3507C11.2228 12.3507 10.2126 10.4317 10.2126 8.06548C10.2126 5.69927 11.2227 3.78031 12.4688 3.78031C13.7149 3.78031 14.7252 5.69866 14.7252 8.06548Z" fill="#94A7C6"/>
+                            <path d="M16.75 8.06548C16.75 10.185 16.3948 11.9043 15.9565 11.9043C15.5181 11.9043 15.1631 10.1855 15.1631 8.06548C15.1631 5.94547 15.5183 4.22664 15.9565 4.22664C16.3946 4.22664 16.75 5.94532 16.75 8.06548Z" fill="#94A7C6"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2981_108257">
+                            <rect width="16" height="16" fill="white" transform="translate(0.75 0.180176)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@AirDropHunterOfficial">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
                             <path d="M16.999 4.9989C16.799 3.83779 16.399 2.18223 14.999 1.9989C12.799 1.63223 8.99905 1.9989 8.99905 1.9989C8.99905 1.9989 5.19905 1.63223 2.99905 1.9989C1.59905 2.18223 1.06571 3.83779 0.999045 4.9989C0.799045 6.16001 0.999045 7.9989 0.999045 7.9989C0.999045 7.9989 0.799045 8.83779 0.999045 9.9989C1.19905 11.16 1.59905 12.8156 2.99905 12.9989C5.19905 13.3656 8.99905 12.9989 8.99905 12.9989C8.99905 12.9989 12.799 13.3656 14.999 12.9989C16.399 12.7545 16.799 11.2211 16.999 9.9989C17.199 8.77668 16.999 7.9989 16.999 7.9989C16.999 7.9989 17.199 6.16001 16.999 4.9989ZM6.99905 9.9989V4.9989L11.999 7.9989L6.99905 9.9989Z" fill="#94A7C6"/>
                         </svg>
                     </a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58184 0 0 3.05392 0 7C0 10.1688 1.78679 13.0434 5 14C5.40165 14.0598 6 14.1794 6 14V12C3.99175 12.3587 3.13388 11.4185 3 11C2.93306 10.8206 3.33471 10.1794 3 10C2.73223 9.88042 2.33058 10 3 10C3.60248 10 3.86612 10.8206 4 11C4.73636 12.0762 5.53141 11.1794 6 11C6.06694 10.5217 6.73223 10.1794 7 10C5.19257 9.82063 3 9.7503 3 7C3 6.22274 3.53141 5.47831 4 5C3.93306 4.76084 3.59835 3.95662 4 3C4 3 4.46034 3.10316 6 4C6.66942 3.82063 7.33058 3 8 3C8.66942 3 9.33058 3.82063 10 4C11.5397 3.04338 12 3 12 3C12.4686 3.95662 12.0669 4.82063 12 5C12.5355 5.47831 13 6.22274 13 7C13 9.7503 10.8074 9.82063 9 10C9.26777 10.2392 10 11.3423 10 12V14C10 14.1794 10.5983 14.0598 11 14C12.6066 13.5217 13.0628 12.2556 14 11C15.0041 9.80422 16 8.49473 16 7C16.0669 3.05392 12.4182 0 8 0Z" fill="#94A7C6"/>
-                        </svg>
-                    </a>
+                    
                 </div>
                 <p class="copyright">Copyright© 2023 All rights reserved</p>
-                <div class="footer_btns">
+                <!-- <div class="footer_btns">
                     <a href="https://app.airdrop-hunter.site/get100/" class="btn_100" id=get100>
                         <img src="images/present.png" alt="" />
                         $100 &#128072;
                     </a>
                     <a href="https://app.airdrop-hunter.site/" class="btn btn-dark" target="_blank" id=gotodapp>Go to dApp</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
