@@ -1489,7 +1489,7 @@ button {
   flex-wrap: wrap-reverse;
 }
 
-.leave_request_row button {
+.leave_request_row button, .leave_request_row a {
   display: flex;
   width: 180px;
   height: 60px;
@@ -1501,11 +1501,11 @@ button {
   background-color: #fff;
   flex-shrink: 0;
 }
-.leave_request_row button:hover {
+.leave_request_row button:hover, .leave_request_row a:hover {
   background: #23ACDE;
   border-color: #23ACDE;
 }
-.leave_request_row button:hover svg path {
+.leave_request_row button:hover svg path, .leave_request_row a:hover svg path {
   transition: all 0.3s ease-in-out;
   fill: #FFF;
 }
